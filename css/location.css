@@ -1,0 +1,94 @@
+/* Base styles */
+
+#Location-Section h1,
+#Location-Section h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+#Location-Section h1 {
+    font-size: 6rem;
+}
+
+#Location-Section h2 {
+    font-size: 4.2rem;
+}
+
+#Location-Section ul {
+    list-style: none;
+}
+
+#Location-Section a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+
+
+#Location-Section {
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(8, 45, 63, 1) 0%, rgba(5, 57, 86, 1) 100%);
+}
+
+#Location-Section .map-card {
+    height: 100%;
+}
+
+#Location-Section .map-info-area {
+    position: relative;
+    top: -75px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+
+
+}
+
+#Location-Section .contact-info {
+   
+
+    width: auto;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#Location-Section .single-icon {
+
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: auto;
+    z-index: 4;
+}
+
+
+
+@media (max-width: 480px) {
+    /* #Location-Section .contact-info {
+        width: 15%;
+        margin-bottom: 10%;
+        margin-left: 40%;
+    } */
+}
+
+@media (max-width: 754px) {
+    /* #Location-Section .contact-info {
+        width: 17%;
+        margin-bottom: 7%;
+        margin-left: 40%;
+    } */
+}
+
+@media (max-width: 991px) {
+    /* #Location-Section .contact-info {
+        width: 15%;
+        margin-bottom: 10%;
+        margin-left: 40%;
+    } */
+}
