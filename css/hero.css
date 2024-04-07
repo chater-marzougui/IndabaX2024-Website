@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
 :root {
-	--color-white-100: #fafafa;
+	--color-white-100: #000;
 	--color-white-200: #e4e6e7;
 	--color-white-300: #c9cccf;
 	--color-white-400: #a1a6aa;
 	--color-white-500: #798086;
 	--color-white-600: #555a5e;
-	--color-black-300: #0083ef;
-	--color-black-400: #0083ef;
-	--color-black-500: #0083ef;
-	--color-black-600: #0083ef;
-	--color-black-700: #0083ef;
-	--color-black-800: #0083ef;
+	--color-black-300: #ffffff;
+	--color-black-400: #ffffff;
+	--color-black-500: #ffffff;
+	--color-black-600: #ffffff;
+	--color-black-700: #ffffff;
+	--color-black-800: #ffffff;
 	--color-blue-100: #dcebfe;
 	--color-blue-200: #bedbfe;
 	--color-blue-300: #91c3fd;
@@ -1029,20 +1029,12 @@ body{
 	.logo a {
 		color: #fff;
 	}
-	.brand1{
-		/*color: #333333;*/
-		/*filter: invert();*/
-		filter: brightness(0.6);
-	}
+	
 	.banner-image{
 		/*filter: invert();*/
 		filter: brightness(0.6);
 	}
-
-	.banner-inner{
-		/*filter: invert();*/
-		filter: brightness(0.6);
-	}
+	
 	.menu1 {
 		/*filter: invert();*/
 		filter: brightness(0.6);
