@@ -27,65 +27,9 @@
     scale: 1;
 }
 
-.btnR {
-    display: inline-block;
-    font-family: inherit;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
-    user-select: none;
-    outline: none;
-    border: none;
-    border-radius: 0.25rem;
-    text-transform: unset;
-    height: 10vw;
-    overflow: hidden;
-    padding: 0;
-    width: 15vw;
-    height: 7vh;
-    border-radius: 7vh;
-    background-color: #225c97;
-    transition: all .2s;
-    margin-top: 1vh;
-    margin-bottom: 4vh;
-}
-
 .image-row .col-md-6 {
     margin-left: 100vh; 
 }
-
-
-.btnR .textR {
-	transition: all .2s;
-	color: #fff;
-}
-
-.btnR:hover {
-	background-color: #cdd9e4;
-	color: #000;
-}
-
-.btnR:hover .textR {
-	transform: translateX(5px) scale(1.1);
-	color: black;
-}
-
-.textR {
-	position: absolute;
-	display: flex;
-	align-items: center;
-}
-
-.btnR-inline {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	column-gap: 0.5rem;
-}
-
 
 :root {
 	--bg: #e3e4e8;

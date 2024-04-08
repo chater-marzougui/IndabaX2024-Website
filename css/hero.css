@@ -543,8 +543,8 @@ body{
 	}
 	#hero .banner-column {
 		grid-template-columns: 1fr max-content;
-		column-gap: 4rem;
-		/* margin-top: 3rem; */
+		/*column-gap: 1rem;*/
+		margin-top: 1.5rem;
 	}
 }
 
@@ -958,21 +958,6 @@ body{
 	#hero .btn1{
 		display: none;
 	}
-}
-
-
-.hero-accessory{
-	left:94vw;
-    bottom: 5vh;
-	width: 6vw;
-	display: none !important;
-}
-
-.hero-accessory-inverted {
-	transform: scaleX(-1);
-	width: 6vw;
-	top: -70px;
-	left: 0;
 }
 
 

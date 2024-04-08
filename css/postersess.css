@@ -5,3 +5,113 @@
     flex-direction: column;
     column-gap: 2rem;
 }
+
+#poster-session h1 { 
+    font-weight: bolder;
+    color:aliceblue;
+    font-family: Rubik;
+    font-size: 11vh;
+    margin-bottom: 0vh;
+}
+
+.glasscard p {
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 1.6vw;
+    text-align: left;
+
+}
+.glasscard {
+    margin-top: 6%;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 38vw;
+    height: auto;
+    padding: 35px;
+    border: 0.3vw solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    /*background-color: rgba(255, 255, 255, 0.65);*/
+    background-color: rgb(15 156 144 / 18%);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  #poster-session .row .col-md-6 {
+    font-size: larger;
+    color: aliceblue;
+  }
+
+  
+
+
+
+  #poster-session .btn1 {
+	display: inline-block;
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	user-select: none;
+	outline: none;
+	border: none;
+	border-radius: 0.25rem;
+	text-transform: unset;
+	height: 10vw;
+	overflow: hidden;
+	padding: 0;
+	width: 175px;
+	height: 70px;
+	border-radius: 70px;
+	background-color: #225c97;
+	transition: all .2s
+}
+
+#poster-session .btn1 .textt {
+	transition: all .2s;
+	color: #fff;
+}
+
+#poster-session .btn1:hover {
+	background-color: #cdd9e4;
+	color: #000;
+}
+
+#poster-session .btn1:hover .textt {
+	transform: translateX(5px) scale(1.1);
+	color: black;
+}
+
+/* #hero .btn1 img {
+	opacity: 1;
+	filter: invert();
+} */
+
+#poster-session .textt {
+	position: absolute;
+	display: flex;
+	align-items: center;
+}
+
+#poster-session .btn1-inline {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 0.5rem;
+}
+
+
+@media only screen and (max-width: 426px) {
+	#poster-session .btn1-inline {
+		display: none !important;
+	}
+	#Navbar  .brand1{
+		width: 67%;
+	}
+	#Navbar  .brand1 img{
+		width:100%		
+	}
+}
