@@ -13,7 +13,7 @@ function removeCode() {
     }
 }
 
-
+/*
 //DARK - MODE
 const darkModeToggle = document.getElementById('darkModeToggle');
         const body = document.body;
@@ -30,4 +30,4 @@ const darkModeToggle = document.getElementById('darkModeToggle');
                 body.classList.remove('dark-mode');
                 localStorage.setItem('darkMode', 'disabled');
             }
-        });  
+        });  */
