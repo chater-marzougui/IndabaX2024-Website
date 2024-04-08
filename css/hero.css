@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
 :root {
-	--color-white-100: #000;
+	--color-white-100: #225566;
 	--color-white-200: #e4e6e7;
 	--color-white-300: #c9cccf;
 	--color-white-400: #a1a6aa;
@@ -22,9 +22,11 @@
 	--color-blue-700: #1d4fd7;
 	--color-blue-800: #1e3fae;
 	--color-blue-900: #1e3b8a;
+	--text-color: #ffffff;
 	--hover-color: #7301ff;
 	--primary-color: #8d0adfe9;
     --primary-dark: #5e0505;
+	--navbar-scrolled-color : #140374;
 	--shadow-small: 0 1px 3px 0 rgba(191, 214, 237, 1), 0 1px 2px 0 rgba(191, 214, 237, 1);
 	--shadow-medium: 0 4px 6px -1px rgba(191, 214, 237, 1), 0 2px 4px -1px rgba(191, 214, 237, 1);
 	--shadow-large: 0 10px 15px -3px rgba(191, 214, 237, 1), 0 4px 6px -2px rgba(191, 214, 237, 1);
@@ -284,7 +286,7 @@ body{
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.5;
-	color: var(--color-white-100);
+	color: var(--text-color);
 	text-transform: uppercase;
 	transition: all 0.3s ease;
 }
@@ -437,6 +439,7 @@ body{
 	flex-direction: column;
 	align-items: flex-end;
 	row-gap: 1.75rem;
+	color: var(--text-color);
 }
 
 #hero .banner-links {
@@ -456,7 +459,7 @@ body{
 #hero .banner-links>* {
 	font-size: 2.5rem;
 	line-height: 1.25;
-	color: var(--color-white-100);
+	color: var(--text-color);
 }
 
 #hero .banner-links::before {
@@ -466,7 +469,7 @@ body{
 	width: 4rem;
 	height: 2px;
 	transform: rotate(0deg);
-	background: var(--color-white-100);
+	background: var(--text-color);
 	margin-top: 5%;
 }
 
@@ -477,7 +480,7 @@ body{
 	width: 4rem;
 	height: 2px;
 	transform: rotate(0deg);
-	background: var(--color-white-100);
+	background: var(--text-color);
 	margin-top: 5%;
 }
 
@@ -557,7 +560,7 @@ body{
 		height:auto;
 	}
 	#hero .container1, #Navbar .container1 {
-		
+		height: auto;
 	}
 }
 
@@ -891,7 +894,7 @@ body{
 @media only screen and (min-width: 1080px) {
 	#Navbar .jwpnavbar--scrolled {
 		height: 68px;
-		background: var(--color-black-500);
+		background: var(--navbar-scrolled-color);
 		box-shadow: var(--shadow-large);
 		position: fixed;
 		top: 0;
@@ -900,7 +903,7 @@ body{
 
 @media only screen and (max-width: 1080px) {
 	#Navbar .header1{
-		background: var(--color-black-500);
+		background: var(--navbar-scrolled-color);
 		box-shadow: var(--shadow-large);
 		height: 68px!important
 	}
@@ -1034,7 +1037,7 @@ body{
 		/*filter: invert();*/
 		filter: brightness(0.6);
 	}
-	
+
 	.menu1 {
 		/*filter: invert();*/
 		filter: brightness(0.6);

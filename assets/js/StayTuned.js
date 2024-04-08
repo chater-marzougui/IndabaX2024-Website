@@ -13,8 +13,6 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "<div>" + days + "d " + hours + "h "
     + minutes + "m " + seconds + "s </div>";
 
-    document.getElementById("hourglass").style.transform = `rotate(180deg)`;
-    // If the countdown is over, display a message
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "EXPIRED";
