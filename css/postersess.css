@@ -66,7 +66,7 @@
 	width: 175px;
 	height: 70px;
 	border-radius: 70px;
-	background-color: #225c97;
+	background-color: #d2b48c;
 	transition: all .2s
 }
 
@@ -83,6 +83,12 @@
 #poster-session .btn1:hover .textt {
 	transform: translateX(5px) scale(1.1);
 	color: black;
+}
+
+#poster-session .btn1 .textt i{
+    transform: rotateY(180deg);
+    scale: 2;
+    padding: 8%;
 }
 
 /* #hero .btn1 img {
@@ -103,6 +109,9 @@
 	column-gap: 0.5rem;
 }
 
+#poster-session .textt i.bx-right-arrow-alt:before {
+    content: "\21B5";
+}
 
 @media only screen and (max-width: 426px) {
 	#poster-session .btn1-inline {
@@ -114,4 +123,59 @@
 	#Navbar  .brand1 img{
 		width:100%		
 	}
+}
+
+body{
+    background-color: black;
+}
+.amp{
+    
+    margin: 20px 35% 20px 35%;
+    grid-template-columns: 1.5fr 5fr;
+    display: grid;
+    align-items: center;
+}
+.amp img{
+    grid-area: 1 / 1;
+    height: 100px;
+    rotate: -45deg;
+}
+.amp p{
+    grid-area: 1 / 2;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1cm;
+}
+
+#glasscard-and-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the column horizontally */
+    margin-top: 6%;
+}
+
+#poster-session .row .col-md-6 {
+    font-size: larger;
+    color: aliceblue;
+}
+
+@media only screen and (max-width: 426px) {
+    #poster-session .btn1-inline {
+        display: none !important;
+    }
+    #Navbar .brand1 {
+        width: 67%;
+    }
+    #Navbar .brand1 img {
+        width: 100%;
+    }
+}
+
+.container{
+    position: absolute;
+    align-items: center;
+}
+
+body {
+    background-color: black;
 }

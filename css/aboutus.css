@@ -44,8 +44,8 @@
 #About-Section {
     /*background-image: linear-gradient(to bottom, #564705, #1a5104, #4b034d, #ee6e0c, #d1db0a, #ebff09, #05243f, #07223c, #0c213a, #102039, #131f37, #151e35);*/
     background-size: cover;
-    /*background-color: #0f1b2c;
-    background-color: #073856;*/
+    /*background-color: #0f1b2c;*/
+    background-color: #073856;
     background-image: linear-gradient(#073856 , #161f39);
 
 }

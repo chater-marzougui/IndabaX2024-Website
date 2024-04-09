@@ -24,7 +24,7 @@
 	--color-blue-900: #1e3b8a;
 	--text-color: #ffffff;
 	--hover-color: #7301ff;
-	--primary-color: #8d0adfe9;
+	--primary-color: #d2b48c;
     --primary-dark: #5e0505;
 	--navbar-scrolled-color : #140374;
 	--shadow-small: 0 1px 3px 0 rgba(191, 214, 237, 1), 0 1px 2px 0 rgba(191, 214, 237, 1);
@@ -187,7 +187,7 @@ body{
 	width: 175px;
 	height: 70px;
 	border-radius: 70px;
-	background-color: #225c97;
+	background-color: var(--primary-color);
 	transition: all .2s
 }
 
@@ -894,16 +894,21 @@ body{
 @media only screen and (min-width: 1080px) {
 	#Navbar .jwpnavbar--scrolled {
 		height: 68px;
-		background: var(--navbar-scrolled-color);
+		/*background: var(--navbar-scrolled-color);*/
+		/*background: rgba(20, 4, 116, 0.15);*/
+		background-image: linear-gradient(120deg ,#1F385B , #0F1B2C);
 		box-shadow: var(--shadow-large);
 		position: fixed;
+		box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+		backdrop-filter: blur(15px);
 		top: 0;
 	}
 }
 
 @media only screen and (max-width: 1080px) {
 	#Navbar .header1{
-		background: var(--navbar-scrolled-color);
+		/*background: var(--navbar-scrolled-color);*/
+		background-image: linear-gradient(120deg ,#1F385B , #0F1B2C);
 		box-shadow: var(--shadow-large);
 		height: 68px!important
 	}
