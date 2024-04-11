@@ -2,9 +2,9 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: ".trigger",
-      scrub: 0.5,
+      scrub: 2,
       pin: true,
-      markers: true,
+      markers: false,
       start: "-9% top",
       end: "+=139%",
     },

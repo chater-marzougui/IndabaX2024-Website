@@ -233,18 +233,6 @@
     position: relative;
 }
 
-@media only screen and (max-width: 426px) {
-	#poster-session .btn1-inline {
-		display: none !important;
-	}
-	#Navbar  .brand1{
-		width: 67%;
-	}
-	#Navbar  .brand1 img{
-		width:100%		
-	}
-}
-
 body{
     background-color: black;
 }
@@ -287,18 +275,6 @@ body{
     align-items: center;
 }
 
-@media only screen and (max-width: 426px) {
-    #poster-session .btn1-inline {
-        display: none !important;
-    }
-    #Navbar .brand1 {
-        width: 67%;
-    }
-    #Navbar .brand1 img {
-        width: 100%;
-    }
-}
-
 #poster-session .containerPoster{
     display: flex;
     flex-direction: column;
@@ -306,6 +282,26 @@ body{
     row-gap: 5vh;
 }
 
-body {
-    background-color: black;
+@media only screen and (max-width: 719px) {
+  #poster-session {
+    height: auto;
+  }
+  #poster-session .paper{
+    opacity: 0;
+  }
+  .glasscard p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  #poster-session .rowPoster2 .col-md-6 {
+    padding: 5%;
+    font-size: 13px;
+    width: 60%;
+  }
+  .regbutton {
+    width: 0%;
+    scale: 0.65;
+  }
 }
