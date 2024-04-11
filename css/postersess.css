@@ -14,37 +14,154 @@
     margin-bottom: 0vh;
 }
 
-.glasscard p {
-    color: aliceblue;
-    font-weight: 400;
-    font-size: 1.6vw;
-    text-align: left;
-
-}
 .glasscard {
-    margin-top: 6%;
-    margin-left: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 38vw;
+    max-width: 900px;
     height: auto;
-    padding: 35px;
-    border: 0.3vw solid rgba(255, 255, 255, 0.25);
-    border-radius: 20px;
-    /*background-color: rgba(255, 255, 255, 0.65);*/
-    background-color: rgb(15 156 144 / 18%);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
-  }
+    width: 75%;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+    overflow: visible; 
+    margin-top: 2%;
+    box-shadow:-12px 12px 8px #0F1B2C;
+}
 
-  #poster-session .row .col-md-6 {
-    font-size: larger;
-    color: aliceblue;
-  }
+.glasscard p {
+    color: #fff; 
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 15px; /* Margin between paragraphs */
+}
 
+.glasscard strong {
+    font-weight: bold; 
+}
+
+
+.paper {
+    position: absolute;
+    left: -18%;
+    top: 1%;
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    background-color: #d2b48c;
+    box-shadow: -6px 6px 9px #0F1B2C;
+    transform: rotate(-20deg);
+    transform-origin: top left;
+    height: 27%;
+  }
+  
+  .paper p {
+    margin: auto;
+    color : #000;
+    font-family: "Caveat", cursive;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  .pin {
+    --pin-color: #d02627;
+    --pin-dark: #9e0608;
+    --pin-light: #fc7e7d;
+    position: absolute;
+    left: 5%;
+    top: -18%;
+    width: 60px;
+    height: 50px;
+  }
+  
+  .shadow {
+    position: absolute;
+    top: 18px;
+    left: -14px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: radial-gradient(#000, 20%, rgba(201, 191, 141, 0));
+  }
+  
+  .metal {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: linear-gradient(to right, #808080, 40%, #eae8e8, 50%, #808080);
+    border-radius: 0 0 30% 30%;
+    transform: rotate(50deg);
+    transform-origin: bottom left;
+    top: 15px;
+    border-bottom: 1px solid #808080;
+  }
+  
+  .bottom-circle {
+    position: absolute;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--pin-color);
+    background: radial-gradient(
+      circle at bottom right,
+      var(--pin-light),
+      25%,
+      var(--pin-dark),
+      90%,
+      var(--pin-color)
+    );
+  }
+  
+  /* Barrel */
+  .bottom-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 20px;
+    height: 30px;
+    transform: rotate(55deg);
+    transform-origin: 100% 100%;
+    border-radius: 0 0 40% 40%;
+    background: linear-gradient(
+      to right,
+      var(--pin-dark),
+      30%,
+      var(--pin-color),
+      90%,
+      var(--pin-light)
+    );
+  }
+  
+  /* Top circle */
+  .bottom-circle::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle at right,
+      var(--pin-light),
+      30%,
+      var(--pin-color),
+      var(--pin-dark) 80%
+    );
+  }
   
 
-
+  
+#poster-session .rowPoster2 .col-md-6 {
+    padding: 5%;
+    font-size: 23px;
+    width: 70%;
+}
 
   #poster-session .btn1 {
 	display: inline-block;
@@ -100,6 +217,7 @@
 	position: absolute;
 	display: flex;
 	align-items: center;
+    justify-content: flex-end;
 }
 
 #poster-session .btn1-inline {
@@ -111,6 +229,8 @@
 
 #poster-session .textt i.bx-right-arrow-alt:before {
     content: "\21B5";
+    top: -2px;
+    position: relative;
 }
 
 @media only screen and (max-width: 426px) {
@@ -130,7 +250,6 @@ body{
 }
 .amp{
     
-    margin: 20px 35% 20px 35%;
     grid-template-columns: 1.5fr 5fr;
     display: grid;
     align-items: center;
@@ -150,13 +269,22 @@ body{
 #glasscard-and-button {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the column horizontally */
+    align-items: center;
     margin-top: 6%;
 }
 
-#poster-session .row .col-md-6 {
+#poster-session .rowPoster2{
+    display: flex;
     font-size: larger;
     color: aliceblue;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+}
+
+#poster-session .rowPoster1{
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (max-width: 426px) {
@@ -171,9 +299,11 @@ body{
     }
 }
 
-.container{
-    position: absolute;
+#poster-session .containerPoster{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    row-gap: 5vh;
 }
 
 body {

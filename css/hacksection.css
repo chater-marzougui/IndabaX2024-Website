@@ -1,0 +1,127 @@
+body {
+    --light: #eee;
+    --dark: #161616;
+  }
+#Hackaton-Section {
+    height: 239vh !important;
+}
+.trigger {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #0f1b2c;
+}
+
+.container-thatcontains {
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    z-index: 2;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--light);
+}
+
+.container-thatcontains.up {
+    right: 0;
+}
+
+.container-thatcontains.down {
+    left: 0;
+}
+
+.zindi-img {
+    width: 60%;
+    padding-bottom: 5rem;
+}
+
+.box {
+    height: 1.2vh;
+    width: 50vw;
+    margin-bottom: -0.2vh;
+    background: var(--dark);
+    display: block;
+}
+/* Abda e5dem css te3ek lenna */
+
+.p1 {
+    font-size: 23px;
+    width: 80%;
+    font-weight: 400;
+    font-style: unset;
+    padding: 5%;
+}
+
+.hackathon-container {
+    width: 98%;
+    width: 98%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.titlezindi {
+    font-weight: 900;
+    font-size: 40px;
+    width: 90%;
+}
+
+.titlezindi .zindi-title {
+    scale: 4;
+    display: block;
+    padding: 15px;
+}
+
+.hackathon-zindi {
+    width: 13rem;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-zindi--hide{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 900px) {
+.p1 {
+    font-size: 13px;
+    font-weight: 500;
+    font-style: unset; /* badlha ala ases houma chnoi khadmin */
+}
+
+.titlezindi {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.hackathon-zindi {
+    width: 8rem;
+}
+
+.zindi-img {
+    width: 8rem;
+    padding-bottom: 5rem;
+}
+
+.container-thatcontains {
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    z-index: 2;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--light);
+}
+}
