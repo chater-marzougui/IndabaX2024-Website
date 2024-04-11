@@ -44,7 +44,6 @@ body {
     background: var(--dark);
     display: block;
 }
-/* Abda e5dem css te3ek lenna */
 
 .p1 {
     font-size: 23px;
@@ -94,11 +93,27 @@ body {
 
 @media only screen and (max-width: 900px) {
 .p1 {
-    font-size: 13px;
+    font-size: 21px;
     font-weight: 500;
-    font-style: unset; /* badlha ala ases houma chnoi khadmin */
+    font-style: unset;
+    width: 90%;
 }
 
+@media only screen and (max-width: 720px) {
+    .p1 {
+        font-size: 19px;
+        font-weight: 500;
+        font-style: unset;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .p1 {
+        font-size: 13px;
+        font-weight: 500;
+        font-style: unset;
+        width: 98%;
+    }
+}
 .titlezindi {
     font-weight: 900;
     font-size: 25px;

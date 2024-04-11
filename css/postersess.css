@@ -254,6 +254,24 @@ body{
     font-size: 1cm;
 }
 
+.textforphone {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1cm;
+    opacity: 0;
+    position: absolute;
+}
+
+@media only screen and (max-width : 719px){
+  .amp p {
+    position: fixed;
+  }
+  .textforphone {
+    opacity: 0.9;
+    width: 80%;
+  }
+}
+
 #glasscard-and-button {
     display: flex;
     flex-direction: column;
