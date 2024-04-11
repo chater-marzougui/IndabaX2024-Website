@@ -68,13 +68,15 @@
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
   }
+
   .partners figure.snip0058 figcaption {
-    left: 30px;
-    margin-bottom: -50px;
+    left: 10%;
+    margin-bottom: -24%;
     position: absolute;
-    right: 30px;
+    right: 10%;
     text-align: left;
     bottom: 130%;
+    font-weight: 900;
     -webkit-transition: bottom 1s;
     transition: bottom 1s;
   }

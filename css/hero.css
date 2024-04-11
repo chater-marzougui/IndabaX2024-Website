@@ -252,13 +252,6 @@ body{
 	margin: 0 auto;
 }
 
-@media only screen and (max-width : 1080px){
-	#Navbar .navbar1 {
-		column-gap: 15%;
-		justify-content: space-around;
-	}
-}
-
 #Navbar .menu1 {
 	position: fixed;
 	top: -100%;
@@ -491,107 +484,6 @@ body{
 	margin-top: 5%;
 }
 
-
-/* CSS Document */
-@media only screen and (max-width: 1080px){
-	#Navbar .navbar1 {
-		column-gap: .2rem
-	}
-	#hero #lightings{display: none}
-}
-@media only screen and (min-width: 1080px) {
-	#Navbar .burger1 {
-		display: none;
-		visibility: hidden;
-	}
-	#Navbar .menu1 {
-		position: relative;
-		top: 0;
-		width: auto;
-		height: auto;
-		padding: 0rem;
-		margin-left: auto;
-		background: none;
-		box-shadow: none;
-	}
-
-	#Navbar .menu1-inner {
-		display: flex;
-		flex-direction: row;
-		column-gap: 2rem;
-		margin: 0 auto;
-	}
-
-	#Navbar .menu1-link {
-		text-transform: capitalize;
-	}
-
-	#Navbar .menu1-block {
-		margin-left: 2rem;
-	}
-	#hero .banner-column {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: center;
-	}
-	#hero .banner-image {
-		order: 1;
-		max-width: 20rem;
-		height: auto;
-	}
-	#hero .banner-links {
-		opacity: 1;
-		visibility: visible;
-	}
-	#hero .banner-image {
-		max-width: 25rem;
-		height: auto;
-		margin-right: 5rem;
-	}
-	#hero .banner-column {
-		grid-template-columns: 1fr max-content;
-		column-gap: 1rem;
-		/*margin-top: 1.5rem;*/
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	#hero {
-		display: flex;
-		align-items: center;
-		height:auto;
-		min-height:115vh;
-		position: relative;
-	}
-	#hero .section{
-		height:auto;
-	}
-	#hero .container1{
-		height: auto;
-	}
-}
-
-
-
-@media only screen and (max-width: 426px) {
-	#hero .btn1-inline {
-		display: none !important;
-	}
-	#Navbar  .brand1{
-		width: 40%;
-	}
-	#Navbar  .brand1 img{
-		width:100%		
-	}
-}
-
-@media only screen and (max-width: 376px) {
-	#hero h2 {
-		font-size: 20px ;
-	}
-}
-
-
 #hero * {
 	padding: 0px;
 	margin: 0px;
@@ -615,11 +507,6 @@ body{
 
 }
 
-@media only screen and (max-width: 600px) {
-	#hero #lightings {
-		display: none;
-	}
-}
 body{
 	margin:0;
 }
@@ -931,19 +818,6 @@ body{
 	position: relative;
 	color: var(--hover-color);
 }
-/*
-#Navbar ul.menu1-inner li:hover>a::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	right: 0px;
-	bottom: 0;
-	height: 2px;
-	background-color: var(--hover-color);
-	transform: scaleX(0);
-	transform-origin: bottom left;
-	transition: transform 0.5s ease-out, transform-origin 0.5s ease-out;
-}*/
 
 #Navbar ul.menu1-inner li:hover>a::after {
 	transform: scaleX(1);
@@ -972,6 +846,115 @@ body{
 	}
 }
 
+@media only screen and (max-width : 1080px){
+	#Navbar .navbar1 {
+		column-gap: 15%;
+		justify-content: space-around;
+	}
+}
+
+@media only screen and (max-width: 1080px){
+	#Navbar .navbar1 {
+		column-gap: .2rem
+	}
+	#hero #lightings{display: none}
+}
+@media only screen and (min-width: 1080px) {
+	#Navbar .burger1 {
+		display: none;
+		visibility: hidden;
+	}
+	#Navbar .menu1 {
+		position: relative;
+		top: 0;
+		width: auto;
+		height: auto;
+		padding: 0rem;
+		margin-left: auto;
+		background: none;
+		box-shadow: none;
+	}
+
+	#Navbar .menu1-inner {
+		display: flex;
+		flex-direction: row;
+		column-gap: 2rem;
+		margin: 0 auto;
+	}
+
+	#Navbar .menu1-link {
+		text-transform: capitalize;
+	}
+
+	#Navbar .menu1-block {
+		margin-left: 2rem;
+	}
+	#hero .banner-column {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+	}
+	#hero .banner-image {
+		order: 1;
+		max-width: 20rem;
+		height: auto;
+	}
+	#hero .banner-links {
+		opacity: 1;
+		visibility: visible;
+	}
+	#hero .banner-image {
+		max-width: 25rem;
+		height: auto;
+		margin-right: 5rem;
+	}
+	#hero .banner-column {
+		grid-template-columns: 1fr max-content;
+		column-gap: 1rem;
+		/*margin-top: 1.5rem;*/
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#hero {
+		display: flex;
+		align-items: center;
+		height:auto;
+		min-height:115vh;
+		position: relative;
+	}
+	#hero .section{
+		height:auto;
+	}
+	#hero .container1{
+		height: auto;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	#hero #lightings {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 426px) {
+	#hero .btn1-inline {
+		display: none !important;
+	}
+	#Navbar  .brand1{
+		width: 40%;
+	}
+	#Navbar  .brand1 img{
+		width:100%		
+	}
+}
+
+@media only screen and (max-width: 376px) {
+	#hero h2 {
+		font-size: 20px ;
+	}
+}
 
 /* DARK MODE */
 
