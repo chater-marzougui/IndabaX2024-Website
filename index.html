@@ -32,6 +32,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- speaker Style -->
@@ -44,6 +45,7 @@
     <link rel="stylesheet" href="./css/StayTuned.css">
     <link rel="stylesheet" href="./css/postersess.css">
     <link rel="stylesheet" href="./css/hacksection.css">
+    <link rel="stylesheet" href="./css/prefooter.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -504,47 +506,44 @@
          
     </section>
     <!-- ****** -->
-    <section id="Location-Section" class="p-md-4">
-        <div class="map-card">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.935252323835!2d10.185582815250289!3d36.89189717992986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cb6fc49b7883%3A0x84da64ea383c01d2!2s%C3%89cole%20Sup%C3%A9rieure%20des%20communications%20de%20Tunis!5e0!3m2!1sfr!2stn!4v1679399243301!5m2!1sfr!2stn"
-                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="map-info-area">
-                        
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-6 col-lg-3 ">
-                                <div class="single-icon text-center">
-                                    <div class="contact-info">
-                                        <img src="assets/images/mail.png" alt="" height="50px">
+    <section id="pre-footer">
+        <div class="container text-center"> 
+            <div class="row justify-content-center"> 
+                <div class="col-lg-8">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.9365322124095!2d10.185198974957506!3d36.89186656252835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cb6fc49b7883%3A0x84da64ea383c01d2!2s%C3%89cole%20Sup%C3%A9rieure%20des%20communications%20de%20Tunis!5e0!3m2!1sfr!2stn!4v1712850130272!5m2!1sfr!2stn" width="100%" height="420px" frameborder="0" style="border:0; border-radius: 15px; position: relative; z-index: 2;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="contact-info">
+                                    <div class="icon">
+                                        <i class="fa fa-phone"></i>
                                     </div>
-                                    <h4>
-                                        indabaxtunisia@gmail.com
-                                    </h4>
+                                    <div class="relativeinfo">
+                                        <h4>Phone:</h4>
+                                        <span>+216 55614415</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-3 ">
-                                <div class="single-icon">
-                                    <div class="contact-info">
-                                        <img src="assets/images/destination.png" alt="" height="50px">
+                            <div class="col-lg-4">
+                                <div class="contact-info">
+                                    <div class="icon">
+                                        <i class="fa fa-envelope"></i>
                                     </div>
-                                    <h4>
-                                        SUP'COM
-                                    </h4>
+                                    <div class="relativeinfo">
+                                        <h4>Email:</h4>
+                                        <span>indabaxtunisia<span class="break-lg"><br></span>@gmail.com</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-3 ">
-                                <div class="single-icon">
-                                    <div class="contact-info">
-                                        <img src="assets/images/phone-call.png" alt="" height="50px">
+                            <div class="col-lg-4"> 
+                                <div class="contact-info">
+                                    <div class="icon">
+                                        <i class="fa fa-map-marker"></i> 
                                     </div>
-                                    <h4>
-                                        +21655614415
-                                    </h4>
+                                    <div class="relativeinfo">
+                                        <h4>Location:</h4>
+                                        <span>Sup'Com</span> 
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -552,7 +551,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>   
     <!-- ****** -->
     <section id="Footer" style="background: url(./assets/images/postersessionbg-cropped.jpg) ;background-size: cover;opacity: 1;">
         <footer class="bg-dark text-white" style="background: transparent !important">
