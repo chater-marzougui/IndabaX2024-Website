@@ -12,7 +12,7 @@ function LandingPageScrollTrigger() {
         start: "0% 0%",
         end: "300% 0%",
         pin: "#ImgWrapper",
-        markers : true,
+        markers : false,
         scrub: 2,
         snap: {
           duration: 0.5, 
@@ -44,7 +44,7 @@ function LandingPageScrollTrigger() {
         start: "0% 0%",
         end: "300% 0%",
         pin: "#ImgWrapper",
-        markers : true,
+        markers : false,
         scrub: 2,
         snap: {
           duration: 0.5, 

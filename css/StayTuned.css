@@ -1,3 +1,9 @@
+:root {
+	--bg: #e3e4e8;
+	--fg: #2e3138;
+	--primary: #255ff4;
+}
+
 #stay-tuned {
     height: 140vh; 
     display: flex; 
@@ -31,10 +37,29 @@
     margin-left: 100vh; 
 }
 
-:root {
-	--bg: #e3e4e8;
-	--fg: #2e3138;
-	--primary: #255ff4;
+#stay-tuned .container .rowSt {
+	flex-direction: row;
+	display: flex;
+	align-items: center;
+}
+
+#stay-tuned .container .rowSt .col-md-6 {
+	width: 45%;
+	padding: 5%;
+	max-width: 380px;
+}
+
+@media only screen and (max-width :512px) {
+	#stay-tuned .container .rowSt {
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+	}
+
+	#stay-tuned .container .rowSt .col-md-6 {
+		width: 80%;
+		padding: 5%;
+	}
 }
 
 #remindertext {
@@ -139,4 +164,27 @@
 		--bg: #17181c;
 		--fg: #c7cad1;
 	}
+}
+
+.note{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    padding: 1px;
+    animation: roll 3s infinite;
+}
+
+#revgear {
+	animation: roll2 3s infinite;
+}
+
+@keyframes roll{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes roll2{
+    100%{
+        transform: rotate(-360deg);
+    }
 }
