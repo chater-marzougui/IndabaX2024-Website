@@ -312,8 +312,21 @@ body{
 
 #Navbar .menu1-block:hover {
 	background-color: var(--hover-color);
-	color: #000;
+	transition: all 0.3s ease-in-out;
+	font-weight: 500;
 }
+
+#Navbar .menu1 a::before{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: aliceblue;
+	transition: 0.4s;
+}
+
 /*
 .navbar ul li a {
   text-decoration: none;
@@ -321,20 +334,6 @@ body{
   font-weight: bold;
   font-size: 15px;
   position: relative;
-}
-.navbar a::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: 0.3s;
-}
-.navbar a:hover::before,
-.navbar a.active::before {
-  width: 100%;
 }
 
 .navbar a.active {
@@ -888,11 +887,13 @@ body{
 #Navbar ul.menu1-inner li a:hover{
 	position: relative;
 	color: var(--hover-color);
+	transition: 0.4s;
 }
 
 #Navbar ul.menu1-inner li:hover>a::after {
 	transform: scaleX(1);
 	transform-origin: bottom right;
+	transition: 0.5s;
 }
 
 
