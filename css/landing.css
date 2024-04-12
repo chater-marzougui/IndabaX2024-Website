@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+.loader-wrap {
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+.loader-wrap svg {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 110vh;
+}
+
+@media (max-width: 767px) {
+    .loader-wrap svg {
+        width: 200vw;
+        margin-left: -50vw;
+    }
+    .loader-wrap-heading{
+        scale: 0.5;
+        right: 15%;
+        position: relative;
+    }
+}
+
+.loader-wrap-heading {
+    display: block;
+    max-width: 600px;
+    height: auto;
+    width: 70%;
+    /* margin-top: 0.5rem; */
+    object-fit: cover;
+    justify-self: center;
+    float: right;
+  }
+

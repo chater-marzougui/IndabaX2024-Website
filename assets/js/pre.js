@@ -1,3 +1,4 @@
+/*
 var loader = document.querySelector(".loader")
 
 window.addEventListener("load", vanish);
@@ -13,7 +14,7 @@ function removeCode() {
     }
 }
 
-/*
+
 //DARK - MODE
 const darkModeToggle = document.getElementById('darkModeToggle');
         const body = document.body;

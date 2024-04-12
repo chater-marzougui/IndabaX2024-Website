@@ -52,7 +52,7 @@ function LandingPageScrollTrigger() {
       }
     })
   LandingPageScrollTrigger
-    .to('#ImgWrapper #img8', { transform: 'translateX(40%) translateY(-60%)', }, 0)
+    .to('#ImgWrapper #img8', { transform: 'translateX(40%) translateY(-80%)', }, 0)
     //.to('#ImgWrapper #img8', { transform: '', }, 0)
       .from('#codeby a', { y: 130, opacity: 0 }, 1)
         .to('#codeby a', { z:300 , opacity: 0 }, 4)
