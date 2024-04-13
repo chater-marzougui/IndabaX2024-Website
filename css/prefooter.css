@@ -75,3 +75,12 @@
         display: inline; 
     }
 }
+
+#Location-Section h1 {
+  position: relative;
+  color: aliceblue;
+  padding: 8%;
+  text-align: center;
+  width: 100%;
+  font-size: xxx-large;
+}
