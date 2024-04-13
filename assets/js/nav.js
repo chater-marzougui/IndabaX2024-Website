@@ -64,3 +64,37 @@ if (!navbarMenu.classList.contains('is-active')) {
       }
    });
 }
+window.addEventListener('scroll', function() {
+   const sections = document.querySelectorAll('section');
+   const navLinks = document.querySelectorAll('.menu1-link');
+   
+   let currentSection = 'c';
+   sections.forEach(section => {
+     const sectionTop = section.offsetTop;
+     const sectionHeight = section.clientHeight;
+     const scrollPosition = window.scrollY || window.pageY; 
+     
+     if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+         currentSection = section.id;
+         if (currentSection === "five") {
+             currentSection = "hero"; 
+         }
+         else if (currentSection === "") {
+             currentSection = "hero";
+         }
+         else if (currentSection === "pre-footer") {
+            currentSection = "Location-Section";
+        }
+        else if (currentSection === "stay-tuned") {
+         currentSection = "poster-session"; 
+     }
+     }
+   });
+   console.log('Current section:', currentSection);
+   navLinks.forEach(link => {
+     link.classList.remove('active'); // Remove 'active' class from all links
+     if (link.getAttribute('href').substring(1) === currentSection) {
+       link.classList.add('active'); // Add 'active' class to the link corresponding to the current section
+     }
+   });
+ });

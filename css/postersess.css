@@ -323,3 +323,37 @@ body{
     scale: 0.65;
   }
 }
+
+.Newbanner-line {
+  width: 160px;
+  transform: rotate(-45deg);
+  height: 5vw;
+  background-color: #D2B48C;
+  /* margin: 0 auto; */
+  position: absolute;
+  top: 25px;
+  overflow: hidden;
+  left: -40px;
+}
+.Newbanner-line h2 {
+  top: -2px;
+  position: relative;
+  font-size: 4.5vw;
+  color: white;
+  font-weight: 600;
+}
+
+.Newonlyforphone {
+  width: 45%;
+  height: 45%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (min-width : 719px) {
+  .Newonlyforphone {
+      opacity : 0;
+  }
+}

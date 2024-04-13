@@ -450,3 +450,21 @@
 #Footer .container {
 	margin: 3%;
 }
+
+#Footer .col-md-4:nth-of-type(1n) li:hover {
+	scale: 1.2;
+	transition: all 0.3s;
+}
+#Footer .col-md-4:nth-of-type(1n) a:hover {
+	color: #d2b48c;
+	transition: all 0.3s;
+}
+
+#Footer .col-md-4:nth-of-type(3) li:hover {
+	scale: 1.8 !important;
+	transition: all 0.3s;
+}
+#Footer .col-md-4:nth-of-type(3) a:hover {
+	color: #0069d9 !important;
+	transition: all 0.3s;
+}

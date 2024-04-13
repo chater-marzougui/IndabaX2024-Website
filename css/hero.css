@@ -23,7 +23,7 @@
 	--color-blue-800: #1e3fae;
 	--color-blue-900: #1e3b8a;
 	--text-color: #ffffff;
-	--hover-color: #075388;
+	--hover-color: #d2b48c;
 	--primary-color: #d2b48c;
     --primary-dark: #5e0505;
 	--navbar-scrolled-color : #042D62;
@@ -310,11 +310,24 @@ body{
 }
 
 #Navbar .menu1-block:hover {
-	/*background-color: var(--hover-color);/*/
+	background-color: var(--hover-color);
 	transition: all 0.3s ease-in-out;
 	font-weight: 500;
-	background-color: #d2b48c;
 }
+
+.menu1-link.active {
+	color: red !important;
+  }
+/*
+#Navbar .menu1 a{
+	top: 100%;
+	left: 0;
+	width: 0%;
+	height: 3px;
+	background: aliceblue;
+	transition: 0.4s;
+	opacity: 0.5;
+}*/
 
 #Navbar .menu1 a::before{
 	content: "";
