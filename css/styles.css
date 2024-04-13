@@ -402,167 +402,6 @@
 }
 /* foooter and Pre-footer ENDS!!!!!! */
 
-/* Hackathon
-#Hackaton-Section{
-	background: #053856;
-	margin-top: -2px;
-}
-
-#Hackaton-Section .hackathon-panel.blue {
-    background-color: #0b172e;
-
-}
-
-#Hackaton-Section .hackathon-panel.blue::before {
-		content: "";
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(to top, rgba(5, 57, 86, 1) 0%, rgba(5, 57, 86, 0) 50%, rgba(21, 30, 53, 1) 100%);
-		z-index: +1;
-}
-
-#Hackaton-Section .hackathon-panel.blue div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-	width: 50%;
-
-}
-
-#Hackaton-Section .hackathon-panel.blue h1{
-    font-size: 4rem;
-}
-
-#Hackaton-Section .hackathon-panel h2 {
-    font-size: 2.5rem;
-}
-
-#Hackaton-Section .hackathon-panel.red {
-    background-color: #bfd6ed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-	row-gap: 5vh;
-}
-
-#Hackaton-Section .hackathon-zindi{
-	height: 50px;
-}
-
-#Hackaton-Section .hackathon-panel.orange {
-    background-color: #DFEBF6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-	row-gap: 10vh;
-}
-
-#Hackaton-Section div {
-	text-align: center;
-}
-
-#Hackaton-Section div p:not(.notp){
-	text-align: justify
-}
-
-#Hackaton-Section .hackathon-panel {
-    height: 100vh;
-}
-
-@media screen and (min-width: 769px) {
-    #Hackaton-Section .hackathon-panel.red {
-            width: 50vw;
-    }
-    
-    #Hackaton-Section .hackathon-panel.orange {
-        width: 50vw;
-    }
-    
-    #Hackaton-Section .hackathon-panel.purple {
-        width: 50vw;
-    }
-    
-    #Hackaton-Section .hackathon-panel.green {
-        width: 50vw;
-    }
-}
-
-@media screen and (max-width:769px) {
-    #Hackaton-Section .hackathon-panel.blue div.col:first-of-type {
-            display: none;
-    }
-}
-
-@media screen and (max-width:426px) {
-	#Hackaton-Section .hackathon-panel h2{
-		font-size: 30px ;
-	}
-		
-	#Hackaton-Section .hackathon-panel p {
-		font-size: 19px !important;
-	}
-}
-
-@media screen and (max-width: 375px) {
-
-	#Hackaton-Section .hackathon-panel {
-		padding-right: 2rem !important;
-		padding-left: 2rem !important;
-	}
-}
-
-@media screen and (max-width: 1320px) {
-	
-	#Hackaton-Section .hackathon-panel h1{
-		font-size: 3rem !important;
-	}
-
-}
-
-@media screen and (max-width: 375px) {
-
-	#Hackaton-Section .hackathon-panel h1 {
-		font-size: 2rem !important;
-	}
-
-}
-
-#Hackaton-Section .regbut  {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: Rubik;
-	font-size: 1rem;
-	font-weight: 500;
-	line-height: 1.25;
-	user-select: none;
-	white-space: nowrap;
-	text-align: center;
-	padding: 0.65rem 1.5rem;
-	width: 175px;
-	height: 65px;
-	border-radius: 70px;
-	color: var(--color-white);
-	background-color: #225c97;
-	transition: all 0.3s ease-in-out;
-	color: #fff;
-	text-decoration: none;
-	z-index: 2;
-	margin-top: 2rem;
-}
-
-#Hackaton-Section .regbut:hover {
-	background-color: #cdd9e4;
-	color: #000;
-}*/
-
 /* Modals */
 
 .modal .bx.bxl-linkedin{
@@ -599,6 +438,13 @@
 			font-size: 20px;
 		}
 
+}
+
+.horizontal-line {
+    width: 90%;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto; 
 }
 
 

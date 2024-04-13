@@ -269,7 +269,6 @@ body{
 	top: 0;
 	width: 100%;
 	height: auto;
-	
 }
 
 #Navbar .menu1-inner {
@@ -311,11 +310,10 @@ body{
 }
 
 #Navbar .menu1-block:hover {
-	/*background-color: var(--hover-color);*/
+	/*background-color: var(--hover-color);/*/
 	transition: all 0.3s ease-in-out;
 	font-weight: 500;
 	background-color: #d2b48c;
-	color: #000;
 }
 
 #Navbar .menu1 a::before{
@@ -400,6 +398,7 @@ body{
 	outline: none;
 	background: none;
 	visibility: visible;
+	transform: rotate(0deg);
 	transition: 0.35s ease;
 }
 
@@ -414,6 +413,7 @@ body{
 	border: none;
 	outline: none;
 	opacity: 1;
+	transform: rotate(0deg);
 	background-color: var(--color-white-100);
 	transition: 0.25s ease-in-out;
 }
@@ -430,27 +430,13 @@ body{
 	top: 1rem;
 }
 
-/* .burger1.is-active .burger1-line:nth-child(1) {
-	top: 0.5rem;
-	transform: rotate(135deg);
-}
-
-.burger1.is-active .burger1-line:nth-child(2) {
-	right: -1.5rem;
-	opacity: 0;
-	visibility: hidden;
-}
-
-.burger1.is-active .burger1-line:nth-child(3) {
-	top: 0.5rem;
-	transform: rotate(-135deg);
-} */
 #Navbar .nav-toggle {
 	z-index: 100;
 }
 
 #Navbar .nav-toggle.active {
 	color: var(--clr-primary-1);
+	/*transform: rotate(90deg);*/
 }
 
 #hero {
@@ -855,6 +841,34 @@ body{
 	transition: ease 0.4s;
 }
 @media only screen and (min-width: 1080px) {
+	#Navbar .burger1 {
+		visibility: hidden !important;
+	}
+	#Navbar .menu1 {
+		position: relative;
+		top: 0;
+		width: auto;
+		height: auto;
+		padding: 0rem;
+		margin-left: auto;
+		background: none;
+		box-shadow: none;
+	}
+
+	#Navbar .menu1-inner {
+		display: flex;
+		flex-direction: row;
+		column-gap: 2rem;
+		margin: 0 auto;
+	}
+
+	#Navbar .menu1-link {
+		text-transform: capitalize;
+	}
+
+	#Navbar .menu1-block {
+		margin-left: 2rem;
+	}
 	#Navbar .jwpnavbar--scrolled {
 		height: 68px;
 		/*background: var(--navbar-scrolled-color);*/
@@ -887,7 +901,7 @@ body{
 		bottom: 0;
 		right: 0;
 		width: 100%;
-		height: 100%;
+		height: 50%;
 	}
 }
 
@@ -900,7 +914,6 @@ body{
 #Navbar ul.menu1-inner li:hover>a::after {
 	transform: scaleX(1);
 	transform-origin: bottom right;
-	transition: 0.5s;
 }
 
 
@@ -935,35 +948,10 @@ body{
 
 
 @media only screen and (min-width: 800px) {
-	#Navbar .burger1 {
-		display: none;
-		visibility: hidden;
-	}
-	#Navbar .menu1 {
-		position: relative;
-		top: 0;
-		width: auto;
-		height: auto;
-		padding: 0rem;
-		margin-left: auto;
-		background: none;
-		box-shadow: none;
-	}
-
-	#Navbar .menu1-inner {
-		display: flex;
-		flex-direction: row;
-		column-gap: 2rem;
-		margin: 0 auto;
-	}
-
+	/*
 	#Navbar .menu1-link {
 		text-transform: capitalize;
-	}
-
-	#Navbar .menu1-block {
-		margin-left: 2rem;
-	}
+	}*/
 	#hero .banner-column {
 		display: flex;
 		flex-direction: row-reverse;
@@ -994,9 +982,8 @@ body{
 
 @media only screen and (max-width: 1080px){
 	#Navbar .navbar1 {
-		column-gap: .2rem
+		column-gap: 1%;
 	}
-	#hero #lightings{display: none}
 	#hero .banner-links{
 		opacity: 0;
 		visibility: hidden;
@@ -1043,88 +1030,3 @@ body{
 		font-size: 20px ;
 	}
 }
-
-/* DARK MODE */
-
-.mode i {
-	font-size: 1.4rem;
-	cursor: pointer;
-	color: var(--primary-color);
-	opacity: 1;
-	animation: rightSideAni 1.5s ease forwards;
-}
-
-#click:checked~ul {
-	left: 0%;
-	transition: all 0.3s ease;
-}
-
-.dark-mode .menu {
-	color: var(--primary-color);
-}
-
-
-
-.mode {
-	position: absolute;
-	right: 4rem;
-}
-
-.dark-mode header {
-	box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
-
-}
-
-.dark-mode {
-            
-	color: #ffffff;
-}
-
-.mode input {
-	display: none;
-}
-
-
-:is(.dark-mode) {
-	.social a {
-		color: var(--primary-color);
-		border: 1.6px solid var(--primary-color);
-	}
-
-	.social a:hover {
-		color: var(--primary-dark);
-		background-color: var(--primary-color);
-		box-shadow: 0 0 20px var(--primary-color);
-	}
-
-	.logo a {
-		color: #fff;
-	}
-	
-	.banner-image{
-		/*filter: invert();*/
-		filter: brightness(0.6);
-	}
-
-	.menu1 {
-		/*filter: invert();*/
-		filter: brightness(0.6);
-	}
-
-	.banner-links{
-		/*filter: invert();*/
-		filter: brightness(0.6);
-	}
-	
-	.menu1-block{
-		/*filter: invert();*/
-		filter: brightness(0.6);
-	}
-}
-
-.dark-mode header {
-	box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
-
-}
-
-/*--DARK END--*/
