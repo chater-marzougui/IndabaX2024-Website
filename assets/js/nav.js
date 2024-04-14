@@ -1,15 +1,20 @@
 const navbarMenu = document.getElementById("menu");
 const burgerMenu = document.getElementById("burger");
 const headerMenu = document.getElementById("header");
-
+const closeBtn = document.querySelector('.close-menu');
 // Open Close Navbar Menu on Click Burger
 if (burgerMenu && navbarMenu) {
    burgerMenu.addEventListener("click", () => {
       burgerMenu.classList.toggle("is-active");
       navbarMenu.classList.toggle("is-active");
+      document.getElementById("menu1-block").className="is-hidden";
 	  $('.nav-toggle').toggleClass("active");
    });
 }
+closeBtn.addEventListener('click', function () {
+   menu.classList.remove('is-active');
+   document.getElementById("menu1-block").className='menu1-block';
+});
 
 // Close Navbar Menu on Click Menu Links
 document.querySelectorAll(".menu1-link").forEach((link) => {

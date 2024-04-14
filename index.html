@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="./css/prefooter.css">
     <link rel="stylesheet" href="./css/landing.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 </head>
 
 <body > 
@@ -90,13 +91,15 @@
                         <li class="menu1-item"><a href="#Sponsors-Section" class="menu1-link">Partners</a></li>
                         <li class="menu1-item"><a href="#Location-Section" class="menu1-link">Location</a></li>
                     </ul>
+                    <!-- Adding a button for closing the menu -->
+                    <span class="close-menu">X</span>
                 </div>
                 <!--
                 <label class="mode">
                     <input type="checkbox" id="darkModeToggle">
                     <i class='bx bxs-moon'></i>
                 </label>-->
-                <a href="#popup" class="menu1-block">Register</a>
+                <a href="#popup" id="menu1-block" class="menu1-block">Register</a>
             </nav>
         </header>
     </section>
@@ -389,6 +392,35 @@
                 </div>
             </div>
         </div>
+        <div class="FAQwrapper">
+            <div class="main-title">Frequently Asked Questions</div>
+            <input type="radio" id="radioFirstQuestion" name="accordion" />
+            <label class="item" for="radioFirstQuestion">
+              <div class="title">When is the deadline for the submission of the posters?</div>
+              <div class="content">On May 10th, 2024</div>
+            </label>
+            <input type="radio" id="radioSecondQuestion" name="accordion"/>
+            <label class="item" for="radioSecondQuestion">
+              <div class="title">Can I re-use this poster in other events?</div>
+              <div class="content">Posters submitted in IndabaX 2024 can all be submitted again in other events</div>
+            </label>
+            <input type="radio" id="radioThirdQuestion" name="accordion"/>
+            <label class="item" for="radioThirdQuestion">
+              <div class="title">When and where will it take place?</div>
+              <div class="content">It's going to be in the Higher School of Communication at Technopole-El Ghazela on May 18th,2024</div>
+            </label>
+            <input type="radio" id="radioForthQuestion" name="accordion"/>
+            <label class="item" for="radioForthQuestion">
+              <div class="title">For whome will i be presenting my poster?</div>
+              <div class="content">AI enthousiasts and members of the jury </div>
+            </label>
+          </div>
+          <input type="radio" id="radioFifthQuestion" name="accordion"/>
+            <label class="item" for="radioFifthQuestion">
+              <div class="title">What should my poster look like?</div>
+              <div class="content">link to template , A0 size  </div>
+            </label>
+          </div>
     </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script>
