@@ -10,6 +10,9 @@
   --duration: 60s;
 
 }
+#Sponsors-Section {
+  background: linear-gradient(#374470 , #053956);
+}
 
 .content p, a{
   font-size: 10pt;
@@ -28,7 +31,7 @@
 }
 
 .partners  body {
-      background-color: #1c2b5b ;
+      background-color: #1c2b5b;
       display: flex;
       justify-content: center;
       align-items: center;

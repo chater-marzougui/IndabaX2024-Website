@@ -1,3 +1,8 @@
+#pre-footer {
+  background-color: #053956;
+}
+
+
 #pre-footer:after {
     position: absolute;
     content: '';

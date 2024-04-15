@@ -18,28 +18,25 @@
   height: 110vh;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
+  /*
     .loader-wrap svg {
         width: 200vw;
         margin-left: -50vw;
-    }
+    }*/
     .loader-wrap-heading{
-        scale: 0.5;
-        right: 15%;
-        position: relative;
+        scale: 0.6;
     }
 }
-
+/*
 .loader-wrap-heading {
-    display: block;
     max-width: 600px;
     height: auto;
-    width: 70%;
-    /* margin-top: 0.5rem; */
     object-fit: cover;
     justify-self: center;
     float: right;
   }
+*/
 
   .button{
     border: 1px solid #fff;

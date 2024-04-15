@@ -32,23 +32,23 @@ tl.to(".loader-wrap", {
 tl.to(".loader-wrap", {
   zIndex: -1,
   display: "none",
+  duration:0.1,
 });
 tl.from(
-  "#hero",
+  "#hero, #Navbar",
   {
-    y: 100,
     opacity: 0,
   },
-  "-=1.5"
-);
-tl.from(
-  "#Navbar",
+  "-=0.1"
+).to(
+  "#hero, #Navbar",
   {
-    duration: 1,
-    opacity: 0,
+    opacity: 1,
   },
-  "-=1.2"
+  "+=1.5"
 );
+
+
 
 const buttons = document.querySelectorAll('.btn1, .regbutton , .menu1-block');
 

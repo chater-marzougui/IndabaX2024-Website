@@ -288,6 +288,9 @@ body{
 	text-transform: uppercase;
 	transition: all 0.3s ease;
 }
+*{
+	box-shadow: #053956;
+}
 
 #Navbar .menu1-block {
 	display: inline-block;
@@ -304,19 +307,20 @@ body{
 	text-transform: capitalize;
 	color: var(--color-white);
 	background-color: var(--primary-color);
-	box-shadow: var(--shadow-medium);
+	/*box-shadow: var(--shadow-medium);*/
 	transition: all 0.3s ease-in-out;
 	color: #fff;
 }
 
 #Navbar .menu1-block:hover {
-	background-color: var(--hover-color);
+	background-color: #f0EAE6;
+    color: #0F1B2C;
 	transition: all 0.3s ease-in-out;
 	font-weight: 500;
 }
 
 .menu1-link.active {
-	color: red !important;
+	color: #d2b48c !important;
   }
 /*
 #Navbar .menu1 a{
