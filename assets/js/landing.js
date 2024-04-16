@@ -80,3 +80,8 @@ gsap.utils.toArray(buttons).forEach((button) => {
     });
   });
 });
+
+
+function togglepopup() {
+  document.getElementById("popup").classList.toggle("active");
+}

@@ -63,15 +63,17 @@
     <!-- START Nav -->
     <section id="Navbar">
         <div id="popup">
-            <div class="popblur"></div>
+        <div class="popblur">
+            <div class="popoutside" onclick="togglepopup()"></div>
             <div class="popup-content">
                 <!--<img src="./assets/images/download.jpg" alt="">-->
-                <a href="#" class="close">x</a>
+                <div class="close" onclick="togglepopup()">&times;</div>
                 <p><b>Registration for the Hackathon is not open yet.</b>
                 <br><br>Only for PhD students who wish to register in the poster session.
                 </p>
-                <button><a href="#poster-session">Poster Session Section</a></button>
+                <a href="#poster-session"><button onclick="togglepopup()">Poster Session Section</button></a>
             </div>
+        </div>
         </div>
         <header class="header1" id="header">
             <nav class="navbar1 container1">
@@ -96,11 +98,11 @@
                     <input type="checkbox" id="darkModeToggle">
                     <i class='bx bxs-moon'></i>
                 </label>-->
-                <a href="#popup" class="menu1-block">Register</a>
+                <button onclick="togglepopup()" class="menu1-block">Register</button>
             </nav>
         </header>
     </section>
-    
+
     <!-- END Nav -->
 
 
@@ -119,8 +121,8 @@
                         <h2>May 18<sup>th</sup> & 19<sup>th</sup>, 2024</h2>
                         <h2>Sup’com, Technopole El Ghazela</h2>
                     </div>
-                    <a href="#popup">
-                        <button class="btn1 btn1-darken btn1-inline">
+                    <a>
+                        <button class="btn1 btn1-darken btn1-inline" onclick="togglepopup()">
                             <div class="textt">
                                 Register Now
                                 <i class="bx bx-right-arrow-alt"></i>

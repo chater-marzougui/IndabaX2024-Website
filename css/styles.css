@@ -468,3 +468,7 @@
 	color: #0069d9 !important;
 	transition: all 0.3s;
 }
+
+#Footer .col-md-4 a {
+	text-decoration: none;
+}
