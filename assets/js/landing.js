@@ -66,8 +66,8 @@ gsap.utils.toArray(buttons).forEach((button) => {
   button.addEventListener("mousemove", (e) => {
     const mousePoxX = e.clientX - boundingRect.left;
     const mousePoxY = e.clientY - boundingRect.top;
-    xTo((mousePoxX - boundingRect.width / 2) * 0.4);
-    yTo((mousePoxY - boundingRect.height / 2) * 0.4);
+    xTo((mousePoxX - boundingRect.width / 2) * 0.1);
+    yTo((mousePoxY - boundingRect.height / 2) * 0.1);
   });
   button.addEventListener("mouseleave", () => {
     xTo.tween.pause().invalidate();

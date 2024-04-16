@@ -34,8 +34,16 @@
 
 body{
 	overflow-y: auto;
-	background: #053956!important;
+	background: #042D62!important;
 	overflow-x: hidden;
+}
+
+#hero {
+	display: flex;
+	align-items: center;
+	min-height: 120vh;
+	background: url(../assets/images/site.jpg);
+	background-size: cover;
 }
 
 #hero *,
@@ -58,8 +66,14 @@ body{
 	transform: translateY(10vh);
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(to top, rgba(5, 57, 86, 1) 0%, rgba(0, 0, 0, 0) 50%);
+	background: linear-gradient(to top, rgba(4, 45, 98, 1) 0%, rgba(0, 0, 0, 0) 50%);
 	z-index: 1;
+}
+
+@media only screen and (max-width:800px) {
+	#hero::before {
+		transform: translateY(0%);
+	}
 }
 
 #hero,#Navbar {
@@ -288,9 +302,6 @@ body{
 	text-transform: uppercase;
 	transition: all 0.3s ease;
 }
-*{
-	box-shadow: #053956;
-}
 
 #Navbar .menu1-block {
 	display: inline-block;
@@ -456,11 +467,6 @@ body{
 	/*transform: rotate(90deg);*/
 }
 
-#hero {
-	display: flex;
-	align-items: center;
-	min-height: 120vh;
-}
 .banner-section{min-height: 100vh;}
 @media screen and (min-width: 1800px) and (min-height: 1080px) {
 	#hero .banner-column{

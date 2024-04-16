@@ -14,6 +14,17 @@
     margin-bottom: 0vh;
 }
 
+#poster-session::before {
+	content: "";
+	display:flex;
+	position: absolute;
+	/*transform: translateY(-21vh);*/
+	width: 100%;
+	height: 140vh;
+	background: linear-gradient(to bottom, rgba(4, 45, 98, 1) 0%, rgba(0, 0, 0, 0) 20%);
+	z-index: 1;
+}
+
 .glasscard {
     display: flex;
     flex-direction: column;
@@ -241,6 +252,7 @@ body{
     grid-template-columns: 1.5fr 5fr;
     display: grid;
     align-items: center;
+    z-index: 5;
 }
 .amp img{
     grid-area: 1 / 1;
@@ -259,6 +271,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1cm;
     opacity: 0;
+    z-index: 5;
     position: absolute;
 }
 
@@ -291,6 +304,7 @@ body{
 #poster-session .rowPoster1{
     display: flex;
     align-items: center;
+    z-index: 6;
 }
 
 #poster-session .containerPoster{
@@ -301,9 +315,6 @@ body{
 }
 
 @media only screen and (max-width: 719px) {
-  #poster-session {
-    height: auto;
-  }
   #poster-session .paper{
     opacity: 0;
   }

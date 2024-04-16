@@ -23,7 +23,7 @@ gsap
     {
       y: 20,
     },
-    { y: -150 },
+    { y: -250 },
     "-=1"
   )
   .to(
@@ -38,7 +38,7 @@ gsap
   )
   .fromTo(
     ".hackathon-zindi",
-    { y: -220, ease: "power1.out", duration: 1 },
+    { y: -250, ease: "power1.out", duration: 1 },
     { y: 0 },
     "-=6"
   )
