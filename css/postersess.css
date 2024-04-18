@@ -365,7 +365,7 @@ body{
     text-align: center;
     font-family: "Abril Fatface", cursive;
     font-size: 2.32rem;
-    color: #D2B48C;
+    color: #d2b48c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,7 +375,7 @@ body{
     display: block;
     margin: 0 0.2rem;
     flex: 1;
-    border-bottom: 1px solid #D2B48C;
+    border-bottom: 1px solid #d2b48c;
   }
   .FAQwrapper {
     width: 50%;
@@ -397,8 +397,8 @@ body{
   }
   input[type=radio]:checked + .item .title {
     color: #fff;
-    border-color: #D2B48C;
-    background-color: #D2B48C;
+    border-color: #d2b48c;
+    background-color: #d2b48c;
   }
   input[type=radio]:checked + .item .title:after {
     transform: rotate(180deg);
@@ -420,7 +420,7 @@ body{
   .title {
     padding: 0.1rem 0.3rem;
     border-radius: 0.3rem;
-    color: #D2B48C;
+    color: #d2b48c;
     border: 1px solid;
     font-weight: bold;
     cursor: pointer;
@@ -441,7 +441,7 @@ body{
     margin: 0 auto;
     padding: 0 0.3rem;
     line-height: 1.6;
-    color: #D2B48C;
+    color: #d2b48c;
     border: 1px solid;
     border-width: 0 1px;
     height: 0;
