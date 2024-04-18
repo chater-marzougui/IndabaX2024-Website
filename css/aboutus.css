@@ -48,7 +48,16 @@
     background-image: linear-gradient(#051a34 ,#051a34);
 
 }
-
+.logowrapper h1{
+  position: relative;
+  color: aliceblue;
+  padding: 8%;
+  padding-top: 0;
+  text-align: center;
+  width: 100%;
+  font-size: xxx-large;
+  margin-top: 0;
+}
 #ImgWrapper {
   position: relative;
   width: 100vw;
