@@ -1,4 +1,3 @@
-/* Custom properties/variables  */
 :root {
     --main-blue: #011d47;
     --main-beige: #D4C39B;
@@ -17,7 +16,6 @@
 
 
 
-/* foooter and Pre-footer STARTS!!!!!! */
 #Footer footer {
     font-size: 14px;
     position: relative;

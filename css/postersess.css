@@ -41,6 +41,7 @@
     overflow: visible; 
     margin-top: 2%;
     box-shadow:-12px 12px 8px #0F1B2C;
+    z-index: 7;
 }
 
 .glasscard p {
@@ -54,7 +55,31 @@
     font-weight: bold; 
 }
 
+.glasscard .FAQ {
+  cursor: pointer;
+  align-self: center;
+  border-bottom-width: 0px;
+  justify-content: center;
+  text-align: center;
+  background-color: #0b074766;
+  height: 45px;
+  width: 30%;
+  max-width: 200px;
+  min-width: 120px;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid white;
+  border-radius: 2rem;
+}
 
+.glasscard .FAQ:hover{
+  scale: 1.2;
+  background-color: #110b6666;
+}
+
+.FAQ .Faqtext {
+  color: aliceblue;
+  margin-top: -2px;
+}
 .paper {
     position: absolute;
     left: -18%;
