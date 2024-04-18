@@ -17,6 +17,17 @@
     margin-bottom: 0vh;
 }
 
+#poster-session::before {
+	content: "";
+	display:flex;
+	position: absolute;
+	/*transform: translateY(-21vh);*/
+	width: 100%;
+	height: 140vh;
+	background: linear-gradient(to bottom, rgba(5, 26, 52, 1) 0%, rgba(0, 0, 0, 0) 20%);
+	z-index: 1;
+}
+
 .glasscard {
     display: flex;
     flex-direction: column;
@@ -33,6 +44,7 @@
     overflow: visible; 
     margin-top: 2%;
     box-shadow:-12px 12px 8px #0F1B2C;
+    z-index: 7;
 }
 
 .glasscard p {
@@ -46,7 +58,31 @@
     font-weight: bold; 
 }
 
+.glasscard .FAQ {
+  cursor: pointer;
+  align-self: center;
+  border-bottom-width: 0px;
+  justify-content: center;
+  text-align: center;
+  background-color: #0b074766;
+  height: 45px;
+  width: 30%;
+  max-width: 200px;
+  min-width: 120px;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid white;
+  border-radius: 2rem;
+}
 
+.glasscard .FAQ:hover{
+  scale: 1.2;
+  background-color: #110b6666;
+}
+
+.FAQ .Faqtext {
+  color: aliceblue;
+  margin-top: -2px;
+}
 .paper {
     position: absolute;
     left: -18%;
@@ -190,6 +226,14 @@
 	transition: all .2s
 }
 
+@media only screen and (max-width:600px){
+  #poster-session .btn1 {
+    width: 145px;
+    height: 60px;
+  }
+  
+}
+
 #poster-session .btn1 .textt {
 	transition: all .2s;
 	color: #fff;
@@ -219,8 +263,9 @@
 #poster-session .textt {
 	position: absolute;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
     justify-content: flex-end;
+
 }
 
 #poster-session .btn1-inline {
@@ -244,6 +289,7 @@ body{
     grid-template-columns: 1.5fr 5fr;
     display: grid;
     align-items: center;
+    z-index: 5;
 }
 .amp img{
     grid-area: 1 / 1;
@@ -262,6 +308,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1cm;
     opacity: 0;
+    z-index: 5;
     position: absolute;
 }
 
@@ -294,6 +341,7 @@ body{
 #poster-session .rowPoster1{
     display: flex;
     align-items: center;
+    z-index: 6;
 }
 
 #poster-session .containerPoster{
@@ -304,9 +352,6 @@ body{
 }
 
 @media only screen and (max-width: 719px) {
-  #poster-session {
-    height: auto;
-  }
   #poster-session .paper{
     opacity: 0;
   }

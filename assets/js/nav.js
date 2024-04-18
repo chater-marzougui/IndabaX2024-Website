@@ -69,6 +69,7 @@ if (!navbarMenu.classList.contains('is-active')) {
       }
    });
 }
+
 window.addEventListener('scroll', function() {
    const sections = document.querySelectorAll('section');
    const navLinks = document.querySelectorAll('.menu1-link');
@@ -77,8 +78,13 @@ window.addEventListener('scroll', function() {
    sections.forEach(section => {
      const sectionTop = section.offsetTop;
      const sectionHeight = section.clientHeight;
-     const scrollPosition = window.scrollY || window.pageY; 
+     let scrollPosition = window.scrollY || window.pageY;
      
+     if (isNaN(scrollPosition)) {
+      currentSection = "hero"; 
+      }
+      
+     scrollPosition+=20; 
      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
          currentSection = section.id;
          if (currentSection === "five") {
@@ -95,7 +101,6 @@ window.addEventListener('scroll', function() {
      }
      }
    });
-   console.log('Current section:', currentSection);
    navLinks.forEach(link => {
      link.classList.remove('active'); // Remove 'active' class from all links
      if (link.getAttribute('href').substring(1) === currentSection) {

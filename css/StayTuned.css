@@ -12,16 +12,38 @@
     column-gap: 2rem;
 }
 
+#stay-tuned::before {
+	content: "";
+	display:flex;
+	position: absolute;
+	width: 100%;
+	height: 140vh;
+	background: linear-gradient(to top, rgba(5, 26, 52, 1) 0%, rgba(0, 0, 0, 0) 50%);
+	z-index: 1;
+}
+
 #stay-tuned h1 { 
     font-weight: bolder;
     color:aliceblue;
-    font-family: Rubik;
-    font-size: 11vh;
+    font-size: 500%;
     margin-bottom: 0vh;
+}
+
+@media only screen and (max-width:720px){
+	#stay-tuned h1 {
+		font-size: 75px;
+	}
+}
+
+@media only screen and (max-width:480px){
+	#stay-tuned h1 {
+		font-size: 13vw;
+		width: 90%;
+		text-align: end;
+	}
 }
 #countdown {
     color:aliceblue;
-     font-family: Rubik;
      font-size: 9vh;
      margin-bottom: 10vh;
 }

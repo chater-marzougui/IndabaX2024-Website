@@ -5,7 +5,7 @@ function LandingPageScrollTrigger() {
 	if(width>719){
 		gsap.to('#About-Section', { 
         opacity: 1, duration: 20,
-    }); 
+    });
     let LandingPageScrollTrigger = gsap.timeline({
       scrollTrigger: {
         trigger: "#ImgWrapper",
@@ -29,10 +29,6 @@ function LandingPageScrollTrigger() {
         .to('#codeby #test1', {x:300, opacity: 0 }, 14)
       .from('#codeby #test2', { y: 130, opacity: 0 }, 16)
         .to('#codeby #test2', { x:300, opacity: 0 }, 19)
-      //.from('#codeby #test3, #codeby #test3 a', { y: 130, opacity: 0 }, 21)
-      //  .to('#codeby #test3, #codeby #test3 a', { y: 0, opacity: 1 }, 24)
-      // .to('#ImgWrapper #img8', { transform: 'translateZ(0px)', }, 26)
-
 	}
   if(width<719){
 		gsap.to('#About-Section', { 
@@ -52,7 +48,7 @@ function LandingPageScrollTrigger() {
       }
     })
   LandingPageScrollTrigger
-    .to('#ImgWrapper #img8', { transform: 'translateX(40%) translateY(-80%)', }, 0)
+    .to('#ImgWrapper #img8', { transform: 'translateX(34%) translateY(-110%)', }, 0)
     //.to('#ImgWrapper #img8', { transform: '', }, 0)
       .from('#codeby a', { y: 130, opacity: 0 }, 1)
         .to('#codeby a', { z:300 , opacity: 0 }, 4)
@@ -62,17 +58,9 @@ function LandingPageScrollTrigger() {
         .to('#codeby #test1', {z:300, opacity: 0 }, 14)
       .from('#codeby #test2', { y: 130, opacity: 0 }, 16)
         .to('#codeby #test2', { z:300, opacity: 0 }, 19)
-      //.from('#codeby #test3, #codeby #test3 a', { y: 130, opacity: 0 }, 21)
-      //  .to('#codeby #test3, #codeby #test3 a', { y: 0, opacity: 1 }, 24)
-      // .to('#ImgWrapper #img8', { transform: 'translateZ(0px)', }, 26)
 
 	}
 
 };
         
-
-//---------------------/Landing Page ScrollTrigger---------------------
-
-window.onload = () => {
-    LandingPageScrollTrigger();
-}
+LandingPageScrollTrigger();

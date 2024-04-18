@@ -32,23 +32,23 @@ tl.to(".loader-wrap", {
 tl.to(".loader-wrap", {
   zIndex: -1,
   display: "none",
+  duration:0.1,
 });
 tl.from(
-  "#hero",
+  "#hero, #Navbar",
   {
-    y: 100,
     opacity: 0,
   },
-  "-=1.5"
-);
-tl.from(
-  "#Navbar",
+  "-=0.1"
+).to(
+  "#hero, #Navbar",
   {
-    duration: 1,
-    opacity: 0,
+    opacity: 1,
   },
-  "-=1.2"
+  "+=1.5"
 );
+
+
 
 const buttons = document.querySelectorAll('.btn1, .regbutton , .menu1-block');
 
@@ -66,8 +66,8 @@ gsap.utils.toArray(buttons).forEach((button) => {
   button.addEventListener("mousemove", (e) => {
     const mousePoxX = e.clientX - boundingRect.left;
     const mousePoxY = e.clientY - boundingRect.top;
-    xTo((mousePoxX - boundingRect.width / 2) * 0.4);
-    yTo((mousePoxY - boundingRect.height / 2) * 0.4);
+    xTo((mousePoxX - boundingRect.width / 2) * 0.1);
+    yTo((mousePoxY - boundingRect.height / 2) * 0.1);
   });
   button.addEventListener("mouseleave", () => {
     xTo.tween.pause().invalidate();
@@ -80,3 +80,8 @@ gsap.utils.toArray(buttons).forEach((button) => {
     });
   });
 });
+
+
+function togglepopup() {
+  document.getElementById("popup").classList.toggle("active");
+}

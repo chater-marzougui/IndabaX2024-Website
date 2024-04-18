@@ -1,4 +1,3 @@
-/* Custom properties/variables  */
 :root {
     --main-blue: #011d47;
     --main-beige: #D4C39B;
@@ -10,10 +9,13 @@
 * {
     margin: 0;
     padding: 0;
+	/*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", 
+	"Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 
-/* foooter and Pre-footer STARTS!!!!!! */
+
 #Footer footer {
     font-size: 14px;
     position: relative;
@@ -467,4 +469,8 @@
 #Footer .col-md-4:nth-of-type(3) a:hover {
 	color: #0069d9 !important;
 	transition: all 0.3s;
+}
+
+#Footer .col-md-4 a {
+	text-decoration: none;
 }

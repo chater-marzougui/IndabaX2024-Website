@@ -9,7 +9,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background: #0f1b2c;
+    background: #051a34;
 }
 
 .container-thatcontains {
@@ -42,7 +42,9 @@ body {
     width: 50vw;
     margin-bottom: -0.2vh;
     background: var(--dark);
+    background-color: #052853;
     display: block;
+    overflow: visible !important;
 }
 
 .p1 {
@@ -67,10 +69,10 @@ body {
     width: 90%;
 }
 
-.titlezindi .zindi-title {
-    scale: 4;
-    display: block;
-    padding: 15px;
+.zindi-title {
+    padding: 5px;
+    margin-top: 10px;
+    width: 30%;
 }
 
 .hackathon-zindi {
