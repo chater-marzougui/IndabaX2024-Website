@@ -34,7 +34,7 @@
 
 body{
 	overflow-y: auto;
-	background: #042D62!important;
+	background: #051a34!important;
 	overflow-x: hidden;
 }
 
@@ -66,7 +66,7 @@ body{
 	transform: translateY(10vh);
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(to top, rgba(4, 45, 98, 1) 0%, rgba(0, 0, 0, 0) 50%);
+	background: linear-gradient(to top, rgba(5, 26, 52, 1) 0%, rgba(0, 0, 0, 0) 50%);
 	z-index: 1;
 }
 

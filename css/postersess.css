@@ -21,7 +21,7 @@
 	/*transform: translateY(-21vh);*/
 	width: 100%;
 	height: 140vh;
-	background: linear-gradient(to bottom, rgba(4, 45, 98, 1) 0%, rgba(0, 0, 0, 0) 20%);
+	background: linear-gradient(to bottom, rgba(5, 26, 52, 1) 0%, rgba(0, 0, 0, 0) 20%);
 	z-index: 1;
 }
 
@@ -198,6 +198,14 @@
 	transition: all .2s
 }
 
+@media only screen and (max-width:600px){
+  #poster-session .btn1 {
+    width: 145px;
+    height: 60px;
+  }
+  
+}
+
 #poster-session .btn1 .textt {
 	transition: all .2s;
 	color: #fff;
@@ -227,8 +235,9 @@
 #poster-session .textt {
 	position: absolute;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
     justify-content: flex-end;
+
 }
 
 #poster-session .btn1-inline {

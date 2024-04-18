@@ -18,7 +18,7 @@
 	position: absolute;
 	width: 100%;
 	height: 140vh;
-	background: linear-gradient(to top, rgba(4, 45, 98, 1) 0%, rgba(0, 0, 0, 0) 50%);
+	background: linear-gradient(to top, rgba(5, 26, 52, 1) 0%, rgba(0, 0, 0, 0) 50%);
 	z-index: 1;
 }
 

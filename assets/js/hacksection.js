@@ -1,14 +1,14 @@
-gsap
-  .timeline({
+gsap.timeline({
     scrollTrigger: {
       trigger: ".trigger",
-      scrub: 2,
+      scrub: 2, 
       pin: true,
-      markers: false,
+      markers: true,
       start: "-9% top",
       end: "+=139%",
     },
   })
+  .yoyo(true)
   .to(".box", {
     force3D: true,
     duration: 1,
