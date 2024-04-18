@@ -8,6 +8,7 @@
   position: absolute;
   z-index: 10;
   height: 100vh;
+  color: aqua !important;
   width: 100%;
   display: flex;
   overflow: hidden;
@@ -86,7 +87,7 @@
     border-radius: 15px;
     position: relative;
     background-color: rgb(29 29 72 / 73%);
-    /*background-color: rgb(15 156 144 / 18%);*/
+    max-height: 330px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
     transition: all 1s ease-in-out;
 }

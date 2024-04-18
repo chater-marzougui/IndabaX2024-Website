@@ -123,7 +123,7 @@
     color: var(--ColorWhiteB);
   }
   #codeby a span {
-    font-weight: 900;
+    font-weight: 800;
     width: 70vw;
     font-size: 4vw;
     display: inline-block;
@@ -161,8 +161,9 @@
   #test3 {
     display: flex;
     position: relative;
-    /* right: 10px; */
-    left: 20px;
+    /* right: 10px; 
+    left: 20px; */
+    margin-left: 10px;
     align-items: center;
     row-gap: 9vh;
     flex-direction: column;
