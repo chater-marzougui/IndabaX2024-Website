@@ -11,6 +11,8 @@ if (burgerMenu && navbarMenu) {
 	  $('.nav-toggle').toggleClass("active");
    });
 }
+
+
 closeBtn.addEventListener('click', function () {
    menu.classList.remove('is-active');
    document.getElementById("menu1-block").className='menu1-block';
