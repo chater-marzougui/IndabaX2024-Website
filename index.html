@@ -363,7 +363,7 @@
                        community dedicated to advancing AI research and fostering meaningful connections.</p>
 
                 <p><strong>See you at IndabaX Tunisia 2024!</strong></p>
-                <button class="FAQ" onclick="togglepopup()">
+                <button class="FAQ" onclick="toggleFAQpopup()">
                     <div class="Faqtext">
                         Read More
                     </div>
@@ -389,34 +389,42 @@
                 </div>
             </div>
         </div>
-        <div class="FAQwrapper">
-            <div class="main-title">Frequently Asked Questions</div>
-            <input type="radio" id="radioFirstQuestion" name="accordion" />
-            <label class="item" for="radioFirstQuestion">
-              <div class="title">When is the deadline for the submission of the posters?</div>
-              <div class="content">On May 10th, 2024</div>
-            </label>
-            <input type="radio" id="radioSecondQuestion" name="accordion"/>
-            <label class="item" for="radioSecondQuestion">
-              <div class="title">Can I re-use this poster in other events?</div>
-              <div class="content">Posters submitted in IndabaX 2024 can all be submitted again in other events</div>
-            </label>
-            <input type="radio" id="radioThirdQuestion" name="accordion"/>
-            <label class="item" for="radioThirdQuestion">
-              <div class="title">When and where will it take place?</div>
-              <div class="content">It's going to be in the Higher School of Communication at Technopole-El Ghazela on May 18th,2024</div>
-            </label>
-            <input type="radio" id="radioForthQuestion" name="accordion"/>
-            <label class="item" for="radioForthQuestion">
-              <div class="title">For whome will i be presenting my poster?</div>
-              <div class="content">AI enthousiasts and members of the jury </div>
-            </label>
-          <input type="radio" id="radioFifthQuestion" name="accordion"/>
-            <label class="item" for="radioFifthQuestion">
-              <div class="title">What should my poster look like?</div>
-              <div class="content">link to template , A0 size  </div>
-            </label>
-          </div>
+        <div id="FAQpopup">
+            <div class="FAQpopblur">
+                <div class="FAQpopoutside" onclick="toggleFAQpopup()"></div>
+                <div class="FAQpopup-content">
+                    <div class="close" onclick="toggleFAQpopup()">&times;</div>
+                    <div class="FAQwrapper">
+                        <div class="main-title" style="z-index: 99999;">Frequently Asked Questions</div>
+                        <input type="radio" id="radioFirstQuestion" name="accordion" />
+                        <label class="item" for="radioFirstQuestion">
+                          <div class="title">When is the deadline for the submission of the posters?</div>
+                          <div class="content">On May 10th, 2024</div>
+                        </label>
+                        <input type="radio" id="radioSecondQuestion" name="accordion"/>
+                        <label class="item" for="radioSecondQuestion">
+                          <div class="title">Can I re-use this poster in other events?</div>
+                          <div class="content">Posters submitted in IndabaX 2024 can all be submitted again in other events</div>
+                        </label>
+                        <input type="radio" id="radioThirdQuestion" name="accordion"/>
+                        <label class="item" for="radioThirdQuestion">
+                          <div class="title">When and where will it take place?</div>
+                          <div class="content">It's going to be in the Higher School of Communication at Technopole-El Ghazela on May 18th,2024</div>
+                        </label>
+                        <input type="radio" id="radioForthQuestion" name="accordion"/>
+                        <label class="item" for="radioForthQuestion">
+                          <div class="title">For whome will i be presenting my poster?</div>
+                          <div class="content">AI enthousiasts and members of the jury </div>
+                        </label>
+                      <input type="radio" id="radioFifthQuestion" name="accordion"/>
+                        <label class="item" for="radioFifthQuestion">
+                          <div class="title">What should my poster look like?</div>
+                          <div class="content">link to template , A0 size  </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     
     <!--  -->

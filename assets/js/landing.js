@@ -85,3 +85,7 @@ gsap.utils.toArray(buttons).forEach((button) => {
 function togglepopup() {
   document.getElementById("popup").classList.toggle("active");
 }
+
+function toggleFAQpopup() {
+  document.getElementById("FAQpopup").classList.toggle("active");
+}
