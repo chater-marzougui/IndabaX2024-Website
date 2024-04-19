@@ -59,14 +59,16 @@
     <!-- START Nav -->
     <section id="Navbar">
         <div id="popup">
-            <div class="popblur"></div>
-            <div class="popup-content">
-                <!--<img src="./assets/images/download.jpg" alt="">-->
-                <a href="#" class="close">x</a>
-                <p><b>Registration for the Hackathon is not open yet.</b>
-                <br><br>Only for PhD students who wish to register in the poster session.
-                </p>
-                <button><a href="#poster-session">Poster Session Section</a></button>
+            <div class="popblur">
+                <div class="popoutside" onclick="togglepopup()"></div>
+                <div class="popup-content">
+                    <!--<img src="./assets/images/download.jpg" alt="">-->
+                    <div class="close" onclick="togglepopup()">&times;</div>
+                    <p><b>Registration for the Hackathon is not open yet.</b>
+                    <br><br>Only for PhD students who wish to register in the poster session.
+                    </p>
+                    <a href="#poster-session"><button onclick="togglepopup()">Poster Session Section</button></a>
+                </div>
             </div>
         </div>
         <header class="header1" id="header">
@@ -94,7 +96,7 @@
                     <input type="checkbox" id="darkModeToggle">
                     <i class='bx bxs-moon'></i>
                 </label>-->
-                <a href="#popup" id="menu1-block" class="menu1-block">Register</a>
+                <button onclick="togglepopup()" class="menu1-block">Register</button>
             </nav>
         </header>
     </section>
@@ -111,14 +113,14 @@
                     <p class="">
                         Welcome to the <strong> 5<sup>th</sup> edition of IndabaX Tunisia!</strong> Dive into two action-packed days filled with panels
                         , workshops, talks,hackathon  and more. This year, we're thrilled to introduce a <strong>poster session.</strong>
-                         AI enthusiasts, this is your moment! <strong>Don't miss out</strong>
+                         AI enthusiasts, this is your moment! <strong>Don't miss out!</strong>
                     </p>
                     <div>
                         <h2>May 18<sup>th</sup> & 19<sup>th</sup>, 2024</h2>
                         <h2>Sup’com, Technopole El Ghazela</h2>
                     </div>
-                    <a href="#popup">
-                        <button class="btn1 btn1-darken btn1-inline">
+                    <a>
+                        <button class="btn1 btn1-darken btn1-inline" onclick="togglepopup()">
                             <div class="textt">
                                 Register Now
                                 <i class="bx bx-right-arrow-alt"></i>
@@ -189,14 +191,13 @@
                 <div class="content-zindi--hide">
                   <!-- el page tet5dem lehna aandek class zindi-container w hackathon-container houma ely bech te5dem fi wosthom fel css -->
                   <h1 class="titlezindi">
-                    In partnership with <br>
-                    <a
-                      href="https://zindi.africa"
-                      style="color: #25a3f1; text-decoration: none" class="zindi-title"
-                      target="_blank"
-                      >ZINDI
+                    In partnership with </h1>
+                    <a href="https://zindi.africa">
+                        <img
+                            src="./assets/images/zindi.png" class="zindi-title"
+                            target="_blank">
+                        </img>
                     </a>
-                  </h1>
                   <p class="p1">
                     Zindi stands as Africa's pioneering data science competition platform.
                     It serves as the epicenter for a comprehensive data science community, encompassing scientists, engineers,
@@ -204,7 +205,7 @@
                       most urgent challenges.
                   </p>
                 </div>
-                <img src="./assets/images/zindi.png"  class="zindi-img">
+                <img src="./assets/images/zindiwhite.png"  class="zindi-img">
               </div>
             </span>
             <span class="up container-thatcontains">
@@ -216,7 +217,7 @@
                     </strong>
                     hackathon to put your skills to the test
                   </h1>
-                  <p class="p1">This 20-hour hackathon, hosted on Zindi, W
+                  <p class="p1">This 20-hour hackathon, hosted on Zindi,
                     offers data scientists and engineers a chance to prove their skills by addressing real-world 
                     challenges. Participants will analyze datasets under time constraints to achieve their goals.
                   </p> 
@@ -331,7 +332,7 @@
     <!-- ****** -->
 
     <!-- Poster Session HERE -->
-    <section id="poster-session" style="background: url(./assets/images/postersessionbg.jpg); background-size: cover;">
+    <section id="poster-session" style="background: url(./assets/images/poster.jpg); background-size: cover;">
         <div class="containerPoster text-center">
             <p class="textforphone"><strong>Poster <br>Session</strong></p>
             <div class="amp">
@@ -431,7 +432,7 @@
 
 
     <!-- Stay Tuned HERE -->
-    <section id="stay-tuned" style="background: url(./assets/images/site.jpg); background-size: cover;">
+    <section id="stay-tuned" style="background: url(./assets/images/staytuned.gif); background-size: cover;">
         <div class="container text-center">
             <h1>Stay Tuned...</h1>
             <img class="note" id="revgear"  src="./assets/images/polygon.png" style="
@@ -440,7 +441,7 @@
             <img class="note" src="./assets/images/polygon.png" style="
             position: relative;right: 18px;scale: .8;opacity: 0.6;" alt="">
             <!--<div class="hourglass" style="scale: 0.7;"></div>  -->
-            <div id="countdown" class="mb-4"></div>  
+            <div id="countdown" class="mb-4" style="z-index: 1;position: relative;"></div>  
             <div class="rowSt justify-content-center align-items-center">
                 <div class="col-md-6">
                     <img src="./assets/images/Instadeep.png" class="img-fluid mx-auto d-block mb-3" alt="Instadeep Logo">
@@ -486,12 +487,19 @@
                 <a href="https://deeplearningindaba.com" target="_blank" class="read-more">Read More</a>
             </figcaption>
             </figure>
-            <figure class="snip0058"><img src="./assets/images/ELYADATA.png" alt="sample57" style="top: -10%;position: relative;" />
+            <figure class="snip0058"><img src="./assets/images/E-gov.jpg" alt="sample57" style="top: -10%;position: relative;" />
             <figcaption>
-                <p><span>Aziz Chaari is the Project Manager of IndabaX 2024</span></p>
-                <h2 class="white"><span>Aziz</span></h2>
-                <a href="https://www.elyadata.com" target="_blank" class="read-more">Read More</a>
+                <p><span>“The Tunisian e-governance society” is a non-governmental association, non-partisan, non-profit working for the enlightened promotion of good governance through the use of digital technologies.</span></p>
+                <h2 class="white"><span>E-Governance</span></h2>
+                <a href="https://www.linkedin.com/company/the-tunisian-e-governance-society" target="_blank" class="read-more">Read More</a>
             </figcaption>
+            </figure>
+            <figure class="snip0058"><img src="./assets/images/Udini.png" alt="sample57" />
+                <figcaption>
+                    <p><span>Implementing Ai in Dentistry.</span></p>
+                    <h2 class="white"><span>Udini</span></h2>
+                    <a href="https://www.Udini.io" target="_blank" class="read-more">Read More</a>
+                </figcaption>
             </figure>
         </div>
       </section>
@@ -642,5 +650,6 @@
     <script src="./assets/js/StayTuned.js" charset="utf-8"></script>
     <script src="./assets/js/landing.js"></script>
     <script src="./assets/js/hacksection.js"></script>
+    <script src="./assets/js/nav.js"></script>
     
 </body>

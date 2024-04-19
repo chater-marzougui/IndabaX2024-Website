@@ -65,6 +65,7 @@
 #stay-tuned .container .rowSt .col-md-6 {
 	width: 45%;
 	padding: 5%;
+	z-index: 6;
 	max-width: 380px;
 }
 
