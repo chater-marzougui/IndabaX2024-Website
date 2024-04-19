@@ -83,7 +83,6 @@ window.addEventListener('scroll', function() {
      if (isNaN(scrollPosition)) {
       currentSection = "hero"; 
       }
-      
      scrollPosition+=20; 
      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
          currentSection = section.id;
