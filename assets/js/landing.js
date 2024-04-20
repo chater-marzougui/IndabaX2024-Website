@@ -63,7 +63,7 @@ function removeCode() {
 
 
 
-const buttons = document.querySelectorAll('.btn1, .regbutton , .menu1-block');
+const buttons = document.querySelectorAll('.btn1, .regbutton , .menu1-block,.regbut');
 
 gsap.utils.toArray(buttons).forEach((button) => {
   let boundingRect = button.getBoundingClientRect(),
@@ -79,8 +79,8 @@ gsap.utils.toArray(buttons).forEach((button) => {
   button.addEventListener("mousemove", (e) => {
     const mousePoxX = e.clientX - boundingRect.left;
     const mousePoxY = e.clientY - boundingRect.top;
-    xTo((mousePoxX - boundingRect.width / 2) * 0.1);
-    yTo((mousePoxY - boundingRect.height / 2) * 0.1);
+    xTo((mousePoxX - boundingRect.width / 2) * 0.15);
+    yTo((mousePoxY - boundingRect.height / 2) * 0.15);
   });
   button.addEventListener("mouseleave", () => {
     xTo.tween.pause().invalidate();
