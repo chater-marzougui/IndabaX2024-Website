@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="./css/pre.css">
     <link rel="stylesheet" href="./css/StayTuned.css">
     <link rel="stylesheet" href="./css/postersess.css">
-    <link rel="stylesheet" href="./css/hacksection.css">
+    <link rel="stylesheet" href="./css/hackathon.css">
     <link rel="stylesheet" href="./css/prefooter.css">
     <link rel="stylesheet" href="./css/landing.css" />
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
@@ -53,7 +53,7 @@
           <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
         </svg>
         <div class="loader-wrap-heading" >
-            <span><img src="./assets/images/icons/LOGOINDABA.png" alt="Logo1"></span>
+            <span><img src="./assets/images/LOGOINDABABlack.png" style="filter: invert();" alt="Logo1"></span>
         </div>
     </div>
     <!-- START Nav -->
@@ -128,7 +128,7 @@
                         </button>
                     </a>
                 </div>
-                <img class="banner-image" src="assets/images/INDABAXLOGO.png" style="transform: scale(.85);" alt="banner">
+                <img class="banner-image" src="assets/images/LOGOINDABABlack.png" style="transform: scale(.85);filter: invert();" alt="banner">
                 <div class="banner-links">
                     <a href="https://www.facebook.com/IndabaXTunisia/" target="_blank"><i
                             class="bx bxl-facebook"></i></a>
@@ -181,15 +181,45 @@
         </div>
     </section>
     
+    <section id="Hackaton-Section">
+        <div class="description-panel hackathon-panel blue row m-0"
+            style="background: url(./assets/images/site.jpg); margin: 0; background-size: cover;">
+            <div class="col m-0">
+
+            </div>
+            <div class="col m-0">
+                <h1 style="color:aliceblue;">About the Hackathon</h1>
+                <!-- <p class="notp" style="color:aliceblue; font-size: 2rem; font-family: Rubik; z-index: 3;">Click here to <a href="https://zindi.africa" style="color: #f18a25; text-decoration: none; font-size: inherit;" target="_blank">register</a>!</p> -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxldmnl_BZ_8JDX3B47-x0YyYrdsrkbKBGEECpuya5zUdmxg/viewform?usp=sf_link" target="_blank" class="regbut">Register</a>
+            </div>
+        </div>
+
+
+        <div class="hackathon-panel red px-5 py-4 m-0">
+            <h2>In partnership with <a href="https://zindi.africa" style="color: #d2b48c; text-decoration: none; font-size: inherit;" target="_blank">ZINDI</a></h2>
+            <p class="fs-3">
+                Zindi is the first data science competition platform in Africa. Zindi hosts an entire data science ecosystem of
+                scientists, engineers, academics, companies, NGOs, governments and institutions focused on solving Africa’s most
+                pressing problems.
+            </p>
+            <img src="./assets/images/zindi.png" class="hackathon-zindi">
+        </div>
+        <div class="hackathon-panel last-panel orange  px-5 py-5  m-0">
+            <h2><span style="color: #d2b48c; text-decoration: none; font-size: inherit; cursor: text ;">20-hour</span> hackathon for you to test
+                your abilities</h2>
+            <p class="fs-3">This 20-hour hackathon, hosted on Zindi by Udini,
+                offers data scientists and engineers a chance to prove their skills by addressing real-world 
+                challenges. Participants will analyze datasets under time constraints to achieve their goals.</p>
+        </div>
+    </section>
 
     <!-- TO BE CHANGED-->
-    <!-- ****** -->
+    <!--
     <section id="Hackaton-Section">
         <section class="trigger">
             <span class="down container-thatcontains">
               <div class="zindi-container" style="padding-top: 5%;">
                 <div class="content-zindi--hide">
-                  <!-- el page tet5dem lehna aandek class zindi-container w hackathon-container houma ely bech te5dem fi wosthom fel css -->
                   <h1 class="titlezindi">
                     In partnership with </h1>
                     <a href="https://zindi.africa">
@@ -328,11 +358,11 @@
             <div class="box"></div>
           </section>
     </section>
-    
+    ****** -->
     <!-- ****** -->
 
     <!-- Poster Session HERE -->
-    <section id="poster-session" style="background: url(./assets/images/poster.jpg); background-size: cover;">
+    <section id="poster-session" style="background: url(./assets/images/posterbg.jpg); background-size: cover;">
         <div class="containerPoster text-center">
             <p class="textforphone"><strong>Poster <br>Session</strong></p>
             <div class="amp">
@@ -432,7 +462,7 @@
 
 
     <!-- Stay Tuned HERE -->
-    <section id="stay-tuned" style="background: url(./assets/images/staytuned.gif); background-size: cover;">
+    <section id="stay-tuned" style="background: url(./assets/images/staytunedbg.jpg); background-size: cover;">
         <div class="container text-center">
             <h1>Stay Tuned...</h1>
             <img class="note" id="revgear"  src="./assets/images/polygon.png" style="
@@ -444,7 +474,7 @@
             <div id="countdown" class="mb-4" style="z-index: 1;position: relative;"></div>  
             <div class="rowSt justify-content-center align-items-center">
                 <div class="col-md-6">
-                    <img src="./assets/images/Instadeep.png" class="img-fluid mx-auto d-block mb-3" alt="Instadeep Logo">
+                    <img src="./assets/images/Instadeep.png" style="scale: 1.1;" class="img-fluid mx-auto d-block mb-3" alt="Instadeep Logo">
                 </div>
                 <div class="col-md-6">
                     <img src="./assets/images/IEEE.png" class="img-fluid mx-auto d-block mb-3" alt="IEEE Logo">
@@ -640,17 +670,17 @@
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Slick slider -->
-    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slick.min.js" type="text/javascript" ></script>
     <!-- Custom js -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
     <!-- ourscripts -->
-    <script type="text/javascript" src="assets/js/about.js"></script>
+    <script src="assets/js/about.js" type="text/javascript"></script>
     <script src="./assets/js/pre.js" charset="utf-8"></script>
     <script src="./assets/js/StayTuned.js" charset="utf-8"></script>
     <script src="./assets/js/landing.js"></script>
-    <script src="./assets/js/hacksection.js"></script>
+    <script src="./assets/js/hackathon.js"></script>
     <script src="./assets/js/nav.js"></script>
     
 </body>

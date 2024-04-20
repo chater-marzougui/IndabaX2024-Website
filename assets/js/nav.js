@@ -7,7 +7,7 @@ if (burgerMenu && navbarMenu) {
    burgerMenu.addEventListener("click", () => {
       burgerMenu.classList.toggle("is-active");
       navbarMenu.classList.toggle("is-active");
-      document.getElementById("menu1-block").className="is-hidden";
+      document.getElementById("menu1-block");
 	  $('.nav-toggle').toggleClass("active");
    });
 }
@@ -15,7 +15,7 @@ if (burgerMenu && navbarMenu) {
 
 closeBtn.addEventListener('click', function () {
    menu.classList.remove('is-active');
-   document.getElementById("menu1-block").className='menu1-block';
+   document.getElementById("menu1-block")
 });
 
 // Close Navbar Menu on Click Menu Links
