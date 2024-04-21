@@ -18,11 +18,6 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="https://www.indabaxtunisia.com/2023/assets/images/icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="https://www.indabaxtunisia.com/2023/assets/images/icons/favicon-16x16.png">
     <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Boxicon -->
@@ -43,35 +38,37 @@
     <link rel="stylesheet" href="./css/pre.css">
     <link rel="stylesheet" href="./css/StayTuned.css">
     <link rel="stylesheet" href="./css/postersess.css">
-    <link rel="stylesheet" href="./css/hacksection.css">
+    <link rel="stylesheet" href="./css/hackathon.css">
     <link rel="stylesheet" href="./css/prefooter.css">
     <link rel="stylesheet" href="./css/landing.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 </head>
 
 <body > 
-    <!--<div class="loader">
-    </div>  -->
+    <div class="loader">
+    </div>
     <div class="loader-wrap">
         <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
           <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
         </svg>
         <div class="loader-wrap-heading" >
-            <span><img src="./assets/images/icons/LOGOINDABA.png" alt="Logo1"></span>
+            <span><img src="./assets/images/LOGOINDABABlack.png" style="filter: invert();" alt="Logo1"></span>
         </div>
     </div>
     <!-- START Nav -->
     <section id="Navbar">
         <div id="popup">
-            <div class="popblur"></div>
-            <div class="popup-content">
-                <!--<img src="./assets/images/download.jpg" alt="">-->
-                <a href="#" class="close">x</a>
-                <p><b>Registration for the Hackathon is not open yet.</b>
-                <br><br>Only for PhD students who wish to register in the poster session.
-                </p>
-                <button><a href="#poster-session">Poster Session Section</a></button>
+            <div class="popblur">
+                <div class="popoutside" onclick="togglepopup()"></div>
+                <div class="popup-content">
+                    <!--<img src="./assets/images/download.jpg" alt="">-->
+                    <div class="close" onclick="togglepopup()">&times;</div>
+                    <p><b>Registration for the Hackathon is not open yet.</b>
+                    <br><br>Only for PhD students who wish to register in the poster session.
+                    </p>
+                    <a href="#poster-session"><button onclick="togglepopup()">Poster Session Section</button></a>
+                </div>
             </div>
         </div>
         <header class="header1" id="header">
@@ -91,15 +88,9 @@
                         <li class="menu1-item"><a href="#Sponsors-Section" class="menu1-link">Partners</a></li>
                         <li class="menu1-item"><a href="#Location-Section" class="menu1-link">Location</a></li>
                     </ul>
-                    <!-- Adding a button for closing the menu -->
-                    <span class="close-menu">X</span>
+                    <span class="close-menu">&times;</span>
                 </div>
-                <!--
-                <label class="mode">
-                    <input type="checkbox" id="darkModeToggle">
-                    <i class='bx bxs-moon'></i>
-                </label>-->
-                <a href="#popup" id="menu1-block" class="menu1-block">Register</a>
+                <button onclick="togglepopup()" class="menu1-block">Register</button>
             </nav>
         </header>
     </section>
@@ -116,14 +107,14 @@
                     <p class="">
                         Welcome to the <strong> 5<sup>th</sup> edition of IndabaX Tunisia!</strong> Dive into two action-packed days filled with panels
                         , workshops, talks,hackathon  and more. This year, we're thrilled to introduce a <strong>poster session.</strong>
-                         AI enthusiasts, this is your moment! <strong>Don't miss out</strong>
+                         AI enthusiasts, this is your moment! <strong>Don't miss out!</strong>
                     </p>
                     <div>
                         <h2>May 18<sup>th</sup> & 19<sup>th</sup>, 2024</h2>
                         <h2>Sup’com, Technopole El Ghazela</h2>
                     </div>
-                    <a href="#popup">
-                        <button class="btn1 btn1-darken btn1-inline">
+                    <a>
+                        <button class="btn1 btn1-darken btn1-inline" onclick="togglepopup()">
                             <div class="textt">
                                 Register Now
                                 <i class="bx bx-right-arrow-alt"></i>
@@ -131,7 +122,7 @@
                         </button>
                     </a>
                 </div>
-                <img class="banner-image" src="assets/images/INDABAXLOGO.png" style="transform: scale(.85);" alt="banner">
+                <img class="banner-image" src="assets/images/LOGOINDABABlack.png" style="transform: scale(.85);filter: invert();" alt="banner">
                 <div class="banner-links">
                     <a href="https://www.facebook.com/IndabaXTunisia/" target="_blank"><i
                             class="bx bxl-facebook"></i></a>
@@ -142,7 +133,7 @@
                 </div>
             </div>
         </section>
-        <article id="lightings">
+            <article id="lightings">
             <section id="one">
                 <section id="two">
                     <section id="three">
@@ -154,9 +145,7 @@
                     </section>
                 </section>
             </section>
-        </article>
-    </section>
-    <script src="assets/js/nav.js"></script>
+            </article>
     </section>
     <!-- ****** -->
     <section id="About-Section">
@@ -186,163 +175,40 @@
         </div>
     </section>
     
-
-    <!-- TO BE CHANGED-->
-    <!-- ****** -->
     <section id="Hackaton-Section">
-        <section class="trigger">
-            <span class="down container-thatcontains">
-              <div class="zindi-container" style="padding-top: 5%;">
-                <div class="content-zindi--hide">
-                  <!-- el page tet5dem lehna aandek class zindi-container w hackathon-container houma ely bech te5dem fi wosthom fel css -->
-                  <h1 class="titlezindi">
-                    In partnership with <br>
-                    <a
-                      href="https://zindi.africa"
-                      style="color: #25a3f1; text-decoration: none" class="zindi-title"
-                      target="_blank"
-                      >ZINDI
-                    </a>
-                  </h1>
-                  <p class="p1">
-                    Zindi stands as Africa's pioneering data science competition platform.
-                    It serves as the epicenter for a comprehensive data science community, encompassing scientists, engineers,
-                      academics, companies, NGOs, governments, and institutions, all united in addressing Africa's
-                      most urgent challenges.
-                  </p>
-                </div>
-                <img src="./assets/images/zindi.png"  class="zindi-img">
-              </div>
-            </span>
-            <span class="up container-thatcontains">
-              <div class="hackathon-container" style="padding-top: 5%;">    
-                <div class="content-hackathon--hide hidden"> 
-                  <h1 class="titlezindi"> A
-                    <strong style="color: #25a3f1;">
-                        20-hour
-                    </strong>
-                    hackathon to put your skills to the test
-                  </h1>
-                  <p class="p1">This 20-hour hackathon, hosted on Zindi, W
-                    offers data scientists and engineers a chance to prove their skills by addressing real-world 
-                    challenges. Participants will analyze datasets under time constraints to achieve their goals.
-                  </p> 
-                </div>
-                    <img src="./assets/images/INDABAXLOGO.png" class="hackathon-zindi">
-              </div>
-            </span>
+        <div class="description-panel hackathon-panel blue row m-0"
+            style="background: url(./assets/images/site.jpg); margin: 0; background-size: cover;">
+            <div class="col m-0">
 
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-          </section>
+            </div>
+            <div class="col m-0">
+                <h1 style="color:aliceblue;">About the Hackathon</h1>
+                <!-- <p class="notp" style="color:aliceblue; font-size: 2rem; font-family: Rubik; z-index: 3;">Click here to <a href="https://zindi.africa" style="color: #f18a25; text-decoration: none; font-size: inherit;" target="_blank">register</a>!</p> -->
+                <a onclick="togglepopup()" class="regbut">Register</a>
+            </div>
+        </div>
+
+
+        <div class="hackathon-panel red px-5 py-4 m-0">
+            <h2>In partnership with <a href="https://zindi.africa" style="color: #d2b48c; text-decoration: none; font-size: inherit;" target="_blank">ZINDI</a></h2>
+            <p class="fs-3">
+                Zindi is the first data science competition platform in Africa. Zindi hosts an entire data science ecosystem of
+                scientists, engineers, academics, companies, NGOs, governments and institutions focused on solving Africa’s most
+                pressing problems.
+            </p>
+            <img src="./assets/images/zindi.png" class="hackathon-zindi">
+        </div>
+        <div class="hackathon-panel last-panel orange  px-5 py-5  m-0">
+            <h2><span style="color: #d2b48c; text-decoration: none; font-size: inherit; cursor: text ;">20-hour</span> hackathon for you to test
+                your abilities</h2>
+            <p class="fs-3">This 20-hour hackathon, hosted on Zindi by Udini,
+                offers data scientists and engineers a chance to prove their skills by addressing real-world 
+                challenges. Participants will analyze datasets under time constraints to achieve their goals.</p>
+        </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="./assets/js/hacksection.js"></script>
-    
-    
-    <!-- ****** -->
 
     <!-- Poster Session HERE -->
-    <section id="poster-session" style="background: url(./assets/images/postersessionbg.jpg); background-size: cover;">
+    <section id="poster-session" style="background: url(./assets/images/posterbg.jpg); background-size: cover;">
         <div class="containerPoster text-center">
             <p class="textforphone"><strong>Poster <br>Session</strong></p>
             <div class="amp">
@@ -374,6 +240,11 @@
                        community dedicated to advancing AI research and fostering meaningful connections.</p>
 
                 <p><strong>See you at IndabaX Tunisia 2024!</strong></p>
+                <button class="FAQ" onclick="toggleFAQpopup()">
+                    <div class="Faqtext">
+                        Read More
+                    </div>
+                </button> 
             </div>
             <div class="rowPoster1 justify-content-center align-items-center">
                 <div class="rowPoster2">
@@ -395,44 +266,49 @@
                 </div>
             </div>
         </div>
-        <div class="FAQwrapper">
-            <div class="main-title">Frequently Asked Questions</div>
-            <input type="radio" id="radioFirstQuestion" name="accordion" />
-            <label class="item" for="radioFirstQuestion">
-              <div class="title">When is the deadline for the submission of the posters?</div>
-              <div class="content">On May 10th, 2024</div>
-            </label>
-            <input type="radio" id="radioSecondQuestion" name="accordion"/>
-            <label class="item" for="radioSecondQuestion">
-              <div class="title">Can I re-use this poster in other events?</div>
-              <div class="content">Posters submitted in IndabaX 2024 can all be submitted again in other events</div>
-            </label>
-            <input type="radio" id="radioThirdQuestion" name="accordion"/>
-            <label class="item" for="radioThirdQuestion">
-              <div class="title">When and where will it take place?</div>
-              <div class="content">It's going to be in the Higher School of Communication at Technopole-El Ghazela on May 18th,2024</div>
-            </label>
-            <input type="radio" id="radioForthQuestion" name="accordion"/>
-            <label class="item" for="radioForthQuestion">
-              <div class="title">For whome will i be presenting my poster?</div>
-              <div class="content">AI enthousiasts and members of the jury </div>
-            </label>
-          <input type="radio" id="radioFifthQuestion" name="accordion"/>
-            <label class="item" for="radioFifthQuestion">
-              <div class="title">What should my poster look like?</div>
-              <div class="content">link to template , A0 size  </div>
-            </label>
-          </div>
+        <div id="FAQpopup">
+            <div class="FAQpopblur">
+                <div class="FAQpopoutside" onclick="toggleFAQpopup()"></div>
+                <div class="FAQpopup-content">
+                    <div class="close" onclick="toggleFAQpopup()">&times;</div>
+                    <div class="FAQwrapper">
+                        <div class="main-title" style="z-index: 99999;">Frequently Asked Questions</div>
+                        <input type="radio" id="radioFirstQuestion" name="accordion" />
+                        <label class="item" for="radioFirstQuestion">
+                          <div class="title">When is the deadline for the submission of the posters?</div>
+                          <div class="content">On May 10th, 2024</div>
+                        </label>
+                        <input type="radio" id="radioSecondQuestion" name="accordion"/>
+                        <label class="item" for="radioSecondQuestion">
+                          <div class="title">Can I re-use this poster in other events?</div>
+                          <div class="content">Posters submitted in IndabaX 2024 can all be submitted again in other events</div>
+                        </label>
+                        <input type="radio" id="radioThirdQuestion" name="accordion"/>
+                        <label class="item" for="radioThirdQuestion">
+                          <div class="title">When and where will it take place?</div>
+                          <div class="content">It's going to be in the Higher School of Communication at Technopole-El Ghazela on May 18th,2024</div>
+                        </label>
+                        <input type="radio" id="radioForthQuestion" name="accordion"/>
+                        <label class="item" for="radioForthQuestion">
+                          <div class="title">For whome will i be presenting my poster?</div>
+                          <div class="content">AI enthousiasts and members of the jury </div>
+                        </label>
+                      <input type="radio" id="radioFifthQuestion" name="accordion"/>
+                        <label class="item" for="radioFifthQuestion">
+                          <div class="title">What should my poster look like?</div>
+                          <div class="content">link to template , A0 size  </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <script>
-                AOS.init();
-    </script>
+    
     <!--  -->
 
 
     <!-- Stay Tuned HERE -->
-    <section id="stay-tuned" style="background: url(./assets/images/faqbg.jpg); background-size: cover;">
+    <section id="stay-tuned" style="background: url(./assets/images/staytunedbg.jpg); background-size: cover;">
         <div class="container text-center">
             <h1>Stay Tuned...</h1>
             <img class="note" id="revgear"  src="./assets/images/polygon.png" style="
@@ -441,10 +317,10 @@
             <img class="note" src="./assets/images/polygon.png" style="
             position: relative;right: 18px;scale: .8;opacity: 0.6;" alt="">
             <!--<div class="hourglass" style="scale: 0.7;"></div>  -->
-            <div id="countdown" class="mb-4"></div>  
+            <div id="countdown" class="mb-4" style="z-index: 1;position: relative;"></div>  
             <div class="rowSt justify-content-center align-items-center">
                 <div class="col-md-6">
-                    <img src="./assets/images/Instadeep.png" class="img-fluid mx-auto d-block mb-3" alt="Instadeep Logo">
+                    <img src="./assets/images/Instadeep.png" style="scale: 1.1;" class="img-fluid mx-auto d-block mb-3" alt="Instadeep Logo">
                 </div>
                 <div class="col-md-6">
                     <img src="./assets/images/IEEE.png" class="img-fluid mx-auto d-block mb-3" alt="IEEE Logo">
@@ -487,12 +363,19 @@
                 <a href="https://deeplearningindaba.com" target="_blank" class="read-more">Read More</a>
             </figcaption>
             </figure>
-            <figure class="snip0058"><img src="./assets/images/ELYADATA.png" alt="sample57" style="top: -10%;position: relative;" />
+            <figure class="snip0058"><img src="./assets/images/E-gov.jpg" alt="sample57" style="top: -10%;position: relative;" />
             <figcaption>
-                <p><span>Aziz Chaari is the Project Manager of IndabaX 2024</span></p>
-                <h2 class="white"><span>Aziz</span></h2>
-                <a href="https://www.elyadata.com" target="_blank" class="read-more">Read More</a>
+                <p><span>“The Tunisian e-governance society” is a non-governmental association, non-partisan, non-profit working for the enlightened promotion of good governance through the use of digital technologies.</span></p>
+                <h2 class="white"><span>E-Governance</span></h2>
+                <a href="https://www.linkedin.com/company/the-tunisian-e-governance-society" target="_blank" class="read-more">Read More</a>
             </figcaption>
+            </figure>
+            <figure class="snip0058"><img src="./assets/images/Udini.png" alt="sample57" />
+                <figcaption>
+                    <p><span>Udini is a cutting-edge R&D lab that specializes in the application of AI in dentistry, with a specific focus on orthodontics. With advanced capabilities in AI, dental clinics, and cloud computing.</span></p>
+                    <h2 class="white"><span>Udini</span></h2>
+                    <a href="http://www.udini.ai" target="_blank" class="read-more">Read More</a>
+                </figcaption>
             </figure>
         </div>
       </section>
@@ -551,7 +434,8 @@
         <div style="height: 70px;"></div>
     </section>   
     <!-- ****** -->
-    <section id="Footer" style="background-image: linear-gradient(120deg , #15253d , #0f1b2c) ;background-size: cover;opacity: 1;">
+    <section id="Footer" style="background-image: linear-gradient(90deg ,#051a34 ,#112139  , #051a34) ;background-size: cover;opacity: 1;">
+        <!-- linear-gradient(90deg ,#1F385B , #0F1B2C,#0F1B2C, #051a34) -->
         <footer class="bg-dark text-white" style="background: transparent !important;display: flex;flex-direction: column;align-items: center;">
             <div
                 class="horizontal-line">
@@ -627,625 +511,21 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <!-- jQuery library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Slick slider -->
-    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slick.min.js" type="text/javascript" ></script>
     <!-- Custom js -->
-    <script type="text/javascript" src="assets/js/about.js"></script>
-    <script src="./assets/js/pre.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <!-- ourscripts -->
+    <script src="assets/js/about.js" type="text/javascript"></script>
     <script src="./assets/js/StayTuned.js" charset="utf-8"></script>
     <script src="./assets/js/landing.js"></script>
+    <script src="./assets/js/hackathon.js"></script>
+    <script src="./assets/js/nav.js"></script>
     
 </body>
-
-</html>
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="IndabaX is a Deep Learning Indaba local event in Africa, bringing together AI communities to network and learn. Topics include Machine Learning and Deep Learning, catering to participants of all expertise levels. Join workshops and keynotes facilitated by regional AI experts. 🌍✨">
-    <meta name="keywords" content="IndabaX, IndabaXTunisia, indabax-tunisia, IndabaXTunisia2024, Tunisia, Indaba, IEEE, SUPCOM, INSTADEEP, AI, Machine learning, event, engeneering">
-	<meta property="og:title" content="IndabaX Tunisia 2024">
-    <meta property="og:image" content="https://www.indabaxtunisia.com/2023/assets/images/ogthumbnail.png">
-    <meta name="og:description"
-    content="IndabaX is a Deep Learning Indaba local event in Africa, bringing together AI communities to network and learn. Topics include Machine Learning and Deep Learning, catering to participants of all expertise levels. Join workshops and keynotes facilitated by regional AI experts. 🌍✨">
-    
-
-    <meta property="og:title" content="IndabaX Tunisia 2024">
-    <title>IndabaX Tunisia 2024</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="https://www.indabaxtunisia.com/2023/assets/images/icons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="https://www.indabaxtunisia.com/2023/assets/images/icons/favicon-16x16.png">
-   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- Boxicon -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- Font Awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- speaker Style -->
-    <link href="./css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/sponsors.css">
-    <link rel="stylesheet" href="./css/aboutus.css">
-    <link rel="stylesheet" href="./css/pre.css">
-    <link rel="stylesheet" href="./css/StayTuned.css">
-    <link rel="stylesheet" href="./css/postersess.css">
-    <link rel="stylesheet" href="./css/hacksection.css">
-    <link rel="stylesheet" href="./css/prefooter.css">
-    <link rel="stylesheet" href="./css/landing.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-
-<body > 
-    <!-- <div class="loader"> -->
-    <!-- </div> -->
-    <div class="loader-wrap">
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-          <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-        </svg>
-        <div class="loader-wrap-heading" >
-            <span><img src="./assets/images/INDABAXLOGO.png" alt="Logo1"></span>
-        </div>
-    </div>
-    <!-- START Nav -->
-    <section id="Navbar">
-        <div id="popup">
-            <div class="popblur">
-                <div class="popoutside" onclick="togglepopup()"></div>
-                <div class="popup-content">
-                    <!--<img src="./assets/images/download.jpg" alt="">-->
-                    <div class="close" onclick="togglepopup()">&times;</div>
-                    <p><b>Registration for the Hackathon is not open yet.</b>
-                    <br><br>Only for PhD students who wish to register in the poster session.
-                    </p>
-                    <a href="#poster-session"><button onclick="togglepopup()">Poster Session Section</button></a>
-                </div>
-            </div>
-        </div>
-        <header class="header1" id="header">
-            <nav class="navbar1 container1">
-                <a href="./index.html" class="brand1"><img style="filter: invert(); transform: scale(.7)" src="./assets/images/navlog.png"></a>
-                <div class="burger1 nav-toggle" id="burger">
-                    <span class="burger1-line"></span>
-                    <span class="burger1-line"></span>
-                    <span class="burger1-line"></span>
-                </div>
-                <div class="menu1" id="menu">
-                    <ul class="menu1-inner">
-                        <li class="menu1-item"><a href="#hero" class="menu1-link">Home</a></li>
-                        <li class="menu1-item"><a href="#About-Section" class="menu1-link">IndabaX</a></li>
-                        <li class="menu1-item"><a href="#Hackaton-Section" class="menu1-link">Hackathon</a></li>
-                        <li class="menu1-item"><a href="#poster-session" class="menu1-link">Poster Session</a></li>
-                        <li class="menu1-item"><a href="#Sponsors-Section" class="menu1-link">Partners</a></li>
-                        <li class="menu1-item"><a href="#Location-Section" class="menu1-link">Location</a></li>
-                    </ul>
-                </div>
-                <!--
-                <label class="mode">
-                    <input type="checkbox" id="darkModeToggle">
-                    <i class='bx bxs-moon'></i>
-                </label>-->
-                <button onclick="togglepopup()" class="menu1-block">Register</button>
-            </nav>
-        </header>
-    </section>
-
-    <!-- END Nav -->
-
-
-    <!-- Main Section -->
-    <section id="hero">
-        <section class="section banner1 banner-section" >
-            <div class="container1 banner-column">
-                <div class="banner-inner">
-                    <h1 class="">IndabaX Tunisia 2024</h1>
-                    <p class="">
-                        Welcome to the <strong> 5<sup>th</sup> edition of IndabaX Tunisia!</strong> Dive into two action-packed days filled with panels
-                        , workshops, talks,hackathon  and more. This year, we're thrilled to introduce a <strong>poster session.</strong>
-                         AI enthusiasts, this is your moment! <strong>Don't miss out!</strong>
-                    </p>
-                    <div>
-                        <h2>May 18<sup>th</sup> & 19<sup>th</sup>, 2024</h2>
-                        <h2>Sup’com, Technopole El Ghazela</h2>
-                    </div>
-                    <a>
-                        <button class="btn1 btn1-darken btn1-inline" onclick="togglepopup()">
-                            <div class="textt">
-                                Register Now
-                                <i class="bx bx-right-arrow-alt"></i>
-                            </div>
-                        </button>
-                    </a>
-                </div>
-                <img class="banner-image" src="assets/images/INDABAXLOGO.png" style="transform: scale(.85);" alt="banner">
-                <div class="banner-links">
-                    <a href="https://www.facebook.com/IndabaXTunisia/" target="_blank"><i
-                            class="bx bxl-facebook"></i></a>
-                    <a href="https://twitter.com/indabaxtunisia" target="_blank"><i class="bx bxl-twitter"></i></a>
-                    <a href="https://tn.linkedin.com/company/indabax-tunisia" target="_blank"><i
-                            class='bx bxl-linkedin-square'></i></i></a>
-                    <a href="https://www.instagram.com/indabaxtunisia/" target="_blank"><i class='bx bxl-instagram'></i></a>
-                </div>
-            </div>
-        </section>
-        <article id="lightings">
-            <section id="one">
-                <section id="two">
-                    <section id="three">
-                        <section id="four">
-                            <section id="five">
-
-                            </section>
-                        </section>
-                    </section>
-                </section>
-            </section>
-        </article>
-    </section>
-    
-    </section>
-    <!-- ****** -->
-    <section id="About-Section">
-        <div id="ImgWrapper">
-            <img id="img8" style="filter: invert();" src="./assets/images/white_logo.png" alt="">
-            <div id="codeby">
-                <a style="font-family: Rubik;"><span id="testa">About <br>IndabaX 2024</span></a>
-                <span id="test">IndabaX Tunisia is a local Deep Learning Indaba that brings together professionals and AI enthusiasts to exchange ideas,
-                  network, and learn about the latest developments in the Artificial Intelligence field.
-                </span>
-                <span id="test1">At this two-day event, attendees can expect to engage in keynote speeches, hands-on workshops, and a 20-hour hackathon.</span>
-                <span id="test2">For its <strong>5<sup>th</sup> edition,</strong> IEEE Sup'Com Student Branch and InstaDeep are collaborating to deliver an event that meets your
-                      expectations and offers a variety of opportunities to expand your network and deepen your understanding of the AI field.
-                </span>
-            </div>
-        </div>
-        <div id="test3">
-            <a href="https://supcom.ieee.tn/" target="_blank">
-                <img id="test3img1" src="assets/images/IEEE.png" alt="IEEE logo">
-            </a>
-            <a href="https://www.instadeep.com/" target="_blank">
-                <img id="test3img2" src="assets/images/Instadeep.png" alt="Instadeep Logo">
-            </a>
-        </div>
-    </section>
-    
-
-    <!-- TO BE CHANGED-->
-    <!-- ****** -->
-    <section id="Hackaton-Section">
-        <section class="trigger">
-            <span class="down container-thatcontains">
-                <div class="zindi-container" style="padding-top: 5%;">
-                    <div class="content-zindi--hide">
-                        <h1 class="titlezindi">
-                            In partnership with
-                        </h1>
-                        <a href="https://zindi.africa">
-                            <img
-                                src="./assets/images/zindi.png" class="zindi-title"
-                                target="_blank">
-                            </img>
-                        </a>
-                        <p class="p1">
-                            Zindi stands as Africa's pioneering data science competition platform.
-                            It serves as the epicenter for a comprehensive data science community, encompassing scientists, engineers,
-                            academics, companies, NGOs, governments, and institutions, all united in addressing Africa's
-                            most urgent challenges.
-                        </p>
-                    </div>
-                    <img src="./assets/images/zindiwhite.png"  class="zindi-img">
-                </div>
-            </span>
-            <span class="up container-thatcontains">
-              <div class="hackathon-container" style="padding-top: 5%;">    
-                <div class="content-hackathon--hide hidden"> 
-                  <h1 class="titlezindi"> A
-                    <strong style="color: #25a3f1;">
-                        20-hour
-                    </strong>
-                    hackathon to put your skills to the test
-                  </h1>
-                  <p class="p1">This 20-hour hackathon, hosted on Zindi,
-                    offers data scientists and engineers a chance to prove their skills by addressing real-world 
-                    challenges. Participants will analyze datasets under time constraints to achieve their goals.
-                  </p> 
-                </div>
-                    <img src="./assets/images/INDABAXLOGO.png" class="hackathon-zindi">
-              </div>
-            </span>
-
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-          </section>
-    </section>
-
-    
-    
-    <!-- ****** -->
-
-    <!-- Poster Session HERE -->
-    <section id="poster-session" style="background: url(./assets/images/postersessionbg.jpg); background-size: cover;">
-        <div class="containerPoster text-center">
-            <p class="textforphone"><strong>Poster <br>Session</strong></p>
-            <div class="amp">
-                <img data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" src="./assets/images/noun-amphitheater-1.png"  >
-                <img data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" src="./assets/images/noun-amphitheater-2.png"  >
-                <img data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" src="./assets/images/noun-amphitheater-3.png"  >
-                <img data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000" src="./assets/images/noun-amphitheater-4.png"  >
-                <img data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1000" src="./assets/images/noun-amphitheater-5.png"  >
-                <p data-aos="fade-up-left" data-aos-delay="0" data-aos-duration="1500">Poster Session</p>
-            </div>
-            <div class="glasscard">
-                <div class="Newonlyforphone">
-                    <div class="Newbanner-line"> <h2>New!</h2> </div>
-                </div>
-                <div class="paper">
-                    <div class="pin">
-                      <div class="shadow"></div>
-                      <div class="metal"></div>
-                      <div class="bottom-circle"></div>
-                    </div>
-                    <p>For the first time in <br> IndabaX Tunisia</p>
-                </div>
-                <p>Dear <strong>PhD Students,</strong></p>
-
-                <p>Join us at <strong>IndabaX Tunisia</strong> in it's<strong> 5<sup>th</sup> Edition</strong> for an enriching
-                     opportunity to share your AI research, connect with peers, and 
-                     learn from industry leaders. Your insights are crucial in shaping
-                      the future of AI. <br>Don't miss out on this chance to be part of a vibrant
-                       community dedicated to advancing AI research and fostering meaningful connections.</p>
-
-                <p><strong>See you at IndabaX Tunisia 2024!</strong></p>
-                <button class="FAQ" onclick="togglepopup()">
-                    <div class="Faqtext">
-                        Read More
-                    </div>
-                </button> 
-            </div>
-            <div class="rowPoster1 justify-content-center align-items-center">
-                <div class="rowPoster2">
-                    <div class="col-md-6">
-                        <p>If you're a<strong> PhD student</strong> and want to 
-                                present your AI related research, <br>reach out through <strong>this form</strong>
-                            <strong><i class="bx bx-right-arrow-alt" style="top: 3px;position: relative;"></i></p></strong>
-                    </div>
-                    <div class="regbutton" style="padding: 5%;">
-                        <a href="https://forms.gle/xTCd7xPzbUd9gUuH8" target="_blank">
-                            <button class="btn1 btn1-darken btn1-inline">
-                                <div class="textt">
-                                    <i class="bx bx-right-arrow-alt"></i>
-                                    Register
-                                </div>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--  -->
-
-
-    <!-- Stay Tuned HERE -->
-    <section id="stay-tuned" style="background: url(./assets/images/site.jpg); background-size: cover;">
-        <div class="container text-center">
-            <h1>Stay Tuned...</h1>
-            <img class="note" id="revgear"  src="./assets/images/polygon.png" style="
-            top: 8%;left: 20px;opacity: 0.7;position: relative;" alt="">
-            <img class="note" src="./assets/images/polygon2.png" style="scale: 1.2;" alt="">
-            <img class="note" src="./assets/images/polygon.png" style="
-            position: relative;right: 18px;scale: .8;opacity: 0.6;" alt="">
-            <!--<div class="hourglass" style="scale: 0.7;"></div>  -->
-            <div id="countdown" class="mb-4" style="z-index: 1;position: relative;"></div>  
-            <div class="rowSt justify-content-center align-items-center">
-                <div class="col-md-6">
-                    <img src="./assets/images/Instadeep.png" class="img-fluid mx-auto d-block mb-3" alt="Instadeep Logo">
-                </div>
-                <div class="col-md-6">
-                    <img src="./assets/images/IEEE.png" class="img-fluid mx-auto d-block mb-3" alt="IEEE Logo">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--  -->
-
-    <!-- Partners -->
-    <section id="Sponsors-Section">
-        <h1>Our Partners</h1>
-        <div class="partners">
-            <figure class="snip0058"><img src="./assets/images/supcom.png" alt="sample57" />
-            <figcaption>
-                <p><span>The Tunis Higher School of Communications is the main training school for telecommunications engineers in Tunisia, occupying the top places for the national competition for access to engineering schools in Tunisia.</span></p>
-                <h2 class="white"><span>SUP'COM</span></h2>
-                <a href="https://www.supcom.tn" target="_blank" class="read-more">Read More</a>
-            </figcaption>
-            </figure>
-            <figure class="snip0058"><img src="./assets/images/giz-bg-white.png" alt="sample57" />
-            <figcaption>
-                <p><span>The Deutsche Gesellschaft für Internationale Zusammenarbeit or German Agency for International Cooperation is a German federal enterprise that provides services in the field of international development cooperation.</span></p>
-                <h2 class="white"><span>GIZ</span></h2>
-                <a href="https://www.giz.de/en/html/index.html" target="_blank" class="read-more">Read More</a>
-            </figcaption>
-            </figure>
-            <figure class="snip0058"><img src="./assets/images/zindi.png" alt="sample57" />
-            <figcaption>
-                <p><span>Zindi is the first data science competition platform in Africa. Zindi hosts an entire data science ecosystem of scientists, engineers, academics, companies, NGOs, governments and institutions.</span></p>
-                <h2 class="white"><span>ZINDI</span></h2>
-                <a href="https://zindi.africa" target="_blank" class="read-more">Read More</a>
-            </figcaption>
-            </figure>
-            <figure class="snip0058"><img src="./assets/images/indaba.png" alt="sample57" />
-            <figcaption>
-                <p><span>The Deep Learning Indaba is the annual meeting of the African machine learning and AI community with the mission to Strengthen African AI.</span></p>
-                <h2 class="white"><span>INDABA</span></h2>
-                <a href="https://deeplearningindaba.com" target="_blank" class="read-more">Read More</a>
-            </figcaption>
-            </figure>
-            <figure class="snip0058"><img src="./assets/images/E-gov.jpg" alt="sample57" style="top: -10%;position: relative;" />
-            <figcaption>
-                <p><span>“The Tunisian e-governance society” is a non-governmental association, non-partisan, non-profit working for the enlightened promotion of good governance through the use of digital technologies.</span></p>
-                <h2 class="white"><span>E-Governance</span></h2>
-                <a href="https://www.linkedin.com/company/the-tunisian-e-governance-society" target="_blank" class="read-more">Read More</a>
-            </figcaption>
-            </figure>
-        </div>
-      </section>
-    
-
-
-    <!-- ****** -->
-    <section id="Location-Section">
-        <h1>Location</h1>
-    </section>
-    <section id="pre-footer">
-        <div class="container text-center"> 
-            <div class="row justify-content-center"> 
-                <div class="col-lg-8">
-                    <div id="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.9365322124095!2d10.185198974957506!3d36.89186656252835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cb6fc49b7883%3A0x84da64ea383c01d2!2s%C3%89cole%20Sup%C3%A9rieure%20des%20communications%20de%20Tunis!5e0!3m2!1sfr!2stn!4v1712850130272!5m2!1sfr!2stn" width="100%" height="420px" frameborder="0" style="border:0; border-radius: 15px; position: relative; z-index: 2;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="contact-info">
-                                    <div class="icon">
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                    <div class="relativeinfo">
-                                        <h4>Phone:</h4>
-                                        <span>+216 55614415</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="contact-info">
-                                    <div class="icon">
-                                        <i class="fa fa-envelope"></i>
-                                    </div>
-                                    <div class="relativeinfo">
-                                        <h4>Email:</h4>
-                                        <span>indabaxtunisia<span class="break-lg"><br></span>@gmail.com</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4"> 
-                                <div class="contact-info">
-                                    <div class="icon">
-                                        <i class="fa fa-map-marker"></i> 
-                                    </div>
-                                    <div class="relativeinfo">
-                                        <h4>Location:</h4>
-                                        <span>Sup'Com</span> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="height: 70px;"></div>
-    </section>   
-    <!-- ****** -->
-    <section id="Footer" style="background-image: linear-gradient(120deg , #15253d , #0f1b2c) ;background-size: cover;opacity: 1;">
-        <footer class="bg-dark text-white" style="background: transparent !important;display: flex;flex-direction: column;align-items: center;">
-            <div
-                class="horizontal-line">
-            </div>
-            <div class="container py-4 pb-1">
-                <div class="row">
-                    <div class="col-md-3 mb-3 mr-4 mb-md-0 d-flex flex-column justify-content-center">
-                        <img src="assets/images/white_logo.png" alt="Your Logo" style="filter: invert()" class="logo_footer">
-                    </div>
-                    <div class="col-md-9 mb-3 mb-md-0 pl-lg-3">
-                        <div class="row px-4">
-                            <div id="pages_column" class="col-md-4">
-                                <h5 class="mb-3">Pages</h5>
-                                <ul class="list-unstyled">
-                                    <li><a href="#hero">Home</a></li>
-                                    <li><a href="#About-Section">IndabaX</a></li>
-                                    <li><a href="#Hackaton-Section">Hackathon</a></li>
-                                    <li><a href="#poster-session">Poster Session</a></li>
-                                    <li><a href="#Sponsors-Section">Partners</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <h5 class="mb-3">Previous Editions</h5>
-                                <ul class="list-unstyled">
-                                    <li><a href="https://www.indabaxtunisia.com/2019/" target="_blank">2019</a></li>
-                                    <li><a href="https://www.indabaxtunisia.com/2021/" target="_blank">2021</a></li>
-                                    <li><a href="https://www.indabaxtunisia.com/2023/" target="_blank">2023</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <h5 class="mb-3">Follow Us</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li><a href="https://www.facebook.com/IndabaXTunisia/" target="_blank"><i class="footer-icon fa fa-facebook-f"></i></a></li>
-                                    <li><a href="https://twitter.com/indabaxtunisia" target="_blank"><i class="footer-icon fa fa-twitter"></i></a></li>
-                                    <li><a href="https://www.instagram.com/indabaxtunisia/" target="_blank"><i class="footer-icon fa fa-instagram"></i></a></li>
-                                    <li><a href="https://tn.linkedin.com/company/indabax-tunisia" target="_blank"><i class="footer-icon fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="horizontal-line">
-            </div>
-            <div class="bg-dark py-2 pt-0 " style="background: transparent !important;">
-                <div class="container text-center justify-content-center">
-                    <small>Copyright ©
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script> DeepLearningINDABAXTunisia24. <br>All rights reserved.
-                    </small>
-                </div>
-            </div>
-            <article id="lightings">
-                <section id="one">
-                    <section id="two">
-                        <section id="three">
-                            <section id="four">
-                                <section id="five">
-
-                                </section>
-                            </section>
-                        </section>
-                    </section>
-                </section>
-            </article>
-        </footer>
-    </section>
-
-     <!-- GSAP -->
-     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-     <!-- jquery -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- ****** -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <!-- Slick slider -->
-    <script type="text/javascript" src="assets/js/slick.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init(); </script>
-    <!-- Custom js -->
-    <script type="text/javascript" src="assets/js/about.js"></script>
-    <script src="./assets/js/hacksection.js"></script>
-    <script src="assets/js/nav.js"></script>
-    <script src="./assets/js/pre.js" charset="utf-8"></script>
-    <script src="./assets/js/StayTuned.js" charset="utf-8"></script>
-    <script src="./assets/js/landing.js"></script>    
-</body>
-
-</html>

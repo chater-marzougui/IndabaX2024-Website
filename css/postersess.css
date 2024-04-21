@@ -24,7 +24,7 @@
 	/*transform: translateY(-21vh);*/
 	width: 100%;
 	height: 140vh;
-	background: linear-gradient(to bottom, rgba(5, 26, 52, 1) 0%, rgba(0, 0, 0, 0) 20%);
+	background: linear-gradient(to bottom, rgba(5, 26, 52, 1) 0%, rgba(0, 0, 0, 0) 40%);
 	z-index: 1;
 }
 
@@ -38,7 +38,7 @@
     padding: 25px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(3px); 
+    backdrop-filter: blur(4px); 
     border: 1px solid rgba(255, 255, 255, 0.2); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
     overflow: visible; 
@@ -405,92 +405,210 @@ body{
       opacity : 0;
   }
 }
-  .main-title {
-    margin-bottom: 0.5rem;
-    text-align: center;
-    font-family: "Abril Fatface", cursive;
-    font-size: 2.32rem;
-    color: #d2b48c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .main-title:before, .main-title:after {
-    content: "";
-    display: block;
-    margin: 0 0.2rem;
-    flex: 1;
-    border-bottom: 1px solid #d2b48c;
-  }
-  .FAQwrapper {
-    width: 50%;
-    margin: auto;
-    font-family: "Source Sans Pro", sans-serif;
-  }
-  @media (max-width: 768px) {
-    .FAQwrapper {
-      width: auto;
-      padding: 0 0.3rem;
-    }}
-    @media (max-width: 550px) {
-    .main-title {
-      font-size:1.82rem;
-    }
-  }
-  input[type=radio] {
-    display: none;
-  }
-  input[type=radio]:checked + .item .title {
-    color: #fff;
-    border-color: #d2b48c;
-    background-color: #d2b48c;
-  }
-  input[type=radio]:checked + .item .title:after {
-    transform: rotate(180deg);
-  }
-  input[type=radio]:checked + .item .content {
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
-    height: auto;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s, opacity 0.7s;
-  }
-  
-  .item {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  .title {
-    padding: 0.1rem 0.3rem;
-    border-radius: 0.3rem;
-    color: #d2b48c;
-    border: 1px solid;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.2s;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .title:after {
-    content: "▼";
-    display: inline-block;
-    font-size: 12px;
-    transition: transform 0.2s;
-  }
-  
-  .content {
-    width: 95%;
-    margin: 0 auto;
-    padding: 0 0.3rem;
-    line-height: 1.6;
-    color: #d2b48c;
-    border: 1px solid;
-    border-width: 0 1px;
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.2s;
-  }
+
+#FAQpopup.active {
+display: flex;
+animation: opacitychange 1s forwards;
+z-index: 651;
+}
+
+#FAQpopup{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  /* z-index: 651; */
+  opacity: 0;
+  background: rgba(0,0, 0, 0.6);
+  z-index: -1;
+}
+
+#FAQpopup .FAQpopup-content{
+width: 70%;
+max-width: 720px;
+z-index: 655;
+height: auto;
+padding-bottom: 12%;
+padding-left: 5px;
+padding-right: 5px;
+border: 2px solid white;
+border-radius: 15px;
+position: relative;
+background-color: rgb(29 29 72 / 73%);
+/* max-height: 500px; */
+box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+transition: all 1s ease-in-out;
+transition: height 0.3s ease;
+}
+
+#FAQpopup img{
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+}
+
+#FAQpopup .FAQpopblur{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); 
+backdrop-filter: blur(5px); 
+z-index: 650; 
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+
+#FAQpopup .FAQpopoutside{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 651;
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+
+#FAQpopup p {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  right: 10%;
+  color: aliceblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 150%;
+  text-align: center;
+}
+
+@media only screen and (max-width : 420px){
+#FAQpopup button{
+  left: 15%;
+}
+#FAQpopup p {
+  font-size: 100%;
+}
+}
+
+#FAQpopup .close{
+position: absolute;
+top: 2.5%;
+right: 1.5%;
+border-radius: 112%;
+color: #170f04;
+background-color: aliceblue;
+width: 30px;
+height: 30px;
+text-align: center;
+align-content: center;
+cursor: pointer;
+transition: scale 0.3s ease;
+}
+
+#FAQpopup .close:hover{
+color: #170f04;
+background-color: rgb(153, 141, 141);
+scale: 1.2;
+transition: scale 0.3s ease;
+}
+
+#FAQpopup:target{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#FAQpopup .main-title {
+margin-bottom: 0.5rem;
+text-align: center;
+font-family: "Abril Fatface", cursive;
+font-size: 2.32rem;
+color: #d2b48c;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#FAQpopup .main-title:before, .main-title:after {
+content: "";
+display: block;
+margin: 0 0.2rem;
+flex: 1;
+border-bottom: 1px solid #d2b48c;
+}
+#FAQpopup .FAQwrapper {
+width: 80%;
+margin: auto;
+font-family: "Source Sans Pro", sans-serif;
+}
+@media (max-width: 768px) {
+#FAQpopup .FAQwrapper {
+  width: 95%;
+  padding: 0 0.3rem;
+}}
+@media (max-width: 550px) {
+  #FAQpopup .main-title {
+  font-size:1.82rem;
+}
+}
+#FAQpopup input[type=radio] {
+display: none;
+}
+#FAQpopup input[type=radio]:checked + .item .title {
+color: #fff;
+border-color: #d2b48c;
+background-color: #d2b48c;
+}
+#FAQpopup input[type=radio]:checked + .item .title:after {
+transform: rotate(180deg);
+}
+#FAQpopup input[type=radio]:checked + .item .content {
+margin-top: 0.3rem;
+margin-bottom: 0.3rem;
+height: auto;
+opacity: 1;
+visibility: visible;
+transition: all 0.3s, opacity 0.7s;
+}
+
+#FAQpopup .item {
+display: block;
+margin-bottom: 0.5rem;
+}
+
+#FAQpopup .title {
+padding: 0.1rem 0.3rem;
+border-radius: 0.3rem;
+color: #d2b48c;
+border: 1px solid;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.2s;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#FAQpopup .title:after {
+content: "▼";
+display: inline-block;
+font-size: 12px;
+transition: transform 0.2s;
+}
+
+#FAQpopup .content {
+width: 95%;
+margin: 0 auto;
+padding: 0 0.3rem;
+line-height: 1.6;
+color: #d2b48c;
+border: 1px solid;
+border-width: 0 1px;
+height: 0;
+opacity: 0;
+visibility: hidden;
+transition: all 0.2s;
+}

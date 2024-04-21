@@ -57,6 +57,7 @@
   }
   .partners figure.snip0058 * {
     -webkit-box-sizing: border-box;
+    -webkit-box-align: center;
     box-sizing: border-box;
   }
   .partners figure.snip0058 > img {
