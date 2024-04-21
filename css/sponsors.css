@@ -112,14 +112,27 @@
     margin: 0;
     font-size: 0.75em;
     min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .partners figure.snip0058 figcaption p span {
-    padding: 50px 2px;
+    padding: 0px 0px;
     position: absolute;
-    font-size: 10px;
-    top: 10vh;
+    font-size: 11px;
+    bottom: 10%;
+    position: -webkit-sticky;
+    display: flex;
+    width: 90%;
   }
-
+/*
+@media only screen and (min-width :719px) and (max-width:1080px) {
+  .partners figure.snip0058 figcaption p span {
+    font-size: 9px;
+    position: sticky;
+    position: -webkit-sticky;
+  }
+}*/
   .partners figure .read-more {
       opacity: 0;
       border: 1px solid #3c4374;
@@ -179,7 +192,7 @@
     transform: scale(1.1);
   }
   .partners figure.snip0058:hover figcaption {
-    bottom: 115px;
+    bottom: 40%;
   }
   
   .partners figure.snip0058:hover figcaption::before{
