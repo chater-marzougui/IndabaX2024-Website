@@ -419,16 +419,18 @@
 
 .close.fs-1 {
 	transition: all .3s;
-	color: #011d47;
+	color: #d2b48c;
 	display: flex;
-	align-items: flex-start;
+	flex-direction: column;
+	align-items: center;
 }
 
 .close.fs-1:hover {
 	cursor: pointer;
-	color: #225c97;
+	color: #d2b48c;
 	transform: scale(1.2);
 }
+
 
 .footer-icon.fa{
 	font-size: 17px;

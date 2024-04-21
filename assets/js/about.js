@@ -14,9 +14,9 @@ function LandingPageScrollTrigger() {
         pin: "#ImgWrapper",
         markers : false,
         scrub: 2,
-        snap: {
-          duration: 0.5, 
-        }
+        // snap: {
+        //   duration: 0.5, 
+        // }
       }
     })
   LandingPageScrollTrigger
@@ -42,9 +42,9 @@ function LandingPageScrollTrigger() {
         pin: "#ImgWrapper",
         markers : false,
         scrub: 2,
-        snap: {
-          duration: 0.5, 
-        }
+        // snap: {
+        //   duration: 0.5, 
+        // }
       }
     })
   LandingPageScrollTrigger
