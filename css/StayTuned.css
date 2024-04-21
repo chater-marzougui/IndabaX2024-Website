@@ -4,6 +4,12 @@
 	--primary: #255ff4;
 }
 
+#stay-tuned .mb-4{
+	margin-bottom: -0.5rem !important;
+}
+#stay-tuned #word-expired {
+	color: aliceblue;
+}
 #stay-tuned {
     height: 140vh; 
     display: flex; 
