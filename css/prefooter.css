@@ -2,7 +2,6 @@
   background-color: #051a34;
 }
 
-
 #pre-footer:after {
     position: absolute;
     content: '';
@@ -49,7 +48,12 @@
     font-weight: 700;
 
   }
-  
+#Location-Section{
+    user-select: text !important;
+  }
+#pre-footer {
+  user-select: text !important;
+}
 #pre-footer .section-heading {
     text-align: left;
     margin-bottom: 40px;
@@ -70,10 +74,15 @@
         margin:10px
     }
     #pre-footer .contact-info span {
-        margin:10px;
+        margin:5px;
         margin-left: 0px;
     }
-    
+    #pre-footer .row {
+      row-gap: 2em;
+    }
+    #pre-footer .contact-info{
+      padding: 5px;
+    }
   }
   @media (min-width: 992px) {
     .break-lg {

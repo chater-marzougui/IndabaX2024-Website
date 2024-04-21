@@ -40,6 +40,8 @@
       /* height: 100%; */
     }
   .partners{
+    max-width: calc(40vh * 4 + 10px * 3);
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
