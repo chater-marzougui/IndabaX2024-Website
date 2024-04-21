@@ -357,8 +357,8 @@ body{
 	top: 100%;
 	left: 0;
 	width: 100%;
-	height: 3px;
-	background: aliceblue;
+	height: 2px;
+	background: #d2b48c;
 	transition: 0.4s;
 }
 

@@ -103,7 +103,7 @@
     z-index: 1;
   }
   .partners figure.snip0058 figcaption h2 span {
-    font-weight: 800;
+    font-weight: 700;
   }
   .partners figure.snip0058 figcaption p {
     position: relative;
@@ -114,11 +114,12 @@
     min-height: 220px;
   }
   .partners figure.snip0058 figcaption p span {
-    padding: 1px 2px;
+    padding: 50px 2px;
     position: absolute;
+    font-size: 10px;
     top: 10vh;
   }
-  
+
   .partners figure .read-more {
       opacity: 0;
       border: 1px solid #3c4374;
