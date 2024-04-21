@@ -12,6 +12,10 @@
 	/*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
 }
 
+#hero, #poster-session,#stay-tuned, #Hackaton-Section, #About-Section, #Navbar,#Location-Section,#Footer{
+	user-select: none;
+}
+
 #hero, #poster-session, #Hackaton-Section, #About-Section, #Navbar, #poster-session,#Location-Section,#pre-footer,#Footer, #Sponsors-Section{
 	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", 
 	"Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
