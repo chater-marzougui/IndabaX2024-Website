@@ -18,11 +18,17 @@
 	content: "";
 	display:flex;
 	position: absolute;
-	width: 90%;
+	width: 100%;
 	right: 0;
 	height: 100%;
 	background: linear-gradient(to top, rgba(5, 26, 52, 1) 0%, rgba(0, 0, 0, 0) 40%);
 	z-index: 1;
+}
+
+@media only screen and (max-width : 768px) {
+	#Hackaton-Section .hackathon-panel.blue::before {
+		width: 0%;
+	}
 }
 
 #Hackaton-Section .hackathon-panel.blue {

@@ -143,12 +143,12 @@
     }
   }
 
-@media only screen and (max-width :1081px) {
+@media only screen and (max-width :1181px) {
   .partners figure.snip0058 figcaption p span {
     padding: 0px 0px;
     position: absolute;
-    font-size: 11px;
-    bottom: 10%;
+    font-size: 12px;
+    bottom: 9%;
     display: flex;
     width: 90%;
   }
