@@ -1077,3 +1077,54 @@ body{
 		font-size: 20px ;
 	}
 }
+
+@media only screen and (min-width: 2000px) {
+	#Navbar .jwpnavbar--scrolled {
+		height: 120px !important;
+		display: flex;
+	}
+	#Navbar .navbar1 {
+		scale: none;
+		column-gap: 2rem;
+		padding: 0 26vh;
+		align-self: center;
+	}
+	/* #Navbar .menu1 {
+		top : -8px;
+	} */
+	#Navbar .menu1-link {
+		font-size: 2rem;
+	}
+}
+#hero .banner-image {
+	transform: scale(.85);
+	filter: invert();
+}
+
+@media only screen and (min-width:3200px){
+	#Navbar .header1 {
+		scale: 1.52;
+	}
+	#Navbar .navbar1 {
+		scale: none;
+		column-gap: 1rem;
+		padding: 0 44vh;
+		align-self: center;
+	}
+	#hero .banner-inner p{
+		font-size: 45px;
+		width: 120%;
+	}
+	#hero .banner-image {
+		max-width: 50rem;
+		height: auto;
+		width: 200%;
+		transform: scale(1.5);
+		margin-right: 5rem;
+	}
+	#hero .banner-column {
+		grid-template-columns: 1fr max-content;
+		column-gap: 6rem ;
+		/* margin-top: 1.5rem; */
+	}
+}

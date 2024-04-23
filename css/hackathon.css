@@ -1,5 +1,5 @@
 #Hackaton-Section{
-	background: #053856;
+	background: #0f1b2c;
 	margin-top: -2px;
 }
 
@@ -99,7 +99,7 @@
     height: 100vh;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width:1600px) {
     #Hackaton-Section .hackathon-panel.red {
             width: 50vw;
     }
@@ -152,11 +152,108 @@
 }
 
 @media screen and (max-width: 375px) {
-
 	#Hackaton-Section .hackathon-panel h1 {
 		font-size: 2rem !important;
 	}
 
+}
+
+@media only screen and (min-width:1600px){
+	#Hackaton-Section .hackathon-panel.red {
+		width: 50vw;
+	}
+
+	#Hackaton-Section .hackathon-panel.orange {
+		width: 50vw;
+	}
+
+	#Hackaton-Section .hackathon-panel.purple {
+		width: 50vw;
+	}
+
+	#Hackaton-Section .hackathon-panel.green {
+		width: 50vw;
+	}
+	#Hackaton-Section div p:not(.notp) {
+		font-size: 46px !important;
+		text-align: justify;
+	}
+	#Hackaton-Section .hackathon-zindi{
+		height: 6rem !important;
+	}
+}
+
+@media only screen and (min-width:2400px){
+	#Hackaton-Section .hackathon-panel.red {
+		width: 50vw;
+	}
+
+	#Hackaton-Section .hackathon-panel.orange {
+		width: 50vw;
+	}
+
+	#Hackaton-Section .hackathon-panel.purple {
+		width: 50vw;
+	}
+
+	#Hackaton-Section .hackathon-panel.green {
+		width: 50vw;
+	}
+	#Hackaton-Section .hackathon-panel h2{
+		font-size: 5rem;
+	}
+	#Hackaton-Section div p:not(.notp) {
+		font-size: 60px !important;
+		text-align: justify;
+	}
+	#Hackaton-Section .hackathon-zindi{
+		height: 7rem !important;
+	}
+	#Hackaton-Section .hackathon-panel.blue h1 {
+		font-size: 6rem;
+	}
+	#Hackaton-Section .hackathon-panel.blue .regbut {
+		font-size: 4rem;
+		width: 350px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width:3000px){
+	#Hackaton-Section .hackathon-panel.red {
+		width: 50vw;
+	}
+
+	#Hackaton-Section .hackathon-panel.orange {
+		width: 50vw;
+	}
+
+	#Hackaton-Section .hackathon-panel.purple {
+		width: 50vw;
+	}
+
+	#Hackaton-Section .hackathon-panel.green {
+		width: 50vw;
+	}
+	#Hackaton-Section .hackathon-panel h2{
+		font-size: 7rem;
+	}
+	#Hackaton-Section div p:not(.notp) {
+		font-size: 80px !important;
+		text-align: justify;
+		width: 90%;
+	}
+	#Hackaton-Section .hackathon-zindi{
+		height: 7rem !important;
+	}
+	#Hackaton-Section .hackathon-panel.blue h1 {
+		font-size: 8rem;
+	}
+	#Hackaton-Section .hackathon-panel.blue .regbut {
+		font-size: 4.5rem;
+		width: 420px;
+		height: 140px;
+	}
 }
 
 #Hackaton-Section .regbut  {

@@ -89,7 +89,9 @@
         display: inline; 
     }
 }
-
+.col-lg-8 #map iframe{
+  height: 480px;
+}
 #Location-Section h1 {
   position: relative;
   color: aliceblue;
@@ -97,4 +99,20 @@
   text-align: center;
   width: 100%;
   font-size: xxx-large;
+}
+@media only screen and (min-width: 2000px){
+  .col-lg-8 {
+      flex: 0 0 auto;
+      width: 60vw !important;
+      /*height: auto;*/
+      height: 300%;
+      max-height: none;
+      max-width: none;
+  }
+  .col-lg-8 #map iframe{
+    height: 48vh;
+  }
+  #Location-Section h1 {
+    font-size: 8rem;
+  }
 }

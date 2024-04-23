@@ -483,3 +483,99 @@
 #Footer .col-md-4 a {
 	text-decoration: none;
 }
+
+@media only screen and (min-width:1400px){
+	#Footer .col-md-4 h5 {
+		font-size: 25px;
+	}
+	#Footer .col-md-4 a {
+		font-size: 18px;
+	}
+	#Footer .footer-icon.fa {
+		font-size: 24px;
+	}
+	#Footer .logo_footer{
+		scale: 1.15;
+	}
+	#Footer .container {
+		max-width: 88%;
+	}
+	#Footer .container small{
+		font-size: 14px;
+	}
+	#Footer .horizontal-line {
+		height: 3px;
+	}
+}
+
+@media only screen and (min-width:2000px){
+	#Footer .col-md-4 h5 {
+		font-size: 28px;
+	}
+	#Footer .col-md-4 a {
+		font-size: 20px;
+	}
+	#Footer .footer-icon.fa {
+		font-size: 27px;
+	}
+	#Footer .logo_footer{
+		scale: 1.3;
+	}
+	#Footer .container {
+		max-width: 74%;
+	}
+	#Footer .container small{
+		font-size: 18px;
+	}
+	#Footer .horizontal-line {
+		height: 3px;
+	}
+}
+
+
+@media only screen and (min-width:2600px){
+	#Footer .col-md-4 h5 {
+		font-size: 32px;
+	}
+	#Footer .col-md-4 a {
+		font-size: 24px;
+	}
+	#Footer .footer-icon.fa {
+		font-size: 30px;
+	}
+	#Footer .logo_footer{
+		scale: 1.5;
+	}
+	#Footer .container {
+		max-width: 94%;
+	}
+	#Footer .container small{
+		font-size: 30px;
+	}
+	#Footer .horizontal-line {
+		height: 5px;
+	}
+}
+@media only screen and (min-width:2600px){
+	#Footer .col-md-4 h5 {
+		font-size: 45px;
+	}
+	#Footer .col-md-4 a {
+		font-size: 35px;
+	}
+	#Footer .footer-icon.fa {
+		font-size: 40px;
+	}
+	#Footer .logo_footer{
+		scale: 1;
+	}
+	#Footer .container {
+		max-width: 94%;
+	}
+	#Footer .container small{
+		font-size: 30px;
+	}
+	#Footer .horizontal-line {
+		height: 5px;
+	}
+}

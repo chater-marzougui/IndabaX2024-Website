@@ -102,7 +102,7 @@
   justify-content: space-evenly;
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 720px) and (max-width:1600px) {
   #test3 a {
     width: 30%;
   }
@@ -178,5 +178,82 @@
   }
   #test3 #test3img2{
     width: 90%;
+  }
+}
+
+@media only screen and (min-width : 1600px){
+	#test3 a {
+    width: 30%;
+  }
+  #test3 #test3img1{
+    width: 95%;
+  }
+  #test3 #test3img2{
+    width: 100%;
+    position: relative;
+    top: -56px;
+  }
+  
+  #codeby span{
+    width:45%;
+    margin-left: 45%;
+    text-align:start;
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--ColorWhiteB);
+  }
+  #codeby a span {
+    font-weight: 800;
+    width: 70vw;
+    font-size: 4vw;
+    display: inline-block;
+    left: 10%;
+    position: relative;
+    color: var(--ColorWhiteA);
+  }
+}
+
+@media only screen and (min-width : 3200px){
+  .logowrapper h1 {
+    position: relative;
+    color: aliceblue;
+    padding: 8%;
+    padding-top: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 150px;
+    margin-top: 0;
+}
+	#test3 a {
+    width: 30%;
+  }
+  #test3 #test3img1{
+    width: 95%;
+  }
+  #test3 #test3img2{
+    width: 100%;
+    position: relative;
+    top: -86px;
+  }
+  
+  #codeby span{
+    width:45%;
+    margin-left: 45%;
+    text-align:start;
+    text-decoration: none;
+    font-size: 70px;
+    font-weight: 400;
+    color: var(--ColorWhiteB);
+  }
+  #codeby a span {
+    font-weight: 800;
+    width: 70vw;
+    font-size: 4vw;
+    display: inline-block;
+    left: 10%;
+    position: relative;
+    color: var(--ColorWhiteA);
   }
 }

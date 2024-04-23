@@ -116,7 +116,7 @@
     color: #000;
     margin: 0;
     font-size: 0.75em;
-    min-height: 220px;
+    min-height: 30vh;
     display: flex;
     display: -webkit-flex;
     align-items: center;
@@ -147,12 +147,43 @@
   .partners figure.snip0058 figcaption p span {
     padding: 0px 0px;
     position: absolute;
-    font-size: 12px;
+    font-size: 11px;
     bottom: 9%;
     display: flex;
     width: 90%;
   }
 }
+
+@media only screen and (min-width: 2000px){
+.partners figure.snip0058 figcaption p span {
+    padding: 0px 0px;
+    position: absolute;
+    font-size: 1.52rem;
+    bottom: 10%;
+    display: flex;
+    width: 90%;
+  }
+  #Sponsors-Section h1{
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (min-width: 3000px){
+  .partners figure.snip0058 figcaption p span {
+      padding: 0px 0px;
+      position: absolute;
+      font-size: 2rem;
+      bottom: 10%;
+      display: flex;
+      width: 90%;
+    }
+    #Sponsors-Section h1{
+      font-size: 8rem;
+    }
+    .figcaption p{
+    min-height: 604px;
+    }
+  }
 
   .partners figure .read-more {
       opacity: 0;
