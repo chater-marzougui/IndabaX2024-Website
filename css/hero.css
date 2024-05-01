@@ -540,6 +540,13 @@ body{
     margin-top: 1.7rem;
 }
 
+#hero .banner-links svg {
+	fill: white;
+    margin-top: -14px;
+    position: relative;
+    width: 30px;
+    height: 34px;
+}
 
 #hero .banner-links>* {
 	font-size: 2.5rem;
@@ -977,6 +984,10 @@ body{
 #hero .banner-links a:hover{
 	color: #225c97;
 	transform: scale(1.3);
+}
+
+#hero .banner-links svg:hover{
+	fill: #225c97;
 }
 
 @media only screen and (max-width: 320px){
