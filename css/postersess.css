@@ -100,15 +100,14 @@
   margin-top: -2px;
 }  
 #poster-session .rowPoster2 .col-md-6 {
-    padding: 5%;
     font-size: 23px;
-    width: 70%;
+    width: 55%;
 }
 
   #poster-session .btn1 {
 	display: inline-block;
 	font-family: inherit;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	font-weight: 500;
 	line-height: 1.5;
 	text-align: center;
@@ -198,7 +197,6 @@
   }
   #stay-tuned .container .rowSt .col-md-6 {
     width: 60%;
-    padding: 5%;
     z-index: 6;
     max-width: 900px;
   }
@@ -296,7 +294,7 @@ body{
     display: flex;
     font-size: larger;
     color: aliceblue;
-    flex-direction:row;
+    flex-direction: column;
     align-items: center;
     width: 70%;
 }
@@ -327,13 +325,11 @@ body{
     margin-bottom: 15px;
   }
   #poster-session .rowPoster2 .col-md-6 {
-    padding: 5%;
     font-size: 13px;
     width: 60%;
   }
   .regbutton {
-    width: 0%;
-    scale: 0.65;
+    scale: 0.8 !important;
   }
 }
 

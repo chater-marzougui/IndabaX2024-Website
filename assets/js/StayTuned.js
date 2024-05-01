@@ -3,6 +3,7 @@ var countDownBegin = new Date("May 18, 2024 08:30:00").getTime();
 var countDownFinish = new Date("May 19, 2024 17:00:00").getTime();
 
 var x = setInterval(function() {
+    const width = $( window ).width();
     var n = 1000;
     var now = new Date().getTime();
 
@@ -12,6 +13,7 @@ var x = setInterval(function() {
     if (distanceBegin < 0 && distanceFinish < 0) {
         clearInterval(x);
         n=10000;
+        const width = $( window ).width();
         var y = setInterval(function() {
         var now = new Date().getTime();
         /////
@@ -23,11 +25,16 @@ var x = setInterval(function() {
         /////
 
         
-        document.getElementById("countdown").innerHTML = "<div style='font-size: 12vh;font-weight:600;'>" + "00" + "<br><p style='font-size: 6vh;'>Days</p></div><br>"
-        + "<div style='font-size: 9.5vh;'>" + "00" + "<br><p style='font-size: 5vh;'>Hrs</p></div>"
-        + "<div style='font-size: 9.5vh;'> :" + "00" + "<br><p style='font-size: 5vh;'>Mn</p></div>"
-        + "<div style='font-size: 9.5vh;'> :" + "00" + "<br><p style='font-size: 5vh;'>Sec</p></div>";
-        document.getElementById("word-expired").innerHTML = "<div style='font-size: 9.5vh;'>See you at IndabaX "+nextyear+"</div>";
+        document.getElementById("countdown").innerHTML = "<div style='font-size: 15vh;font-weight:600;'>" + "00" + "<br><p style='font-size: 6vh;'>Days</p></div><br>"
+        + "<div style='font-size: 12.5vh;'>" + "00" + "<br><p style='font-size: 5vh;'>Hrs</p></div>"
+        + "<div style='font-size: 12.5vh;'> :" + "00" + "<br><p style='font-size: 5vh;'>Mn</p></div>"
+        + "<div style='font-size: 12.5vh;'> :" + "00" + "<br><p style='font-size: 5vh;'>Sec</p></div>";
+        if(width>719){
+            document.getElementById("word-expired").innerHTML = "<div style='font-size: 7.5vw;'>See you at IndabaX "+nextyear+"</div>";
+        }
+        else {
+            document.getElementById("word-expired").innerHTML = "<div style='font-size: 9.51vh;'>See you at IndabaX "+nextyear+"</div>";
+        }
         }, n);
     } 
     else if (distanceBegin > 0 && distanceFinish > 0){
@@ -41,19 +48,29 @@ var x = setInterval(function() {
     seconds = (seconds < 10) ? "0" + seconds : seconds;
     days = (days < 10) ? "0" + days : days;
     
-    document.getElementById("word-expired").innerHTML = "<div style='font-size: 9.5vh;'>Stay Tuned</div>";
+    if(width>719){
+        document.getElementById("word-expired").innerHTML = "<div style='font-size: 7.5vw;'>Stay Tuned</div>";
+    }
+    else{
+        document.getElementById("word-expired").innerHTML = "<div style='font-size: 12vw;'>Stay Tuned</div>";
+    }
 
-    document.getElementById("countdown").innerHTML = "<div style='font-size: 12vh;font-weight:600;'>" + days + "<br><p style='font-size: 6vh;'>Days</p></div><br>"
-    + "<div style='font-size: 9.5vh;'>" + hours + "<br><p style='font-size: 5vh;'>Hrs</p></div>"
-    + "<div style='font-size: 9.5vh;'> :" + minutes + "<br><p style='font-size: 5vh;'>Mn</p></div>"
-    + "<div style='font-size: 9.5vh;'> :" + seconds + "<br><p style='font-size: 5vh;'>Sec</p></div>";
+    document.getElementById("countdown").innerHTML = "<div style='font-size: 15vh;font-weight:600;'>" + days + "<br><p style='font-size: 6vh;'>Days</p></div><br>"
+    + "<div style='font-size: 12.5vh;'>" + hours + "<br><p style='font-size: 5vh;'>Hrs</p></div>"
+    + "<div style='font-size: 12.5vh;'> :" + minutes + "<br><p style='font-size: 5vh;'>Mn</p></div>"
+    + "<div style='font-size: 12.5vh;'> :" + seconds + "<br><p style='font-size: 5vh;'>Sec</p></div>";
     }
     else  {
-        document.getElementById("countdown").innerHTML = "<div style='font-size: 12vh;font-weight:600;'>" + "00" + "<br><p style='font-size: 6vh;'>Days</p></div><br>"
-        + "<div style='font-size: 9.5vh;'>" + "00" + "<br><p style='font-size: 5vh;'>Hrs</p></div>"
-        + "<div style='font-size: 9.5vh;'> :" + "00" + "<br><p style='font-size: 5vh;'>Mn</p></div>"
-        + "<div style='font-size: 9.5vh;'> :" + "00" + "<br><p style='font-size: 5vh;'>Sec</p></div>";
-        document.getElementById("word-expired").innerHTML = "<div style='font-size: 9.5vh;'>Event has Started</div>";
+        document.getElementById("countdown").innerHTML = "<div style='font-size: 15vh;font-weight:600;'>" + "00" + "<br><p style='font-size: 6vh;'>Days</p></div><br>"
+        + "<div style='font-size: 12.5vh;'>" + "00" + "<br><p style='font-size: 5vh;'>Hrs</p></div>"
+        + "<div style='font-size: 12.5vh;'> :" + "00" + "<br><p style='font-size: 5vh;'>Mn</p></div>"
+        + "<div style='font-size: 12.5vh;'> :" + "00" + "<br><p style='font-size: 5vh;'>Sec</p></div>";
+        if(width>719){
+            document.getElementById("word-expired").innerHTML = "<div style='font-size: 7.5vw;'>Event has Started</div>";
+        }
+        else{
+            document.getElementById("word-expired").innerHTML = "<div style='font-size: 11vw;'>Event has Started</div>";
+        }
     } 
 
 }, 1000);

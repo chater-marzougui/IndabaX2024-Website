@@ -26,6 +26,34 @@
 }
 
 @media only screen and (max-width : 768px) {
+
+
+	#Hackaton-Section .hackathon-panel.blue h1{
+		font-size: 3rem !important;
+		padding-top: 0 !important;
+		position: static !important;
+		top: none !important;
+		height: 13% !important;
+		border: 0px solid #DFEBF6 !important;
+		border-radius: 0px !important;
+		width: 100% !important;
+		background-color: transparent !important;
+		backdrop-filter: blur(0px) !important;
+	}
+	@media only screen and (max-width: 375px){
+		#Hackaton-Section .hackathon-panel.blue h1{
+			font-size: 2rem !important;
+			padding-top: none !important;
+			position: static !important;
+			height: 10% !important;
+			border: 0px solid #DFEBF6 !important;
+			border-radius: 0px !important;
+			width: 100% !important;
+			background-color: transparent !important;
+			backdrop-filter: blur(0px) !important;
+		}
+		
+	}
 	#Hackaton-Section .hackathon-panel.blue::before {
 		width: 0%;
 	}
@@ -58,7 +86,17 @@
 }
 
 #Hackaton-Section .hackathon-panel.blue h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
+	padding-top: 15px;
+	position: absolute;
+	top: 20%;
+	height: 38%;
+	border: 2px solid #DFEBF6;
+	border-radius: 50px;
+	width: 45%;
+	background-color: #0b172ec1;
+	backdrop-filter: blur(2px);
+	/* background-color: #0f1b2c2b; */
 }
 
 #Hackaton-Section .hackathon-panel h2 {

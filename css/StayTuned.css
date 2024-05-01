@@ -5,7 +5,7 @@
 }
 
 #stay-tuned .mb-4{
-	margin-bottom: 0.5rem !important;
+	margin-bottom: 2rem !important;
 }
 #stay-tuned #word-expired {
 	color: aliceblue;
@@ -93,6 +93,13 @@
 		align-items: center;
 	}
 
+	.note{
+		display: inline-block;
+		height: 98px !important;
+		width: 98px !important;
+		padding: 1px;
+		animation: roll 2.5s infinite;
+	}
 	#stay-tuned .container .rowSt .col-md-6 {
 		width: 80%;
 		padding: 5%;
@@ -105,19 +112,19 @@
 
 .note{
     display: inline-block;
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 140px;
     padding: 1px;
-    animation: roll 3s infinite;
+    animation: roll 2.5s infinite;
 }
 
 @media only screen and (min-width:1600px){
 	.note{
 		display: inline-block;
-		height: 200px;
-		width: 200px;
+		height: 260px;
+		width: 260px;
 		padding: 1px;
-		animation: roll 3s infinite;
+		animation: roll 2.5s infinite;
 	}
 	
 }
@@ -125,13 +132,13 @@
 @media only screen and (min-width:1600px){
 	.note{
 		display: inline-block;
-		height: 200px;
-		width: 200px;
+		height: 260px;
+		width: 260px;
 		padding: 1px;
-		animation: roll 3s infinite;
+		animation: roll 2.5s infinite;
 	}
 	#revgear {
-		animation: roll2 3s infinite;
+		animation: roll2 2.5s infinite;
 		top: 50px !important;
 	}
 	
@@ -139,10 +146,10 @@
 @media only screen and (min-width:3000px){
 	.note{
 		display: inline-block;
-		height: 14vh;
-		width: 14vh;
+		height: 16vh;
+		width: 16vh;
 		padding: 1px;
-		animation: roll 3s infinite;
+		animation: roll 2.5s infinite;
 	}
 	#stay-tuned .container .rowSt .col-md-6 {
 		scale: 1.5;
@@ -157,7 +164,7 @@
 
 
 #revgear {
-	animation: roll2 3s infinite;
+	animation: roll2 2.5s infinite;
 	top: 8%;
 }
 

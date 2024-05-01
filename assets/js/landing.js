@@ -62,7 +62,7 @@ function removeCode() {
 
 
 
-
+/*
 const buttons = document.querySelectorAll('.btn1, .regbutton , .menu1-block,.regbut');
 
 gsap.utils.toArray(buttons).forEach((button) => {
@@ -102,3 +102,4 @@ function togglepopup() {
 function toggleFAQpopup() {
   document.getElementById("FAQpopup").classList.toggle("active");
 }
+*/
