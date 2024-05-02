@@ -1,7 +1,5 @@
-
 const descriptionPanel = document.querySelector('.description-panel');
 const widthp = window.innerWidth;
-console.log(widthp);
 gsap.registerPlugin(ScrollTrigger);
     if(widthp<=768){
     gsap.utils.toArray(".hackathon-panel.red").forEach((panel, i) => {

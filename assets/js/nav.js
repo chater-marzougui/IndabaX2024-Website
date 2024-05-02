@@ -97,7 +97,6 @@ window.addEventListener('scroll', function() {
      }
      }
    });
-   console.log('Current section:', currentSection);
    navLinks.forEach(link => {
      link.classList.remove('active'); // Remove 'active' class from all links
      if (link.getAttribute('href').substring(1) === currentSection) {

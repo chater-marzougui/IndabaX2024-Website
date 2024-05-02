@@ -61,42 +61,22 @@ function removeCode() {
 }
 
 
-
-/*
-const buttons = document.querySelectorAll('.btn1, .regbutton , .menu1-block,.regbut');
-
-gsap.utils.toArray(buttons).forEach((button) => {
-  let boundingRect = button.getBoundingClientRect(),
-    updateBoundingRect = () => (boundingRect = button.getBoundingClientRect());
-
-  window.addEventListener("resize", updateBoundingRect);
-  window.addEventListener("scroll", updateBoundingRect);
-
-  let xTo = gsap.quickTo(button, "x", { duration: 0.8, ease: "power3" }),
-    yTo = gsap.quickTo(button, "y", { duration: 0.8, ease: "power3" }),
-    leaveTween;
-  button.addEventListener("mouseenter", (e) => leaveTween && leaveTween.kill());
-  button.addEventListener("mousemove", (e) => {
-    const mousePoxX = e.clientX - boundingRect.left;
-    const mousePoxY = e.clientY - boundingRect.top;
-    xTo((mousePoxX - boundingRect.width / 2) * 0.15);
-    yTo((mousePoxY - boundingRect.height / 2) * 0.15);
-  });
-  button.addEventListener("mouseleave", () => {
-    xTo.tween.pause().invalidate();
-    yTo.tween.pause().invalidate();
-    leaveTween = gsap.to(button, {
-      x: 0,
-      y: 0,
-      duration: 0.8,
-      ease: "elastic.out(1,0.3)",
-    });
-  });
-});
-*/
-
+var RcountDownDate = new Date("May 6, 2024 08:00:00").getTime();
 function togglepopup() {
-  document.getElementById("popup").classList.toggle("active");
+  var now = new Date().getTime();
+  var distance = RcountDownDate - now;
+
+  
+  if (distance > 0) {
+      document.getElementById("popup").classList.toggle("active");
+  }
+  else{
+    if (document.getElementById("popup").classList.contains("active") && distance <= 0) {
+      document.getElementById("popup").classList.toggle("active");
+    } else {
+      window.open("https://forms.gle/21TWeVBLsu2optmAA", "_blank");
+    }
+  }
 }
 
 function toggleFAQpopup() {
