@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 #poster-session {
     height: 140vh;
     display: flex;
@@ -102,6 +100,7 @@
 #poster-session .rowPoster2 .col-md-6 {
     font-size: 23px;
     width: 55%;
+    scale: 1.25;
 }
 
   #poster-session .btn1 {
@@ -266,7 +265,6 @@ body{
 
 .textforphone {
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1cm;
     opacity: 0;
     z-index: 5;
@@ -392,7 +390,7 @@ width: 70%;
 max-width: 720px;
 z-index: 655;
 height: auto;
-padding-bottom: 8%;
+padding-bottom: 3vw;
 padding-left: 5px;
 padding-right: 5px;
 border: 2px solid #bfd6ed;
@@ -444,7 +442,6 @@ align-items: center;
   left: 10%;
   right: 10%;
   color: aliceblue;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 150%;
   text-align: center;
 }
@@ -485,7 +482,6 @@ transition: scale 0.3s ease;
 #FAQpopup .main-title {
 margin-bottom: 0.5rem;
 text-align: center;
-font-family: "Abril Fatface", cursive;
 font-size: 2.32rem;
 color: #d2b48c;
 display: flex;
@@ -503,7 +499,6 @@ border-bottom: 1px solid #d2b48c;
 width: 90%;
 margin: auto;
 margin-top: 10%;
-font-family: "Source Sans Pro", sans-serif;
 }
 a.template {
   color: #d2b48c;

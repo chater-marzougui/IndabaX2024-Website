@@ -79,8 +79,11 @@ window.addEventListener('scroll', function() {
    sections.forEach(section => {
      const sectionTop = section.offsetTop;
      const sectionHeight = section.clientHeight;
-     const scrollPosition = window.scrollY || window.pageY; 
+     const scrollPosition = window.scrollY+50 || window.pageY; 
      
+     console.log(scrollPosition);
+     console.log(sectionTop);
+     console.log(sectionHeight);
      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
          currentSection = section.id;
          if (currentSection === "five") {
@@ -98,9 +101,9 @@ window.addEventListener('scroll', function() {
      }
    });
    navLinks.forEach(link => {
-     link.classList.remove('active'); // Remove 'active' class from all links
+     link.classList.remove('active');
      if (link.getAttribute('href').substring(1) === currentSection) {
-       link.classList.add('active'); // Add 'active' class to the link corresponding to the current section
+       link.classList.add('active');
      }
    });
  });
