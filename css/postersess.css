@@ -23,7 +23,7 @@
 	position: absolute;
 	/*transform: translateY(-21vh);*/
 	width: 100%;
-	height: 140vh;
+	height: 141vh;
 	background: linear-gradient(to bottom, rgba(5, 26, 52, 1) 0%, rgba(0, 0, 0, 0) 40%);
 	z-index: 1;
 }
@@ -447,7 +447,10 @@ align-items: center;
 }
 
 @media only screen and (max-width : 420px){
-#FAQpopup button{
+.amp h1{
+  font-size: 40px !important;
+}
+  #FAQpopup button{
   left: 15%;
 }
 #FAQpopup p {

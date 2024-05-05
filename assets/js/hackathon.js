@@ -28,7 +28,7 @@ if(widthp>768){
         ScrollTrigger.create({
             trigger: panel,
             start: "top top",
-            endTrigger: "#poster-session",
+            endTrigger: "#speaker-section",
             end: "top bottom",
             pin: true,
             pinSpacing: false
@@ -38,7 +38,7 @@ if(widthp>768){
         scrollTrigger: {
             trigger: descriptionPanel,
             start: "top top",
-            endTrigger: "#poster-session",
+            endTrigger: "#speaker-section",
             end: "top bottom",
             pin: true,
             pinSpacing: false,

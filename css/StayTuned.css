@@ -65,6 +65,10 @@
 #countdown {
     font-family: 'sen', sans-serif !important;
 }
+
+#stay-tuned .container{
+	max-width: 100%; 
+}
 .col-md-6 {
     scale: 1;
 }

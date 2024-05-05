@@ -125,7 +125,7 @@
   .partners figure.snip0058 figcaption p span {
     padding: 0px 0px;
     position: absolute;
-    font-size: 78%;
+    font-size: 0.71rem;
     bottom: 6%;
     position: -webkit-sticky;
     display: flex;
@@ -137,6 +137,16 @@
       padding: 0px 0px;
       position: absolute;
       font-size: 11px;
+      bottom: 6%;
+      display: flex;
+      width: 90%;
+    }
+  }
+  @media only screen and (min-width :1600px) {
+    .partners figure.snip0058 figcaption p span {
+      padding: 0px 0px;
+      position: absolute;
+      font-size: 1.5vh;
       bottom: 10%;
       display: flex;
       width: 90%;
@@ -169,7 +179,7 @@
 .partners figure.snip0058 figcaption p span {
     padding: 0px 0px;
     position: absolute;
-    font-size: 1.52rem;
+    font-size: 1.4rem;
     bottom: 10%;
     display: flex;
     width: 90%;

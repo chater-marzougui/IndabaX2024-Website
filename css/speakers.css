@@ -1,0 +1,280 @@
+
+
+#speaker-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.spacebetweensections{
+    height:100px;
+}
+
+#speaker-section .sptitle{
+    color: aliceblue;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+#speaker-section .col-md-4{
+    display: flex;
+    justify-content: center;
+    width: 46vh;
+}
+
+#speaker-section .speakersrow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    width: 100%;
+    flex: 0 0 75%;
+    justify-self: center;
+}
+@media only screen and (max-width:1080px) {
+    #speaker-section .speakersrow{
+        flex: 0 0 100% !important;
+    }
+}
+
+#speaker-section .card{
+    border-radius: 15px;
+	position: relative;
+	height: 540px;
+    background-color: transparent;
+	width: 350px;
+    border-color: transparent;
+    justify-self: center;
+	margin: 30px 0 auto;
+	transition: all 1.3s ease;
+	perspective: 1200px;
+	&:hover{
+        p{
+            opacity: 1 !important;
+        }
+        .splinks{
+            opacity: 1 !important;
+        }
+        h2 {
+            opacity: 1 !important;
+        }
+		.cover{
+			transform: rotateX(0deg) rotateY(-180deg);
+			&:before{
+				transform: translateZ(30px);
+			}
+			&:after{
+				background-color: black;
+			}
+			h1{
+				transform: translateZ(100px);
+			}
+			.job{
+				transform: translateZ(60px);
+			}
+			a{
+				transform: translateZ(-60px) rotatey(-180deg);
+			}
+		}
+	}
+	
+	.cover{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+        display: flex;
+        justify-content: center;
+		transform-style: preserve-3d;
+  	    transition: all 1.3s ease;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+        &:before{
+            content: '';
+            position: absolute;
+            border: 5px solid #d2b48c;
+            box-shadow: 0 0 12px rgba(0,0,0,.3); 
+            top:15px;
+            left:15px;
+            right:15px;
+            bottom:140px;
+            z-index: 2;
+            transition: all 1.3s ease;
+            transform-style: preserve-3d;
+            transform: translateZ(0px);
+        }
+		&:after{
+            border-radius: 15px;
+			content: '';
+			position: absolute;
+			top:0px;
+			left:0px;
+			right:0px;
+			bottom:0px;
+			z-index: 2;
+			transition: ease all 1.3s;
+			background: rgba(0,0,0,.2);
+		}
+		h1{
+			font-weight: 600;
+			position: absolute;
+            align-self: center;
+			bottom: 70px;
+            text-align: center;
+			color: white;
+			transform-style: preserve-3d;
+  		    transition: all 1.3s ease;
+			z-index:3;
+			font-size: 1.9em;
+			transform: translateZ(0px);
+		}
+		.job{
+			font-weight: 200;
+			position: absolute;
+            margin-bottom: -0.5em; 
+			bottom: 32px;
+            width: 90%;
+			color: white;
+			transform-style: preserve-3d;
+  		    transition: all 1.3s ease;
+			z-index:4;
+			font-size: 1.5em;
+            text-align: center;
+			transform: translateZ(0px);
+		}
+	}
+	.card-back{
+		position: absolute;
+		height: 100%;
+        border-radius: 15px;
+		width: 100%;
+		background: #0b0f08;
+		transform-style: preserve-3d;
+    	transition: all 1.3s ease;
+		transform: translateZ(-1px);
+		display: flex;
+        flex-direction: column;
+		align-items: center;
+		justify-content: center;
+        p{
+            color: aliceblue;
+            transform-style: preserve-3d;
+            transform: translateZ(-8px) rotateY(180deg) !important;
+            transition: opacity 1s;
+            font-size: 12.5px;
+            text-align: justify;
+            width: 93%;
+            opacity: 0;
+            top: 38px;
+            position: absolute;
+        }
+        h2{
+            color: aliceblue;
+            transform-style: preserve-3d;
+            transform: translateZ(-15px) rotateY(180deg) !important;
+            opacity: 0;
+            transition: opacity 1s;
+            position: absolute;
+            top: 5px;
+            font-size: 22px;
+        }
+        .splinks{
+            position: absolute;
+            display: flex;
+            bottom: 12px;
+            border-radius: 15px;
+            justify-content: space-around;
+            width: 90%;
+            border: 2px solid #d2b48c;
+            flex-direction: row;
+            opacity: 0;
+            transition: opacity 1s;
+            z-index: 5;
+        }
+		a{
+			transform-style: preserve-3d;
+			transition: transform 1.3s ease, scale 0.4s ease;
+			transform: translateZ(-5px);
+			background: transparent;
+			font-weight: 200;
+			font-size: 2em;
+			color: white;
+            z-index: 5550;
+            &:hover{
+                color: #d2b48c;
+                scale: 1.4;
+            }
+		}
+	}
+}
+
+@media only screen and (min-width:1920px) {
+    #speaker-section .card {
+        height: 650px;
+        width: 470px;
+    }
+    #speaker-section .card .card-back .spbiography{
+        font-size: 16px !important;
+    }
+    .spacebetweensections{
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width:2560px) {
+    #speaker-section .card {
+        height: 750px;
+        width: 550px;
+    }
+    #speaker-section .card .card-back .spbiography{
+        font-size: 18.5px !important;
+    }
+    #speaker-section .splinks a {
+        font-size: 45px !important;
+    }
+    #speaker-section .splinks {
+        border: 4px solid #d2b48c !important;
+    }
+    .cover::before{
+        border: 5px solid #d2b48c !important;
+        box-shadow: 0 0 12px rgba(0,0,0,.3) !important; 
+        top:25px !important;
+        left:25px !important;
+        right:25px !important;
+        bottom:140px !important;
+    }
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #speaker-section .gradient {
+    position: absolute;
+    --size: 450px;
+    --speed: 30s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  
+    width: var(--size);
+    height: 600px;
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(#001D5A , #075388);
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    opacity: 0.4;
+  }
+
+.col-md-4:nth-child(1) .cover::before{
+    border-radius: 15px;
+    background: url(../assets/images/FirasBH.jpg) 0 -65px / cover;
+}
+
+.col-md-4:nth-child(2) .cover::before{
+    border-radius: 15px;
+    background: url(../assets/images/AmalRannenTriki.jpg) 0 0 / cover;
+}

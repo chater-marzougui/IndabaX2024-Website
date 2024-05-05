@@ -51,7 +51,7 @@ function vanish() {
       },
       "+=1.5"
     );
-  }, 1000);
+  }, 1);
 } 
 
 function removeCode() {
