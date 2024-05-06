@@ -4,10 +4,15 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .spacebetweensections{
-    height:100px;
+    margin-top: 50px;
+    height:150px;
+    width: 100%;
+    z-index: 55;
+    background :linear-gradient(to bottom, rgb(5, 26, 52 , 0.0) 20%,rgb(5, 26, 52 , 0.0) 50%, #051a34 90%);
 }
 
 #speaker-section .sptitle{
@@ -19,28 +24,28 @@
 #speaker-section .col-md-4{
     display: flex;
     justify-content: center;
-    width: 46vh;
+    width: 40vh;
 }
 
 #speaker-section .speakersrow{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 30px;
-    width: 100%;
-    flex: 0 0 75%;
+    align-content: center;
+    column-gap: 50px;
+    width: 86%;
     justify-self: center;
 }
 @media only screen and (max-width:1080px) {
     #speaker-section .speakersrow{
-        flex: 0 0 100% !important;
+        width: 99%;
     }
 }
 
 #speaker-section .card{
     border-radius: 15px;
 	position: relative;
-	height: 540px;
+	height: 450px;
     background-color: transparent;
 	width: 350px;
     border-color: transparent;
@@ -67,7 +72,7 @@
 				background-color: black;
 			}
 			h1{
-				transform: translateZ(100px);
+				transform: translateZ(60px);
 			}
 			.job{
 				transform: translateZ(60px);
@@ -101,19 +106,21 @@
             z-index: 2;
             transition: all 1.3s ease;
             transform-style: preserve-3d;
-            transform: translateZ(0px);
+            transform: translateZ(10px);
         }
 		&:after{
             border-radius: 15px;
 			content: '';
 			position: absolute;
-			top:0px;
-			left:0px;
-			right:0px;
-			bottom:0px;
+			top:15px;
+			left:15px;
+			right:15px;
+			bottom:140px;
 			z-index: 2;
-			transition: ease all 1.3s;
+			transition: all 1.3s ease;
 			background: rgba(0,0,0,.2);
+            transform-style: preserve-3d;
+            transform: translateZ(10px);
 		}
 		h1{
 			font-weight: 600;
@@ -161,9 +168,9 @@
             transform-style: preserve-3d;
             transform: translateZ(-8px) rotateY(180deg) !important;
             transition: opacity 1s;
-            font-size: 12.2px;
+            font-size: 13.4px;
             text-align: justify;
-            width: 95%;
+            width: 96%;
             opacity: 0;
             top: 38px;
             position: absolute;
@@ -180,7 +187,7 @@
         }
         .splinks{
             transform-style: preserve-3d;
-			transform: translateZ(-50px);
+			transform: translateZ(-25px);
             position: absolute;
             display: flex;
             bottom: 16px;
@@ -190,6 +197,8 @@
             border: 2px solid #d2b48c;
             flex-direction: row;
             opacity: 0;
+            box-shadow: 4px 4px 15px #d2b48c;
+            background-color: #d2b48c15;
             transition: opacity 1s;
             z-index: 5;
         }
