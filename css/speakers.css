@@ -161,9 +161,9 @@
             transform-style: preserve-3d;
             transform: translateZ(-8px) rotateY(180deg) !important;
             transition: opacity 1s;
-            font-size: 12.5px;
+            font-size: 12.2px;
             text-align: justify;
-            width: 93%;
+            width: 95%;
             opacity: 0;
             top: 38px;
             position: absolute;
