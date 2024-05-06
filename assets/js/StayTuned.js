@@ -2,7 +2,7 @@
 var countDownBegin = new Date("May 18, 2024 08:30:00").getTime();
 var countDownFinish = new Date("May 19, 2024 16:00:00").getTime();
 var registrationDate = new Date("May 6, 2024 20:00:00").getTime();
-var registrationDatedead = new Date("May 16, 2024 20:00:00").getTime();
+var registrationDatedead = new Date("May 14, 2024 20:00:00").getTime();
 
 var x = setInterval(function() {
     const width = $( window ).width();

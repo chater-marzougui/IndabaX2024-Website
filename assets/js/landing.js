@@ -61,7 +61,7 @@ function removeCode() {
 }
 
 
-var RcountDownDate = new Date("May 6, 2024 08:00:00").getTime();
+var RcountDownDate = new Date("May 6, 2024 20:00:00").getTime();
 function togglepopup() {
   var now = new Date().getTime();
   var distance = RcountDownDate - now;
@@ -74,7 +74,7 @@ function togglepopup() {
     if (document.getElementById("popup").classList.contains("active") && distance <= 0) {
       document.getElementById("popup").classList.toggle("active");
     } else {
-      window.open("https://forms.gle/21TWeVBLsu2optmAA", "_blank");
+      window.open("https://forms.gle/LTQrw59pus1jWPaC7", "_blank");
     }
   }
 }
