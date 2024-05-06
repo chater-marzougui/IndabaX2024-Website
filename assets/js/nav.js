@@ -81,9 +81,6 @@ window.addEventListener('scroll', function() {
      const sectionHeight = section.clientHeight;
      const scrollPosition = window.scrollY+50 || window.pageY; 
      
-     console.log(scrollPosition);
-     console.log(sectionTop);
-     console.log(sectionHeight);
      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
          currentSection = section.id;
          if (currentSection === "five") {
