@@ -468,12 +468,12 @@ height: 30px;
 text-align: center;
 align-content: center;
 cursor: pointer;
-transition: scale 0.3s ease;
+transition: all 0.3s ease;
 }
 
 #FAQpopup .close:hover{
-scale: 1.2;
-transition: scale 0.3s ease;
+  scale: 1.2;
+  transform: rotateZ(-45deg);
 }
 
 #FAQpopup:target{

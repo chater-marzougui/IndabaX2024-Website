@@ -49,10 +49,10 @@ var x = setInterval(function() {
 
         if(registrationdistance<0 && registrationdistancedead>0){ 
             if(width>719){
-                document.getElementById("word-expired").innerHTML = "<div style='font-size: 5vw;'>Registration is open!</div>";
+                document.getElementById("word-expired").innerHTML = "<div style='font-size: 5vw;'>Registration is Open!</div>";
             }
             else{
-                document.getElementById("word-expired").innerHTML = "<div style='font-size: 10vw;'>Registration is open!</div>";
+                document.getElementById("word-expired").innerHTML = "<div style='font-size: 10vw;'>Registration is Open!</div>";
             }
         }
         else{ 
