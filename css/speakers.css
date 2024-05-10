@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 #speaker-section {
     display: flex;
     justify-content: center;
@@ -42,220 +40,254 @@
     }
 }
 
-#speaker-section .card{
-    border-radius: 15px;
-	position: relative;
-	height: 450px;
-    background-color: transparent;
-	width: 350px;
-    border-color: transparent;
-    justify-self: center;
-	margin: 30px 0 auto;
-	transition: all 1.3s ease;
-	perspective: 1200px;
-	&:hover{
-        p{
-            opacity: 1 !important;
-        }
-        .splinks{
-            opacity: 1 !important;
-        }
-        h2 {
-            opacity: 1 !important;
-        }
-		.cover{
-			transform: rotateX(0deg) rotateY(-180deg);
-			&:before{
-				transform: translateZ(30px);
-			}
-			&:after{
-				background-color: black;
-			}
-			h1{
-				transform: translateZ(60px);
-			}
-			.job{
-				transform: translateZ(60px);
-			}
-			.splinks a{
-				transform: rotatey(-180deg);
-			}
-		}
-	}
-	
-	.cover{
-		position: absolute;
-		height: 100%;
-		width: 100%;
-        display: flex;
-        justify-content: center;
-		transform-style: preserve-3d;
-  	    transition: all 1.3s ease;
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
-        &:before{
-            content: '';
-            position: absolute;
-            border: 5px solid #d2b48c;
-            box-shadow: 0 0 12px rgba(0,0,0,.3); 
-            top:15px;
-            left:15px;
-            right:15px;
-            bottom:140px;
-            z-index: 2;
-            transition: all 1.3s ease;
-            transform-style: preserve-3d;
-            transform: translateZ(10px);
-        }
-		&:after{
-            border-radius: 15px;
-			content: '';
-			position: absolute;
-			top:15px;
-			left:15px;
-			right:15px;
-			bottom:140px;
-			z-index: 2;
-			transition: all 1.3s ease;
-			background: rgba(0,0,0,.2);
-            transform-style: preserve-3d;
-            transform: translateZ(10px);
-		}
-		h1{
-			font-weight: 600;
-			position: absolute;
-            align-self: center;
-			bottom: 70px;
-            text-align: center;
-			color: white;
-			transform-style: preserve-3d;
-  		    transition: all 1.3s ease;
-			z-index:3;
-			font-size: 1.9em;
-			transform: translateZ(0px);
-		}
-		.job{
-			font-weight: 200;
-			position: absolute;
-            margin-bottom: -0.5em; 
-			bottom: 28px;
-            width: 90%;
-			color: white;
-			transform-style: preserve-3d;
-  		    transition: all 1.3s ease;
-			z-index:4;
-			font-size: 1.35em;
-            text-align: center;
-			transform: translateZ(0px);
-		}
-	}
-	.card-back{
-		position: absolute;
-		height: 100%;
-        border-radius: 15px;
-		width: 100%;
-		background: #1F385B;
-		transform-style: preserve-3d;
-    	transition: all 1.3s ease;
-		transform: translateZ(-1px);
-		display: flex;
-        flex-direction: column;
-		align-items: center;
-		justify-content: center;
-        p{
-            color: aliceblue;
-            transform-style: preserve-3d;
-            transform: translateZ(-8px) rotateY(180deg) !important;
-            transition: opacity 1s;
-            font-size: 17px;
-            text-align: justify;
-            width: 92%;
-            opacity: 0;
-            top: 38px;
-            position: absolute;
-        }
-        h2{
-            color: aliceblue;
-            transform-style: preserve-3d;
-            transform: translateZ(-5px) rotateY(180deg) !important;
-            opacity: 0;
-            transition: opacity 1s;
-            position: absolute;
-            top: 5px;
-            font-size: 22px;
-        }
-        .splinks{
-            transform-style: preserve-3d;
-			transform: translateZ(-25px);
-            position: absolute;
-            display: flex;
-            bottom: 16px;
-            border-radius: 15px;
-            justify-content: space-around;
-            width: 90%;
-            border: 2px solid #d2b48c;
-            flex-direction: row;
-            opacity: 0;
-            box-shadow: 4px 4px 15px #d2b48c;
-            background-color: #d2b48c15;
-            transition: opacity 1s;
-            z-index: 5;
-        }
-		.splinks a{
-			transform-style: preserve-3d;
-			transition: transform 1.3s ease, scale 0.4s ease;
-			transform: translateZ(-5px);
-			background: transparent;
-			font-weight: 200;
-			font-size: 2em;
-			color: white;
-            z-index: 5550;
-            &:hover{
-                color: #d2b48c;
-                scale: 1.4;
-            }
-		}
-        button {
-            transform-style: preserve-3d;
-            transform: rotateY(180deg) translateZ(15px);
-            width: 130px;
-            height: 40px;
-            border-radius: 20px;
-            position: absolute;
-            bottom: 75px;
-            color: aliceblue;
-            border-color: transparent;
-            font-size: 17px;
-            box-shadow: -1px 3px 4px #d2b48c89;
-            /* z-index: 9999; */
-            transition: all 0.4s ease-in;
-            background-color: #d2b48c;
-            &:hover{
-                background-color: aliceblue;
-                color: #051a34;
-            }
-        }
-        svg{
-            fill: aliceblue;
-            &:hover{
-                fill:#d2b48c;
-            }
-        }
-        .twittersvg{
-            display: flex;
-            width: 28px;
-        }
-	}
+#speaker-section {
+    position: relative;
 }
 
+.card {
+    border-radius: 15px;
+    position: relative;
+    height: 450px;
+    background-color: transparent;
+    width: 350px;
+    border-color: transparent;
+    justify-self: center;
+    margin: 30px 0 auto;
+    transition: all 1.3s ease;
+    perspective: 1200px;
+}
+
+.card:hover p,
+.card:hover .splinks,
+.card:hover h2 {
+    opacity: 1 !important;
+}
+
+.card:hover .cover {
+    transform: rotateX(0deg) rotateY(-180deg);
+}
+
+.card:hover .cover:before {
+    transform: translateZ(30px);
+}
+
+.card:hover .cover:after {
+    background-color: black;
+}
+
+.card:hover .cover h1 {
+    transform: translateZ(60px);
+}
+
+.card:hover .cover .job {
+    transform: translateZ(60px);
+}
+
+.card:hover .cover .splinks a {
+    transform: rotatey(-180deg);
+}
+
+.cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: all 1.3s ease;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.cover:before {
+    content: '';
+    position: absolute;
+    border: 5px solid #d2b48c;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 140px;
+    z-index: 2;
+    transition: all 1.3s ease;
+    transform-style: preserve-3d;
+    transform: translateZ(10px);
+}
+
+.cover:after {
+    border-radius: 15px;
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 140px;
+    z-index: 2;
+    transition: all 1.3s ease;
+    background: rgba(0, 0, 0, .2);
+    transform-style: preserve-3d;
+    transform: translateZ(10px);
+}
+
+.cover h1 {
+    font-weight: 600;
+    position: absolute;
+    align-self: center;
+    bottom: 70px;
+    text-align: center;
+    color: white;
+    transform-style: preserve-3d;
+    transition: all 1.3s ease;
+    z-index: 3;
+    font-size: 1.9em;
+    transform: translateZ(0px);
+}
+
+.cover .job {
+    font-weight: 200;
+    position: absolute;
+    margin-bottom: -0.5em;
+    bottom: 28px;
+    width: 90%;
+    color: white;
+    transform-style: preserve-3d;
+    transition: all 1.3s ease;
+    z-index: 4;
+    font-size: 1.35em;
+    text-align: center;
+    transform: translateZ(0px);
+}
+
+.card-back {
+    position: absolute;
+    height: 100%;
+    border-radius: 15px;
+    width: 100%;
+    background: #1F385B;
+    transform-style: preserve-3d;
+    transition: all 1.3s ease;
+    transform: translateZ(-1px);
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.card-back dialog{
+    justify-self: center;
+}
+
+
+.card-back p {
+    color: aliceblue;
+    transform-style: preserve-3d;
+    transform: translateZ(-8px) rotateY(180deg) !important;
+    transition: opacity 1s;
+    font-size: 17px;
+    text-align: justify;
+    width: 92%;
+    opacity: 0;
+    top: 38px;
+    position: absolute;
+}
+
+.card-back h2 {
+    color: aliceblue;
+    transform-style: preserve-3d;
+    transform: translateZ(-5px) rotateY(180deg) !important;
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    top: 5px;
+    font-size: 22px;
+}
+
+.card-back .splinks {
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    position: absolute;
+    display: flex;
+    bottom: 16px;
+    border-radius: 15px;
+    justify-content: space-around;
+    width: 90%;
+    height: 45px;
+    border: 2px solid #d2b48c;
+    flex-direction: row;
+    opacity: 0;
+    box-shadow: 4px 4px 15px #d2b48c;
+    background-color: #d2b48c15;
+    transition: opacity 1s;
+    z-index: 5;
+}
+
+.card-back .splinks a {
+    transform-style: preserve-3d;
+    transition: transform 1.3s ease, scale 0.4s ease;
+    transform: translateZ(-5px);
+    background: transparent;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    z-index: 5550;
+}
+
+.card-back .splinks a:hover {
+    color: #d2b48c;
+    scale: 1.4;
+}
+
+.card-back button {
+    transform-style: preserve-3d;
+    transform: rotateY(180deg) translateZ(15px);
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 75px;
+    color: aliceblue;
+    border-color: transparent;
+    font-size: 17px;
+    box-shadow: -1px 3px 4px #d2b48c89;
+    transition: all 0.4s ease-in;
+    background-color: #d2b48c;
+}
+
+.card-back button:hover {
+    background-color: aliceblue;
+    color: #051a34;
+}
+
+.card-back svg {
+    fill: aliceblue;
+    -webkit-fill: aliceblue;
+    -moz-fill: aliceblue;
+}
+
+.card-back svg:hover {
+    fill: #d2b48c;
+}
+
+.card-back .twittersvg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    padding-bottom: 1%;
+}
 
 dialog {
     padding: 1rem 0rem 3rem 0rem;
     background: rgb(29 29 72 / 73%);
     width: 30%;
     min-width: 320px;
-    display: flex;
+    display: none;
     justify-self: center;
     align-self: center;
     height: 400px;
@@ -264,80 +296,80 @@ dialog {
     border: 0;
     box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
     animation: fadeIn 1s ease both;
-    &::backdrop {
-        animation: fadeIn 1s ease both;
-        background: rgba(0, 0, 0, 0.5); 
-        z-index: 2;
-        backdrop-filter: blur(20px);
-
-        /* position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        backdrop-filter: blur(5px); 
-        z-index: 650; 
-        display: flex;
-        justify-content: center;
-        align-items: center;  */
-    }
-    .x {
-        border: none;
-
-        position: absolute;
-        width: 30px !important;
-        height: 30px !important;
-        top: 0px;
-        right: 10px;
-        transition: ease filter, transform 0.3s;
-        cursor: pointer;
-        z-index: 5;
-        transform-origin: center;
-        background-color: transparent !important;
-        &:hover {
-            transform: scale(1.1);
-        }
-        img {
-            width: 30px !important;
-            height: 30px !important;
-            filter: blur(0);
-            transition: all 0.4s ease;
-            &:hover{
-                scale: 1.3;
-                transform: rotateZ(45deg);
-            }
-        }
-    }
-    .splinks2{
-        position: absolute;
-        bottom: 0;
-        transform: none !important;
-        width: 100%;
-        display: flex;
-        bottom: 0;
-        border-top: 2px solid #d2b48c;
-        justify-content: space-around !important;
-        justify-content: center;
-        a{
-			transform-style: preserve-3d;
-			transition: transform 1.3s ease, scale 0.4s ease;
-			transform: translateZ(-5px);
-			background: transparent;
-			font-weight: 200;
-			font-size: 2em;
-			color: white;
-            z-index: 5550;
-            &:hover{
-                color: #d2b48c;
-                scale: 1.4;
-            }
-		}
-    }
 }
 
-dialog{
-    display: none;
+dialog::backdrop {
+    animation: fadeIn 1s ease both;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 2;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(8px);
 }
+
+.x {
+    border: none;
+    position: absolute;
+    width: 30px !important;
+    height: 30px !important;
+    top: 0px;
+    right: 10px;
+    transition: ease filter, transform 0.3s;
+    cursor: pointer;
+    z-index: 5;
+    transform-origin: center;
+    background-color: transparent !important;
+}
+
+.x:hover {
+    transform: scale(1.1);
+}
+
+.x img {
+    width: 30px !important;
+    height: 30px !important;
+    filter: blur(0);
+    transition: all 0.4s ease;
+}
+
+.x img:hover {
+    scale: 1.3;
+    transform: rotateZ(-45deg);
+}
+
+.splinks2 {
+    position: absolute;
+    bottom: 0;
+    transform: none !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #d2b48c;
+    justify-content: space-around;
+}
+
+.splinks2 a {
+    transform-style: preserve-3d;
+    transition: transform 1.3s ease, scale 0.4s ease;
+    transform: translateZ(-5px);
+    background: transparent;
+    font-weight: 200;
+    font-size: 2em;
+    color: white;
+    align-content: center;
+    z-index: 5550;
+}
+
+.splinks2 a:hover {
+    color: #d2b48c;
+    scale: 1.4;
+}
+
+dialog button {
+    border-color: transparent;
+    box-shadow: 0 0 0 !important;
+    transform: none !important;
+}
+
 dialog.active{
     display: flex;
 }
@@ -372,29 +404,32 @@ dialog.active{
     top: 10px;
     border-bottom: 2px solid #d2b48c;
     color: #051a34;
-    h1{
-        position: absolute !important;
-        bottom: 15px !important;
-        right: 0px !important;
-        left: 15px;
-        text-align: left !important;
-        font-size: 18px !important;
-        color: aliceblue !important;
-        font-weight: 700 !important;
-        width: auto !important;
-    }
-    h3{
-        opacity: 1 !important;
-        position: absolute !important;
-        bottom: 0px !important;
-        right: 0px !important;
-        left: 15px;
-        text-align: left !important;
-        font-size: 14px !important;
-        color: white !important;
-        width: auto !important;
-    }
 }
+
+.Name h1{
+    position: absolute !important;
+    bottom: 15px !important;
+    right: 0px !important;
+    left: 15px;
+    text-align: left !important;
+    font-size: 18px !important;
+    color: aliceblue !important;
+    font-weight: 700 !important;
+    width: auto !important;
+}
+
+.Name h3{
+    opacity: 1 !important;
+    position: absolute !important;
+    bottom: 0px !important;
+    right: 0px !important;
+    left: 15px;
+    text-align: left !important;
+    font-size: 14px !important;
+    color: white !important;
+    width: auto !important;
+}
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;
