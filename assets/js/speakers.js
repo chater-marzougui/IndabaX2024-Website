@@ -26,3 +26,17 @@ function togglepopupspeaker2() {
         document.body.style.overflow = '';
     }
 }
+
+function togglepopupspeaker6() {
+    document.getElementById("dialog6").classList.toggle("active");
+    if (document.getElementById("dialog6").classList.contains("active")) {
+        document.getElementById("dialog6").showModal();
+
+        document.body.style.overflow = 'hidden';
+    }
+    else {
+        document.getElementById("dialog6").close();
+        
+        document.body.style.overflow = '';
+    }
+}
