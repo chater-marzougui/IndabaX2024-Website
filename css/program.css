@@ -77,7 +77,7 @@
       font-size:28px;
       border-left: 6px solid var(--focuscolor);
       top: 70%;
-      margin-top: -5px;
+      margin-top: 0px;
       padding-left: 12px;
       opacity: 0;
       right: calc(-100% - 40px);
@@ -89,7 +89,7 @@
     right: auto;
       text-align: right;
       left: calc(-100% - 34px);
-      top: 48%;
+      top: 50%;
       padding-left: 0;
       border-left: none;
       border-right: 6px solid var(--focuscolor);
@@ -101,7 +101,7 @@
     filter: blur(0px);
   }
   #program-section .timeline-item--active:before {
-    top: 48%;
+    top: 50%;
     transition: 0.3s all 0.2s;
     opacity: 1;
   }
@@ -124,7 +124,7 @@
       font-size: 15px;
     }
     #program-section .timeline-item:before {
-      left: 22% !important;
+      left: 25% !important;
       padding: 0 !important;
       top: 50% !important;
       text-align: center !important;
