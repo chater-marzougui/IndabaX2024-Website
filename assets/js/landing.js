@@ -61,13 +61,13 @@ function removeCode() {
 }
 
 
-var RcountDownDate = new Date("May 6, 2150 20:00:00").getTime();
+var RcountDownDate = new Date("May 6, 2024 20:00:00").getTime();
 function togglepopup() {
   var now = new Date().getTime();
   var distance = RcountDownDate - now;
 
   
-  if (distance > 0) {
+  if (distance < 0) {
       document.getElementById("popup").classList.toggle("active");
   }
   else{
