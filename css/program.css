@@ -61,7 +61,7 @@
     padding: 120px 0;
     opacity: 0.3;
     filter: blur(2px);
-    transition: 0.5s;
+    transition: 0.4s;
     box-sizing: border-box;
     width: calc(50% - 40px);
     display: flex;
@@ -102,7 +102,7 @@
   }
   #program-section .timeline-item--active:before {
     top: 50%;
-    transition: 0.3s all 0.2s;
+    transition: all 0.4s ease;
     opacity: 1;
   }
   #program-section .timeline-item--active .timeline__content-title {
@@ -140,7 +140,7 @@
     width: 100%;
     position: relative;
     padding: 80px 0;
-    transition: 0.3s ease 0.2s;
+    transition: all 0.4s ease;
     background-attachment: fixed;
     background-size: cover;
   }
