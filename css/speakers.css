@@ -148,7 +148,7 @@
     font-weight: 200;
     position: absolute;
     margin-bottom: -0.5em;
-    bottom: 28px;
+    bottom: 32px;
     width: 90%;
     color: white;
     transform-style: preserve-3d;
@@ -545,5 +545,13 @@ dialog.active{
 
 .col-md-4:nth-child(8) .cover::before{
     background: url(../assets/images/FirasBouzguenda.jpg) 0 0 / cover;
+}
+
+.col-md-4:nth-child(9) .cover::before{
+    background: url(../assets/images/amaltarifa.jpg) 0 0 / cover;
+}
+
+.col-md-4:nth-child(10) .cover::before{
+    background: url(../assets/images/3ammonji.png) 0 0 / cover;
 }
 

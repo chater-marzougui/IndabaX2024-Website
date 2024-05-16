@@ -200,7 +200,9 @@
 @media only screen and (max-width: 767px) {
   #program-section .timeline-item .hiddentext{
     font-size: 17px;
+    height: 110%;
     width: 80%;
+    overflow: scroll;
     top: 40%;
     right: 0px;
     border-right: 0px solid #D2B48C;
