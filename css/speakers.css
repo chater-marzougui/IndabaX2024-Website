@@ -508,32 +508,42 @@ dialog.active{
     
 }
 
-.col-md-4:nth-child(1) .cover::before{
+.col-md-4 .cover::before{
     border-radius: 15px;
+}
+
+.col-md-4:nth-child(1) .cover::before{
     background: url(../assets/images/FirasBH.jpg) 0 -65px / cover;
 }
 
 .col-md-4:nth-child(2) .cover::before{
-    border-radius: 15px;
     background: url(../assets/images/AmalRannenTriki.jpg) 0 0 / cover;
 }
 
 .col-md-4:nth-child(3) .cover::before{
-    border-radius: 15px;
     background: url(../assets/images/YasmineBenAyed.jpg) 0 0 / cover;
 }
 
 .col-md-4:nth-child(4) .cover::before{
-    border-radius: 15px;
     background: url(../assets/images/YassineKhanfir.jpg) 0 -00px / cover;
 }
 
 .col-md-4:nth-child(5) .cover::before{
-    border-radius: 15px;
     background: url(../assets/images/Omarabousaada.jpg) 0 0 / cover;
 }
 
 .col-md-4:nth-child(6) .cover::before{
-    border-radius: 15px;
     background: url(../assets/images/MašaRoller.jpg) -20px 0px / cover;
 }
+
+
+/*Achraf 7 */
+
+.col-md-4:nth-child(7) .cover::before{
+    background: url(../assets/images/OussemaSmaoui.jpg) 0 0 / cover;
+}
+
+.col-md-4:nth-child(8) .cover::before{
+    background: url(../assets/images/FirasBouzguenda.jpg) 0 0 / cover;
+}
+
