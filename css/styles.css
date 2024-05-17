@@ -16,7 +16,7 @@
 	user-select: none;
 }
 
-#hero, #poster-session, #Hackaton-Section, #About-Section, #Navbar, #poster-session,#Location-Section,#pre-footer,#Footer, #Sponsors-Section{
+#hero, #poster-session, #Hackaton-Section, #program-section,#About-Section, #Navbar, #poster-session,#Location-Section,#pre-footer,#Footer, #Sponsors-Section{
 	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", 
 	"Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
 	 "Segoe UI Symbol", "Noto Color Emoji";
@@ -494,6 +494,21 @@
 #Footer .col-md-4 a {
 	text-decoration: none;
 }
+
+#Footer .gradient {
+    position: absolute;
+    --size: 250px;
+    --speed: 20s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  
+    width: var(--size);
+    height:300px;
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(#bfd6ed72, #075388);
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    opacity: 0.4;
+  }
 
 @media only screen and (min-width:1400px){
 	#Footer .col-md-4 h5 {

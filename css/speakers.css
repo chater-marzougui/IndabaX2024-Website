@@ -501,8 +501,8 @@ dialog.active{
     opacity: 0.4;
   }
 
-@media only screen and (max-width:768px) {
-    .gradient {
+@media only screen and (max-width:767px) {
+    #speaker-section .gradient {
         display: none !important;
     }
     
@@ -525,7 +525,7 @@ dialog.active{
 }
 
 .col-md-4:nth-child(4) .cover::before{
-    background: url(../assets/images/YassineKhanfir.jpg) 0 -00px / cover;
+    background: url(../assets/images/YassineKhanfir.jpg) 0 0px / cover;
 }
 
 .col-md-4:nth-child(5) .cover::before{
@@ -537,21 +537,27 @@ dialog.active{
 }
 
 
-/*Achraf 7 */
-
 .col-md-4:nth-child(7) .cover::before{
-    background: url(../assets/images/OussemaSmaoui.jpg) 0 0 / cover;
+    background: url(../assets/images/AchrafBH.jpg) 0 0 / cover;
 }
 
 .col-md-4:nth-child(8) .cover::before{
-    background: url(../assets/images/FirasBouzguenda.jpg) 0 0 / cover;
+    background: url(../assets/images/OussemaSmaoui.jpg) 0 0 / cover;
 }
 
 .col-md-4:nth-child(9) .cover::before{
-    background: url(../assets/images/amaltarifa.jpg) 0 0 / cover;
+    background: url(../assets/images/FirasBouzguenda.jpg) 0 0 / cover;
 }
 
 .col-md-4:nth-child(10) .cover::before{
+    background: url(../assets/images/amaltarifa.jpg) 0 0 / cover;
+}
+
+.col-md-4:nth-child(11) .cover::before{
     background: url(../assets/images/3ammonji.png) 0 0 / cover;
+}
+
+.col-md-4:nth-child(12) .cover::before{
+    background: url(../assets/images/daviddrakard.jpg) 0px 0px / cover;
 }
 

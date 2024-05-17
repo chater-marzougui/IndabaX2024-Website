@@ -54,7 +54,7 @@
       left: 40px;
     }
     .timeline__content {
-        border-left: 7px solid #D2B48C;
+        border-left: 6px solid #D2B48C;
     }
   }
   #program-section .timeline-item {
@@ -71,16 +71,17 @@
   #program-section .timeline-item:before {
     content: attr(data-text);
       letter-spacing: 3px;
-      width: 100%;
+      width: 110%;
       position: absolute;
       color: aliceblue;
+      font-family: 'FontAwesome' !important;
       font-size:26px;
       border-left: 6px solid var(--focuscolor);
       top: 70%;
       margin-top: 0px;
       padding-left: 12px;
       opacity: 0;
-      right: calc(-100% - 40px);
+      right: calc(-100% - 71px);
   }
   #program-section .timeline-item:nth-child(even) {
     align-self: flex-end;
@@ -88,7 +89,7 @@
   #program-section .timeline-item:nth-child(even):before {
     right: auto;
       text-align: right;
-      left: calc(-100% - 34px);
+      left: calc(-100% - 65px);
       top: 50%;
       padding-left: 0;
       border-left: none;
