@@ -56,15 +56,7 @@
     <!-- START Nav -->
     <section id="Navbar">
         <div id="popup">
-            <div class="popblur">
-                <div class="popoutside" onclick="togglepopup()"></div>
-                <div class="popup-content">
-                    <!--<img src="./assets/images/download.jpg" alt="">-->
-                    <div class="close" onclick="togglepopup()"><img src="./assets/images/Polygon3.png" alt="indabax tn polygon 1"></div>
-                    <p><b>Registration is Closed.</b>
-                    <br><br>See you at IndabaX Tunisia!
-                    </p>
-                </div>
+            <div id="finalpopup" class="popblur">
             </div>
         </div>
         <header class="header1" id="header">
@@ -676,7 +668,7 @@
         <div class="timeline">
           <div class="timeline-item" data-text="Check-In">
             <div class="timeline__content">
-              <h2 class="timeline__content-title">08:30 - 9:00</h2>
+              <h2 class="timeline__content-title">08:00 - 9:00</h2>
             </div>
           </div>
           <div class="timeline-item" data-text="Opening Ceremony">
@@ -784,7 +776,7 @@
               <h2 class="timeline__content-title">14:00 - 15:00</h2>
             </div>
           </div>
-          <div class="timeline-item" data-text="ANNOUNCE OF WINNERS">
+          <div class="timeline-item" data-text="ANNOUNCEMENT OF WINNERS">
             <div class="timeline__content">
               <h2 class="timeline__content-title">15:00 - 15:30</h2>
             </div>
@@ -832,7 +824,7 @@
                                 present your AI related research, <br>reach out through <strong>this form</strong>
                     </div>
                     <div class="regbutton" style="padding: 5%;">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScLnV50V8FHktHssYMSL1PkY4Sk_V18sjjYYsJCQtQzYt6brA/viewform?usp=sf_link" target="_blank">
+                        <a onclick="togglepopup()">
                             <button class="btn1 btn1-darken btn1-inline">
                                 <div class="textt">
                                     Register
@@ -1095,5 +1087,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
     <!-- Made By Chater Marzougui -->
     <script src="./assets/js/fullwebsite.js"></script>
-    
 </body>
